@@ -1,0 +1,372 @@
+import { PGQuestion, ISQuestion, UTQuestion, SubjectQuestionBank } from "@/lib/types";
+
+const pg: PGQuestion[] = [
+  // Kebudayaan Betawi (C1-C2)
+  {
+    id: "plbj-pg-1", type: "PG", number: 1,
+    question: "Ondel-ondel merupakan kesenian boneka raksasa yang berasal dari daerah ...",
+    options: ["Jawa Barat", "Banten", "DKI Jakarta (Betawi)", "Jawa Tengah"],
+    correctAnswer: 2,
+    materi: "Kebudayaan Betawi", tujuanPembelajaran: "Mengidentifikasi kesenian khas Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-2", type: "PG", number: 2,
+    question: "Tari Topeng Betawi merupakan salah satu kesenian tradisional yang berasal dari ...",
+    options: ["Suku Sunda", "Suku Betawi", "Suku Jawa", "Suku Bali"],
+    correctAnswer: 1,
+    materi: "Kebudayaan Betawi", tujuanPembelajaran: "Mengidentifikasi tari tradisional Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-3", type: "PG", number: 3,
+    question: "Kerak telor adalah makanan khas Betawi yang terbuat dari ...",
+    options: ["Tepung beras, telur bebek, dan kelapa parut", "Tepung terigu, telur ayam, dan gula", "Singkong, telur, dan bumbu rempah", "Ketan, telur puyuh, dan santan"],
+    correctAnswer: 0,
+    materi: "Kuliner Betawi", tujuanPembelajaran: "Menyebutkan bahan makanan khas Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-4", type: "PG", number: 4,
+    question: "Alat musik Betawi yang dimainkan dengan cara dipukul dan berbentuk seperti drum adalah ...",
+    options: ["Gambang", "Tehyan", "Tanjidor", "Kendang"],
+    correctAnswer: 3,
+    materi: "Kebudayaan Betawi", tujuanPembelajaran: "Mengidentifikasi alat musik Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-5", type: "PG", number: 5,
+    question: "Pakaian adat pengantin pria Betawi disebut ...",
+    options: ["Baju Sadariah", "Baju Pangsi", "Baju Jas Tutup", "Baju Bodo"],
+    correctAnswer: 0,
+    materi: "Pakaian Adat Betawi", tujuanPembelajaran: "Menyebutkan nama pakaian adat Betawi", levelKognitif: "C1"
+  },
+
+  // Lingkungan Jakarta (C1-C3)
+  {
+    id: "plbj-pg-6", type: "PG", number: 6,
+    question: "DKI Jakarta terdiri dari berapa kota administrasi?",
+    options: ["3", "4", "5", "6"],
+    correctAnswer: 2,
+    materi: "Geografi Jakarta", tujuanPembelajaran: "Menyebutkan wilayah administrasi DKI Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-7", type: "PG", number: 7,
+    question: "Kota administrasi yang terletak di bagian barat DKI Jakarta adalah ...",
+    options: ["Jakarta Timur", "Jakarta Utara", "Jakarta Barat", "Jakarta Pusat"],
+    correctAnswer: 2,
+    materi: "Geografi Jakarta", tujuanPembelajaran: "Menyebutkan nama kota administrasi Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-8", type: "PG", number: 8,
+    question: "Sungai terpanjang yang melintas di wilayah DKI Jakarta adalah Sungai ...",
+    options: ["Cisadane", "Ciliwung", "Citarum", "Bekasi"],
+    correctAnswer: 1,
+    materi: "Geografi Jakarta", tujuanPembelajaran: "Menyebutkan sungai-sungai di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-9", type: "PG", number: 9,
+    question: "Monumen Nasional (Monas) terletak di kota administrasi ...",
+    options: ["Jakarta Selatan", "Jakarta Barat", "Jakarta Pusat", "Jakarta Utara"],
+    correctAnswer: 2,
+    materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mengidentifikasi lokasi tempat bersejarah di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-10", type: "PG", number: 10,
+    question: "Hari jadi Kota Jakarta diperingati setiap tanggal ...",
+    options: ["17 Agustus", "22 Juni", "1 Januari", "28 Oktober"],
+    correctAnswer: 1,
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menyebutkan hari jadi Kota Jakarta", levelKognitif: "C1"
+  },
+
+  // Permainan Tradisional (C1-C3)
+  {
+    id: "plbj-pg-11", type: "PG", number: 11,
+    question: "Permainan tradisional yang dimainkan dengan cara melempar gacuk ke kotak-kotak di tanah disebut ...",
+    options: ["Congklak", "Engklek", "Galah asin", "Bentengan"],
+    correctAnswer: 1,
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Mengidentifikasi permainan tradisional Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-12", type: "PG", number: 12,
+    question: "Permainan congklak dimainkan menggunakan ...",
+    options: ["Bola dan tongkat", "Papan berlubang dan biji-bijian", "Tali dan batu", "Kartu dan dadu"],
+    correctAnswer: 1,
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Mendeskripsikan cara bermain congklak", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-13", type: "PG", number: 13,
+    question: "Manfaat bermain permainan tradisional bagi anak-anak adalah ...",
+    options: ["Membuat anak malas belajar", "Melatih kerja sama, kreativitas, dan kebugaran jasmani", "Membuat anak kecanduan bermain", "Hanya membuang-buang waktu"],
+    correctAnswer: 1,
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Menganalisis manfaat permainan tradisional", levelKognitif: "C3"
+  },
+  {
+    id: "plbj-pg-14", type: "PG", number: 14,
+    question: "Permainan petak umpet dalam Bahasa Betawi dikenal dengan sebutan ...",
+    options: ["Petak jongkok", "Pris-prisan", "Sembunyi-sembunyian", "Ucing sumput"],
+    correctAnswer: 1,
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Menyebutkan nama permainan tradisional Betawi", levelKognitif: "C1"
+  },
+
+  // Lingkungan Hidup & Kebersihan (C1-C3)
+  {
+    id: "plbj-pg-15", type: "PG", number: 15,
+    question: "Kegiatan memilah sampah organik dan anorganik bertujuan untuk ...",
+    options: ["Membuat rumah lebih kotor", "Memudahkan pengelolaan dan daur ulang sampah", "Mengurangi kegiatan membersihkan rumah", "Membuat tempat sampah cepat penuh"],
+    correctAnswer: 1,
+    materi: "Pengelolaan Lingkungan", tujuanPembelajaran: "Menjelaskan pentingnya pemilahan sampah", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-16", type: "PG", number: 16,
+    question: "Banjir di Jakarta sering terjadi karena salah satu faktor utama yaitu ...",
+    options: ["Kurangnya gedung bertingkat", "Sungai yang meluap akibat sampah dan hujan lebat", "Terlalu banyak pohon di kota", "Jalan yang terlalu lebar"],
+    correctAnswer: 1,
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Mengidentifikasi penyebab banjir di Jakarta", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-17", type: "PG", number: 17,
+    question: "Cara yang tepat untuk mengurangi genangan banjir di permukiman adalah ...",
+    options: ["Menutup seluruh tanah dengan beton", "Membuat lubang biopori untuk resapan air", "Membuang sampah ke sungai", "Menebang pohon-pohon di sekitar rumah"],
+    correctAnswer: 1,
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Mengusulkan cara mengurangi banjir", levelKognitif: "C3"
+  },
+
+  // Transportasi Jakarta (C1-C3)
+  {
+    id: "plbj-pg-18", type: "PG", number: 18,
+    question: "Alat transportasi umum berbasis rel yang melayani rute di dalam kota Jakarta dan sekitarnya disebut ...",
+    options: ["Busway", "MRT (Mass Rapid Transit)", "Ojek online", "Bajaj"],
+    correctAnswer: 1,
+    materi: "Transportasi Jakarta", tujuanPembelajaran: "Mengidentifikasi jenis transportasi umum di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-19", type: "PG", number: 19,
+    question: "Manfaat menggunakan transportasi umum dibanding kendaraan pribadi adalah ...",
+    options: ["Lebih cepat dan mahal", "Mengurangi kemacetan dan polusi udara", "Lebih nyaman dan mahal", "Memperbanyak kendaraan di jalan"],
+    correctAnswer: 1,
+    materi: "Transportasi Jakarta", tujuanPembelajaran: "Menjelaskan manfaat transportasi umum", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-20", type: "PG", number: 20,
+    question: "Kendaraan tradisional Betawi yang berbentuk becak bermotor kecil berwarna oranye disebut ...",
+    options: ["Delman", "Bajaj", "Bemo", "Oplet"],
+    correctAnswer: 1,
+    materi: "Transportasi Betawi", tujuanPembelajaran: "Menyebutkan kendaraan tradisional Betawi", levelKognitif: "C1"
+  },
+
+  // Tokoh & Sejarah Jakarta (C1-C3)
+  {
+    id: "plbj-pg-21", type: "PG", number: 21,
+    question: "Nama asli kota Jakarta sebelum berganti nama adalah ...",
+    options: ["Sunda Kelapa", "Batavia", "Jayakarta", "Semua jawaban benar (berurutan)"],
+    correctAnswer: 3,
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menyebutkan nama-nama kota Jakarta dari masa ke masa", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-22", type: "PG", number: 22,
+    question: "Gubernur DKI Jakarta yang berhasil memimpin Jakarta dari tahun 2017 hingga 2022 dan dikenal dengan program OK OCE adalah ...",
+    options: ["Basuki Tjahaja Purnama (Ahok)", "Anies Baswedan", "Sutiyoso", "Fauzi Bowo"],
+    correctAnswer: 1,
+    materi: "Tokoh Jakarta", tujuanPembelajaran: "Mengenal tokoh-tokoh pemimpin Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-23", type: "PG", number: 23,
+    question: "Pelabuhan bersejarah di Jakarta yang dulunya merupakan pusat perdagangan penting disebut Pelabuhan ...",
+    options: ["Tanjung Priok", "Sunda Kelapa", "Merak", "Muara Baru"],
+    correctAnswer: 1,
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Mengidentifikasi tempat bersejarah di Jakarta", levelKognitif: "C1"
+  },
+
+  // Kearifan Lokal & Nilai Budaya (C2-C4)
+  {
+    id: "plbj-pg-24", type: "PG", number: 24,
+    question: "Nilai kebersamaan dan gotong royong dalam masyarakat Betawi tercermin dalam kegiatan ...",
+    options: ["Berdagang sendiri-sendiri", "Kerja bakti membersihkan lingkungan bersama", "Berlomba mendapatkan keuntungan", "Menyimpan harta untuk diri sendiri"],
+    correctAnswer: 1,
+    materi: "Nilai Budaya Betawi", tujuanPembelajaran: "Mengidentifikasi nilai kebersamaan dalam budaya Betawi", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-25", type: "PG", number: 25,
+    question: "Rumah adat Betawi yang memiliki ciri khas teras lebar dan atap berbentuk sengkuap/pelana disebut ...",
+    options: ["Rumah Joglo", "Rumah Kebaya/Bapang", "Rumah Limas", "Rumah Panggung"],
+    correctAnswer: 1,
+    materi: "Rumah Adat Betawi", tujuanPembelajaran: "Mengidentifikasi ciri-ciri rumah adat Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-26", type: "PG", number: 26,
+    question: "Tumbuhan yang banyak terdapat di lingkungan Jakarta dan sering digunakan sebagai penghijauan kota adalah ...",
+    options: ["Pohon pinus", "Pohon trembesi (ki hujan)", "Pohon cemara", "Pohon kurma"],
+    correctAnswer: 1,
+    materi: "Flora Jakarta", tujuanPembelajaran: "Mengidentifikasi tumbuhan yang ada di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-27", type: "PG", number: 27,
+    question: "Kawasan Kota Tua Jakarta merupakan tempat bersejarah yang menyimpan ...",
+    options: ["Bangunan modern dan pusat perbelanjaan", "Bangunan peninggalan zaman kolonial Belanda", "Rumah-rumah adat Betawi", "Kebun binatang terbesar di Indonesia"],
+    correctAnswer: 1,
+    materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mendeskripsikan kawasan bersejarah di Jakarta", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-28", type: "PG", number: 28,
+    question: "Kegiatan yang dapat merusak lingkungan sekitar dan harus dihindari adalah ...",
+    options: ["Menanam pohon di pinggir jalan", "Membuang sampah pada tempatnya", "Mencoret-coret tembok fasilitas umum", "Menggunakan air secukupnya"],
+    correctAnswer: 2,
+    materi: "Kesadaran Lingkungan", tujuanPembelajaran: "Mengidentifikasi tindakan yang merusak lingkungan", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-pg-29", type: "PG", number: 29,
+    question: "Festival Palang Pintu adalah tradisi adat Betawi yang dilaksanakan pada acara ...",
+    options: ["Pesta panen", "Prosesi pernikahan", "Khitanan", "Peringatan hari kemerdekaan"],
+    correctAnswer: 1,
+    materi: "Tradisi Betawi", tujuanPembelajaran: "Menjelaskan tradisi adat Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-pg-30", type: "PG", number: 30,
+    question: "Sebagai warga Jakarta, sikap yang tepat untuk menjaga kebersihan lingkungan kota adalah ...",
+    options: ["Membuang sampah di sembarang tempat karena ada petugas kebersihan", "Membuang sampah pada tempatnya dan ikut kerja bakti", "Membiarkan tetangga yang membuang sampah sembarangan", "Hanya membersihkan halaman rumah sendiri saja"],
+    correctAnswer: 1,
+    materi: "Kewargaan Jakarta", tujuanPembelajaran: "Menganalisis sikap warga yang baik terhadap lingkungan", levelKognitif: "C3"
+  },
+];
+
+const is: ISQuestion[] = [
+  {
+    id: "plbj-is-1", type: "IS", number: 26,
+    question: "Kesenian boneka raksasa khas Betawi yang sering ditampilkan dalam berbagai perayaan adalah ...",
+    acceptedAnswers: ["ondel-ondel", "ondel ondel"],
+    modelAnswer: "Ondel-ondel",
+    materi: "Kesenian Betawi", tujuanPembelajaran: "Menyebutkan kesenian khas Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-2", type: "IS", number: 27,
+    question: "Hari jadi Kota Jakarta diperingati setiap tanggal ... bulan Juni.",
+    acceptedAnswers: ["22", "dua puluh dua"],
+    modelAnswer: "22",
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menyebutkan hari jadi Kota Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-3", type: "IS", number: 28,
+    question: "Makanan khas Betawi yang terbuat dari beras, telur bebek, dan kelapa parut yang dimasak di atas bara api adalah ...",
+    acceptedAnswers: ["kerak telor", "kerak telur"],
+    modelAnswer: "Kerak telor",
+    materi: "Kuliner Betawi", tujuanPembelajaran: "Menyebutkan makanan khas Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-4", type: "IS", number: 29,
+    question: "DKI Jakarta dibagi menjadi ... kota administrasi dan 1 kabupaten administrasi.",
+    acceptedAnswers: ["5", "lima"],
+    modelAnswer: "5 (lima)",
+    materi: "Geografi Jakarta", tujuanPembelajaran: "Menyebutkan jumlah kota administrasi Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-5", type: "IS", number: 30,
+    question: "Permainan tradisional yang dimainkan dengan cara melompat-lompat di atas kotak-kotak di tanah disebut ...",
+    acceptedAnswers: ["engklek"],
+    modelAnswer: "Engklek",
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Menyebutkan nama permainan tradisional", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-6", type: "IS", number: 31,
+    question: "Sungai terpanjang yang mengalir melalui wilayah DKI Jakarta adalah Sungai ...",
+    acceptedAnswers: ["ciliwung"],
+    modelAnswer: "Ciliwung",
+    materi: "Geografi Jakarta", tujuanPembelajaran: "Menyebutkan nama sungai di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-7", type: "IS", number: 32,
+    question: "Kawasan bersejarah di Jakarta yang menyimpan bangunan peninggalan Belanda disebut Kawasan Kota ...",
+    acceptedAnswers: ["tua", "kota tua"],
+    modelAnswer: "Tua (Kota Tua)",
+    materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Menyebutkan tempat bersejarah di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-8", type: "IS", number: 33,
+    question: "Transportasi massal berbasis rel di Jakarta yang menghubungkan Lebak Bulus hingga Kota disebut ...",
+    acceptedAnswers: ["mrt", "mrt jakarta", "mass rapid transit"],
+    modelAnswer: "MRT (Mass Rapid Transit)",
+    materi: "Transportasi Jakarta", tujuanPembelajaran: "Menyebutkan jenis transportasi umum di Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-9", type: "IS", number: 34,
+    question: "Nama kota Jakarta pada masa kolonial Belanda adalah ...",
+    acceptedAnswers: ["batavia"],
+    modelAnswer: "Batavia",
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menyebutkan nama lama Jakarta", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-10", type: "IS", number: 35,
+    question: "Prosesi adat Betawi dalam pernikahan yang menampilkan seni silat dan pantun disebut tradisi ...",
+    acceptedAnswers: ["palang pintu"],
+    modelAnswer: "Palang Pintu",
+    materi: "Tradisi Betawi", tujuanPembelajaran: "Menyebutkan tradisi pernikahan Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-11", type: "IS", number: 36,
+    question: "Rumah adat Betawi yang terkenal dengan teras lebarnya disebut Rumah ...",
+    acceptedAnswers: ["kebaya", "bapang", "rumah kebaya"],
+    modelAnswer: "Kebaya/Bapang",
+    materi: "Rumah Adat Betawi", tujuanPembelajaran: "Menyebutkan nama rumah adat Betawi", levelKognitif: "C1"
+  },
+  {
+    id: "plbj-is-12", type: "IS", number: 37,
+    question: "Pelabuhan bersejarah di Jakarta yang dulunya bernama Sunda Kelapa kini dikenal sebagai kawasan wisata sejarah di ...",
+    acceptedAnswers: ["jakarta utara", "penjaringan", "utara"],
+    modelAnswer: "Jakarta Utara (Penjaringan)",
+    materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mengidentifikasi lokasi tempat bersejarah di Jakarta", levelKognitif: "C2"
+  },
+];
+
+const ut: UTQuestion[] = [
+  {
+    id: "plbj-ut-1", type: "UT", number: 38,
+    question: "Jelaskan apa itu Ondel-ondel! Sebutkan ciri-cirinya, kapan biasanya ditampilkan, dan apa makna atau fungsinya dalam budaya Betawi!",
+    modelAnswer: "Ondel-ondel adalah boneka raksasa khas budaya Betawi setinggi sekitar 2,5 meter yang terbuat dari kerangka bambu dan dihiasi dengan pakaian dan topeng berwarna-warni. Biasanya ditampilkan berpasangan (laki-laki dan perempuan) dalam berbagai acara perayaan seperti pernikahan, sunatan, dan hari jadi Jakarta. Dalam budaya Betawi, ondel-ondel dipercaya sebagai penolak bala (pelindung dari hal buruk) dan lambang kegembiraan masyarakat Betawi.",
+    keyPoints: ["Menjelaskan bentuk/ciri ondel-ondel", "Menyebutkan bahan pembuatan", "Menyebutkan kapan ditampilkan", "Menjelaskan makna/fungsi dalam budaya Betawi"],
+    materi: "Kesenian Betawi", tujuanPembelajaran: "Mendeskripsikan kesenian ondel-ondel secara lengkap", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-ut-2", type: "UT", number: 39,
+    question: "Sebutkan 3 permainan tradisional yang biasa dimainkan oleh anak-anak di Jakarta/Betawi! Jelaskan cara bermain salah satu permainan tersebut!",
+    modelAnswer: "Tiga permainan tradisional Betawi: (1) Engklek, (2) Congklak, (3) Galah Asin (Gobak Sodor).\nCara bermain Engklek: Buat kotak-kotak di tanah membentuk pola tertentu. Lempar gacuk (pecahan genteng/batu pipih) ke kotak pertama. Melompat dengan satu kaki melewati semua kotak kecuali kotak yang ada gacuk-nya. Di kotak paling ujung, balik badan dan lompat kembali sambil mengambil gacuk. Pemain yang dapat melewati semua kotak tanpa menginjak garis dan tidak jatuh adalah pemenangnya.",
+    keyPoints: ["Menyebutkan minimal 3 permainan tradisional", "Menjelaskan cara bermain salah satu dengan benar", "Penjelasan runtut dan mudah dipahami"],
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Mendeskripsikan permainan tradisional Betawi", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-ut-3", type: "UT", number: 40,
+    question: "Jakarta sering mengalami banjir setiap tahun. Jelaskan minimal 3 penyebab banjir di Jakarta dan 3 upaya yang bisa dilakukan untuk mengurangi banjir!",
+    modelAnswer: "Penyebab banjir di Jakarta:\n1. Buang sampah sembarangan ke sungai sehingga aliran air tersumbat\n2. Kurangnya daerah resapan air karena banyak tanah tertutup beton/aspal\n3. Curah hujan tinggi dan kiriman air dari daerah Bogor/Puncak\n\nUpaya mengurangi banjir:\n1. Tidak membuang sampah ke sungai dan membersihkan saluran air secara rutin\n2. Membuat lubang biopori dan taman kota untuk resapan air\n3. Normalisasi/pengerukan sungai agar aliran air lebih lancar",
+    keyPoints: ["Menyebutkan minimal 3 penyebab banjir", "Menyebutkan minimal 3 upaya penanggulangan", "Penjelasan logis dan relevan dengan kondisi Jakarta"],
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Menganalisis penyebab dan solusi banjir di Jakarta", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-ut-4", type: "UT", number: 41,
+    question: "Jelaskan sejarah singkat nama Kota Jakarta dari masa ke masa! (mulai dari Sunda Kelapa hingga Jakarta)",
+    modelAnswer: "Kota Jakarta telah mengalami beberapa kali pergantian nama:\n1. Sunda Kelapa: Nama awal sebagai pelabuhan kerajaan Sunda yang penting sejak abad ke-12\n2. Jayakarta: Pada tahun 1527, Fatahillah (Panglima Demak) mengalahkan Portugis dan mengganti nama menjadi Jayakarta, artinya 'kota kemenangan yang agung'\n3. Batavia: Pada tahun 1619, VOC Belanda di bawah Jan Pieterszoon Coen menaklukkan Jayakarta dan mengganti namanya menjadi Batavia\n4. Jakarta: Pada tanggal 5 Maret 1942, Jepang mengambil alih dan mengganti nama menjadi Jakarta. Nama ini tetap dipakai hingga sekarang setelah Indonesia merdeka.",
+    keyPoints: ["Menyebutkan nama Sunda Kelapa dan artinya", "Menyebutkan Jayakarta dan perubahnya", "Menyebutkan Batavia (era Belanda)", "Menyebutkan Jakarta (era Jepang/kemerdekaan)", "Urutan kronologis benar"],
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menceritakan sejarah nama Kota Jakarta", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-ut-5", type: "UT", number: 42,
+    question: "Sebagai warga Jakarta, apa yang bisa kamu lakukan untuk menjaga kelestarian budaya Betawi? Berikan minimal 4 contoh tindakan nyata yang bisa dilakukan oleh pelajar sekolah dasar!",
+    modelAnswer: "Sebagai pelajar, saya bisa menjaga kelestarian budaya Betawi dengan cara:\n1. Mempelajari dan berlatih tari tradisional Betawi seperti Tari Topeng atau Tari Yapong di sekolah\n2. Mengenal dan mencicipi makanan khas Betawi seperti kerak telor, soto Betawi, dan kue rangi\n3. Menyaksikan dan mengapresiasi pertunjukan ondel-ondel atau lenong Betawi di festival budaya\n4. Menggunakan kosakata atau ungkapan Betawi dalam percakapan sehari-hari\n5. Membuat laporan atau karya tentang budaya Betawi untuk tugas sekolah\n6. Mengunjungi museum Betawi atau Taman Mini Indonesia Indah bersama keluarga",
+    keyPoints: ["Minimal 4 tindakan konkret disebutkan", "Tindakan relevan dengan usia pelajar SD", "Berkaitan dengan pelestarian budaya Betawi", "Jawaban logis dan dapat dilakukan"],
+    materi: "Pelestarian Budaya", tujuanPembelajaran: "Merancang tindakan pelestarian budaya Betawi", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-ut-6", type: "UT", number: 43,
+    question: "Ceritakan pengalamanmu atau apa yang kamu ketahui tentang salah satu tradisi atau perayaan khas Betawi! (misalnya: lebaran Betawi, sunatan, atau pernikahan adat Betawi)",
+    modelAnswer: "Tradisi pernikahan adat Betawi memiliki prosesi yang kaya budaya. Salah satu prosesi yang paling terkenal adalah Palang Pintu, yaitu tradisi di mana keluarga mempelai pria harus melewati 'palang' yang dijaga oleh jawara (pendekar silat) dari pihak mempelai wanita. Prosesi ini menampilkan seni bela diri (silat Betawi) dan saling berbalas pantun. Selain itu, dalam pernikahan adat Betawi juga ada prosesi Akad Nikah dengan pakaian adat khas yaitu Baju Sadariah untuk pria dan kebaya encim untuk wanita. Mempelai juga menggunakan kembang goyang dan hiasan kepala khas Betawi. Suasana pernikahan sangat meriah dengan iringan musik gambang kromong.",
+    keyPoints: ["Menyebutkan nama tradisi/perayaan yang dipilih", "Mendeskripsikan prosesi/kegiatan yang dilakukan", "Menyebutkan unsur budaya Betawi yang ada", "Cerita runtut dan berisi minimal 4-5 kalimat"],
+    materi: "Tradisi Betawi", tujuanPembelajaran: "Menceritakan tradisi khas Betawi", levelKognitif: "C2"
+  },
+];
+
+export const plbjBank: SubjectQuestionBank = {
+  pg,
+  is,
+  ut,
+  sessions: [
+    { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
+    { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], is: [1,2,3,4,5,6,7,8,9,10], ut: [1,2,3,4,5] },
+    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,1,3,5,7,9,11,13,15,17,19], is: [0,2,4,6,8,10,1,3,5,7], ut: [0,2,4,1,3] },
+    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,0] },
+    { pg: [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,0,2,4,6,8,10,12,14,16,18], is: [0,1,3,5,7,9,11,2,4,6], ut: [0,1,2,4,5] },
+  ],
+};
