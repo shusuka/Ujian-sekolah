@@ -1,658 +1,590 @@
 import { PGQuestion, ISQuestion, UTQuestion, SubjectQuestionBank } from "@/lib/types";
 
 const pg: PGQuestion[] = [
-  // Makhluk Hidup & Lingkungan (C1-C3)
+
+  // ============================================================
+  // BAB 1: BAGAIMANA TUBUH KITA BERGERAK? (Sistem Gerak & Saraf)
+  // ============================================================
+
   {
     id: "ipas-pg-1", type: "PG", number: 1,
-    question: "Proses masuknya cahaya matahari ke dalam daun untuk menghasilkan makanan pada tumbuhan disebut ...",
-    options: ["Respirasi", "Transpirasi", "Fotosintesis", "Evaporasi"],
-    correctAnswer: 2,
-    materi: "Tumbuhan dan Fotosintesis", tujuanPembelajaran: "Menjelaskan proses fotosintesis", levelKognitif: "C1"
+    question: "Rangka, sendi, dan otot bekerja sama agar tubuh manusia bisa bergerak. Rangka disebut alat gerak pasif karena ...",
+    options: ["Rangka tidak pernah bergerak sama sekali", "Rangka hanya bergerak jika ditarik oleh otot", "Rangka bergerak sendiri tanpa bantuan otot", "Rangka terlalu berat untuk bergerak"],
+    correctAnswer: 1,
+    materi: "Sistem Gerak – Rangka dan Otot", tujuanPembelajaran: "Menjelaskan peran rangka sebagai alat gerak pasif", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-2", type: "PG", number: 2,
-    question: "Bahan-bahan yang dibutuhkan tumbuhan untuk melakukan fotosintesis adalah ...",
-    options: ["Air, karbon dioksida, cahaya matahari", "Oksigen, air, tanah", "Karbon dioksida, oksigen, mineral", "Air, oksigen, glukosa"],
-    correctAnswer: 0,
-    materi: "Tumbuhan dan Fotosintesis", tujuanPembelajaran: "Mengidentifikasi bahan fotosintesis", levelKognitif: "C1"
+    question: "Sendi yang memungkinkan gerakan ke segala arah seperti pada sendi bahu dan pinggul disebut sendi ...",
+    options: ["Sendi engsel", "Sendi putar", "Sendi pelana", "Sendi peluru"],
+    correctAnswer: 3,
+    materi: "Sistem Gerak – Sendi", tujuanPembelajaran: "Mengidentifikasi jenis-jenis sendi dan fungsinya", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-3", type: "PG", number: 3,
-    question: "Hasil dari proses fotosintesis adalah ...",
-    options: ["Air dan karbon dioksida", "Glukosa dan oksigen", "Mineral dan air", "Karbon dioksida dan uap air"],
+    question: "Perhatikan kelainan tulang berikut:\n• Tulang punggung melengkung ke depan (perut maju)\n• Biasanya terjadi pada wanita hamil atau orang yang sering membawa beban berat di depan\n\nKelainan tulang tersebut disebut ...",
+    options: ["Kifosis", "Lordosis", "Skoliosis", "Osteoporosis"],
     correctAnswer: 1,
-    materi: "Tumbuhan dan Fotosintesis", tujuanPembelajaran: "Menyebutkan hasil fotosintesis", levelKognitif: "C1"
+    materi: "Sistem Gerak – Kelainan Tulang", tujuanPembelajaran: "Membedakan jenis-jenis kelainan pada sistem gerak", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-4", type: "PG", number: 4,
-    question: "Hewan yang memakan tumbuhan disebut ...",
-    options: ["Karnivora", "Herbivora", "Omnivora", "Dekomposer"],
-    correctAnswer: 1,
-    materi: "Rantai Makanan", tujuanPembelajaran: "Mengklasifikasikan jenis konsumen", levelKognitif: "C1"
+    question: "Seorang siswa sering duduk miring ke satu sisi saat belajar selama bertahun-tahun. Kelainan tulang yang kemungkinan akan dialaminya adalah ...",
+    options: ["Lordosis – tulang punggung melengkung ke depan", "Kifosis – tulang punggung melengkung ke belakang", "Skoliosis – tulang punggung melengkung ke samping", "Osteoporosis – tulang menjadi rapuh dan keropos"],
+    correctAnswer: 2,
+    materi: "Sistem Gerak – Kelainan Tulang", tujuanPembelajaran: "Menganalisis penyebab kelainan tulang berdasarkan kebiasaan", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-5", type: "PG", number: 5,
-    question: "Perhatikan rantai makanan berikut:\nRumput → Belalang → Katak → Ular → Elang\nHewan yang berperan sebagai konsumen tingkat dua adalah ...",
-    options: ["Rumput", "Belalang", "Katak", "Ular"],
-    correctAnswer: 2,
-    materi: "Rantai Makanan", tujuanPembelajaran: "Mengidentifikasi peran dalam rantai makanan", levelKognitif: "C3"
+    question: "Otot jantung memiliki sifat yang berbeda dari otot lurik dan otot polos. Sifat khas otot jantung adalah ...",
+    options: ["Bekerja secara sadar dan bisa dikendalikan", "Bekerja di luar kesadaran dan tidak pernah lelah", "Hanya aktif saat kita berolahraga", "Memiliki warna putih dan bergerak lambat"],
+    correctAnswer: 1,
+    materi: "Sistem Gerak – Otot", tujuanPembelajaran: "Membedakan jenis-jenis otot dan cara kerjanya", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-6", type: "PG", number: 6,
-    question: "Simbiosis antara kupu-kupu dan bunga, di mana kupu-kupu mendapat nektar dan bunga terbantu penyerbukannya, disebut ...",
-    options: ["Parasitisme", "Komensalisme", "Mutualisme", "Predasi"],
-    correctAnswer: 2,
-    materi: "Simbiosis", tujuanPembelajaran: "Mengidentifikasi jenis simbiosis", levelKognitif: "C2"
+    question: "Ketika tangan seseorang tidak sengaja menyentuh benda panas, ia langsung menarik tangannya sebelum otak memerintahkan. Peristiwa ini disebut gerak ...",
+    options: ["Gerak sadar yang dikendalikan otak besar", "Gerak refleks yang dikendalikan sumsum tulang belakang", "Gerak terkoordinasi antara otak dan tangan", "Gerak volunter yang dipelajari sejak bayi"],
+    correctAnswer: 1,
+    materi: "Sistem Saraf", tujuanPembelajaran: "Membedakan gerak refleks dan gerak sadar", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-7", type: "PG", number: 7,
-    question: "Hubungan antara benalu dan pohon inangnya termasuk simbiosis ...",
-    options: ["Mutualisme", "Komensalisme", "Parasitisme", "Netralisme"],
+    question: "Perhatikan tabel berikut:\n| Sendi | Contoh Gerakan |\n|---|---|\n| Sendi engsel | Memutar kepala ke kiri dan kanan |\n| Sendi putar | Menekuk siku dan lutut |\n| Sendi peluru | Menggerakkan bahu dan pinggul bebas |\n| Sendi pelana | Menggerakkan ibu jari |\n\nPasangan sendi dan contoh gerakan yang BENAR adalah ...",
+    options: ["Sendi engsel – memutar kepala", "Sendi putar – menekuk siku dan lutut", "Sendi peluru – menggerakkan bahu bebas ke segala arah", "Sendi pelana – menggerakkan seluruh jari tangan"],
     correctAnswer: 2,
-    materi: "Simbiosis", tujuanPembelajaran: "Mengidentifikasi simbiosis parasitisme", levelKognitif: "C2"
+    materi: "Sistem Gerak – Sendi", tujuanPembelajaran: "Mencocokkan jenis sendi dengan gerakan yang sesuai", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-8", type: "PG", number: 8,
-    question: "Berikut ini yang merupakan ciri-ciri makhluk hidup adalah ...",
-    options: ["Diam, tidak bergerak, tidak tumbuh", "Bergerak, bernapas, tumbuh, berkembang biak", "Berwarna, keras, tidak memerlukan makanan", "Mengkilap, dingin, tidak bernapas"],
+    question: "Vitamin D sangat penting untuk kesehatan tulang karena ...",
+    options: ["Vitamin D membantu kontraksi otot", "Vitamin D membantu penyerapan kalsium untuk membentuk tulang yang kuat", "Vitamin D menggantikan fungsi kalsium dalam tubuh", "Vitamin D diproduksi oleh sumsum tulang belakang"],
     correctAnswer: 1,
-    materi: "Ciri-ciri Makhluk Hidup", tujuanPembelajaran: "Menyebutkan ciri makhluk hidup", levelKognitif: "C1"
+    materi: "Sistem Gerak – Kesehatan Tulang", tujuanPembelajaran: "Menjelaskan peran nutrisi terhadap kesehatan sistem gerak", levelKognitif: "C2"
   },
 
-  // Tubuh Manusia & Kesehatan (C1-C3)
+  // ============================================================
+  // BAB 2: CERITA TENTANG INDONESIA KITA (Sejarah Indonesia)
+  // ============================================================
+
   {
     id: "ipas-pg-9", type: "PG", number: 9,
-    question: "Organ tubuh yang berfungsi memompa darah ke seluruh tubuh adalah ...",
-    options: ["Paru-paru", "Jantung", "Ginjal", "Hati"],
+    question: "VOC (Vereenigde Oost-Indische Compagnie) didirikan oleh Belanda pada tahun 1602. Salah satu tujuan utama pembentukan VOC adalah ...",
+    options: ["Membantu rakyat Nusantara dalam bidang pendidikan", "Menghindari persaingan tidak sehat antar pedagang Belanda dan memonopoli perdagangan rempah", "Menyebarkan agama Kristen di seluruh Nusantara", "Membangun infrastruktur jalan raya di Pulau Jawa"],
     correctAnswer: 1,
-    materi: "Sistem Peredaran Darah", tujuanPembelajaran: "Mengidentifikasi fungsi organ tubuh manusia", levelKognitif: "C1"
+    materi: "Sejarah – Kedatangan Bangsa Asing", tujuanPembelajaran: "Menganalisis tujuan pembentukan VOC", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-10", type: "PG", number: 10,
-    question: "Organ yang berfungsi untuk menyaring darah dan menghasilkan urine adalah ...",
-    options: ["Jantung", "Paru-paru", "Ginjal", "Usus"],
-    correctAnswer: 2,
-    materi: "Sistem Ekskresi", tujuanPembelajaran: "Mengidentifikasi fungsi ginjal", levelKognitif: "C1"
+    question: "Perlawanan Pattimura (Thomas Matulessy) di Maluku pada tahun 1817 dipicu oleh ...",
+    options: ["Keinginan menyerang Batavia", "Kebijakan Belanda yang memberatkan rakyat: wajib kerja, penyerahan hasil bumi, dan monopoli perdagangan", "Perintah dari Kerajaan Ternate", "Konflik antar suku di Maluku yang dimanfaatkan Belanda"],
+    correctAnswer: 1,
+    materi: "Sejarah – Perlawanan Rakyat", tujuanPembelajaran: "Menganalisis latar belakang perlawanan Pattimura", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-11", type: "PG", number: 11,
-    question: "Proses masuknya oksigen ke dalam tubuh dan keluarnya karbon dioksida disebut ...",
-    options: ["Pencernaan", "Peredaran darah", "Pernapasan", "Ekskresi"],
-    correctAnswer: 2,
-    materi: "Sistem Pernapasan", tujuanPembelajaran: "Menjelaskan sistem pernapasan manusia", levelKognitif: "C1"
+    question: "Sistem Tanam Paksa (Cultuurstelsel) yang diterapkan oleh Gubernur Jenderal Van den Bosch tahun 1830 mewajibkan rakyat Indonesia untuk ...",
+    options: ["Membayar pajak dalam bentuk uang kepada Belanda", "Menyerahkan 1/5 lahan atau 66 hari kerja per tahun untuk menanam tanaman ekspor Belanda", "Bekerja sebagai tentara VOC selama 5 tahun", "Menyerahkan 1/3 hasil panen kepada kepala desa"],
+    correctAnswer: 1,
+    materi: "Sejarah – Penjajahan Belanda", tujuanPembelajaran: "Menjelaskan sistem tanam paksa dan dampaknya", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-12", type: "PG", number: 12,
-    question: "Vitamin C banyak terdapat pada buah-buahan seperti jeruk dan bermanfaat untuk ...",
-    options: ["Memperkuat tulang", "Membantu pembekuan darah", "Meningkatkan daya tahan tubuh", "Membentuk sel darah merah"],
-    correctAnswer: 2,
-    materi: "Gizi dan Kesehatan", tujuanPembelajaran: "Menjelaskan manfaat vitamin", levelKognitif: "C2"
+    question: "Peristiwa Rengasdengklok (16 Agustus 1945) terjadi karena ...",
+    options: ["Jepang menyerang Rengasdengklok untuk menangkap Soekarno-Hatta", "Golongan muda mengasingkan Soekarno-Hatta agar segera memproklamasikan kemerdekaan tanpa menunggu PPKI", "Belanda mencoba merebut kembali kekuasaan di Indonesia", "Soekarno-Hatta sendiri yang memilih mengasingkan diri ke Rengasdengklok"],
+    correctAnswer: 1,
+    materi: "Sejarah – Proklamasi Kemerdekaan", tujuanPembelajaran: "Menjelaskan latar belakang peristiwa Rengasdengklok", levelKognitif: "C3"
   },
-
-  // Materi dan Perubahannya (C1-C3)
   {
     id: "ipas-pg-13", type: "PG", number: 13,
-    question: "Perubahan wujud air menjadi es disebut ...",
-    options: ["Mencair", "Membeku", "Menguap", "Mengembun"],
+    question: "Proklamasi Kemerdekaan Indonesia dibacakan oleh Ir. Soekarno pada tanggal 17 Agustus 1945 di ...",
+    options: ["Lapangan Banteng, Jakarta Pusat", "Jalan Pegangsaan Timur No. 56, Jakarta", "Istana Negara, Jakarta Pusat", "Gedung Volksraad, Batavia"],
     correctAnswer: 1,
-    materi: "Perubahan Wujud Zat", tujuanPembelajaran: "Mengidentifikasi perubahan wujud zat", levelKognitif: "C1"
+    materi: "Sejarah – Proklamasi Kemerdekaan", tujuanPembelajaran: "Menyebutkan tempat dan tanggal proklamasi kemerdekaan", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-14", type: "PG", number: 14,
-    question: "Besi yang dibiarkan di udara terbuka lama-kelamaan akan berkarat. Perubahan ini merupakan perubahan ...",
-    options: ["Fisika", "Kimia", "Biologi", "Fisika dan kimia"],
+    question: "Perlawanan rakyat Indonesia sebelum era pergerakan nasional (sebelum 1908) seringkali gagal mengusir penjajah. Faktor UTAMA kegagalan tersebut adalah ...",
+    options: ["Rakyat Indonesia tidak bersemangat dalam perjuangan", "Perlawanan bersifat kedaerahan dan mudah dipecah belah dengan politik adu domba (devide et impera)", "Belanda memiliki jumlah prajurit yang jauh lebih banyak dari rakyat Indonesia", "Para pemimpin perlawanan tidak memiliki kemampuan strategi perang"],
     correctAnswer: 1,
-    materi: "Perubahan Materi", tujuanPembelajaran: "Membedakan perubahan fisika dan kimia", levelKognitif: "C2"
+    materi: "Sejarah – Perlawanan Rakyat", tujuanPembelajaran: "Menganalisis faktor kegagalan perlawanan bangsa Indonesia", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-15", type: "PG", number: 15,
-    question: "Contoh perubahan fisika adalah ...",
-    options: ["Kertas yang dibakar", "Besi berkarat", "Air yang membeku", "Susu yang menjadi basi"],
-    correctAnswer: 2,
-    materi: "Perubahan Materi", tujuanPembelajaran: "Membedakan perubahan fisika dan kimia", levelKognitif: "C2"
+    question: "Budi Utomo yang didirikan pada 20 Mei 1908 dianggap sebagai awal kebangkitan nasional Indonesia karena ...",
+    options: ["Merupakan organisasi perlawanan bersenjata pertama melawan Belanda", "Merupakan organisasi modern pertama yang bersifat nasional dan menggunakan pendidikan sebagai sarana perjuangan", "Berhasil mengusir Belanda dari wilayah Jawa", "Merupakan organisasi keagamaan yang menyatukan seluruh Islam Nusantara"],
+    correctAnswer: 1,
+    materi: "Sejarah – Pergerakan Nasional", tujuanPembelajaran: "Menjelaskan makna Hari Kebangkitan Nasional", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-16", type: "PG", number: 16,
-    question: "Benda yang dapat menghantarkan listrik disebut ...",
-    options: ["Isolator", "Konduktor", "Semikonduktor", "Kapasitor"],
+    question: "Sumpah Pemuda yang diikrarkan pada 28 Oktober 1928 menegaskan tiga hal. Pernyataan yang BENAR tentang isi Sumpah Pemuda adalah ...",
+    options: ["Bertumpah darah, berbangsa, dan berbahasa yang satu: Indonesia, Melayu, dan Jawa", "Bertumpah darah satu: tanah air Indonesia; berbangsa satu: bangsa Indonesia; berbahasa satu: bahasa Indonesia", "Merdeka, bersatu, dan berdaulat sebagai bangsa Indonesia", "Bersatu dalam satu agama, satu bahasa, dan satu budaya Jawa"],
     correctAnswer: 1,
-    materi: "Listrik", tujuanPembelajaran: "Membedakan konduktor dan isolator", levelKognitif: "C1"
+    materi: "Sejarah – Sumpah Pemuda", tujuanPembelajaran: "Menyebutkan isi Sumpah Pemuda", levelKognitif: "C1"
   },
 
-  // Energi & Gaya (C1-C3)
+  // ============================================================
+  // BAB 3: PELESIR KELILING DUNIA (Geografi Dunia)
+  // ============================================================
+
   {
     id: "ipas-pg-17", type: "PG", number: 17,
-    question: "Energi yang dihasilkan oleh matahari dan dimanfaatkan oleh panel surya disebut energi ...",
-    options: ["Angin", "Air", "Surya/Matahari", "Panas bumi"],
+    question: "Batas alam yang memisahkan Benua Eropa dari Benua Asia di daratan adalah ...",
+    options: ["Pegunungan Himalaya", "Pegunungan Alpen", "Pegunungan Ural", "Pegunungan Kaukasus"],
     correctAnswer: 2,
-    materi: "Energi Terbarukan", tujuanPembelajaran: "Mengidentifikasi sumber energi terbarukan", levelKognitif: "C1"
+    materi: "Geografi – Benua di Dunia", tujuanPembelajaran: "Mengidentifikasi batas-batas antara benua", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-18", type: "PG", number: 18,
-    question: "Gaya yang bekerja pada benda karena tarikan bumi disebut gaya ...",
-    options: ["Gesek", "Magnet", "Gravitasi", "Pegas"],
-    correctAnswer: 2,
-    materi: "Gaya", tujuanPembelajaran: "Menjelaskan gaya gravitasi", levelKognitif: "C1"
+    question: "Benua yang seluruh wilayahnya berada di Belahan Bumi Selatan dan memiliki iklim tropis di utara hingga gurun di tengahnya adalah ...",
+    options: ["Asia", "Afrika", "Amerika Selatan", "Australia"],
+    correctAnswer: 3,
+    materi: "Geografi – Benua di Dunia", tujuanPembelajaran: "Mengidentifikasi karakteristik setiap benua", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-19", type: "PG", number: 19,
-    question: "Saat mendorong meja yang berat di lantai, kamu merasakan hambatan. Hambatan tersebut disebabkan oleh gaya ...",
-    options: ["Gravitasi", "Magnet", "Gesek", "Dorong"],
-    correctAnswer: 2,
-    materi: "Gaya", tujuanPembelajaran: "Menjelaskan gaya gesek", levelKognitif: "C2"
+    question: "Negara Swiss yang dikelilingi pegunungan Alpen memanfaatkan kondisi geografisnya dengan mengembangkan sektor ...",
+    options: ["Pertambangan emas dan nikel berskala besar", "Pariwisata, perbankan, dan industri jam tangan presisi", "Pertanian padi dan perkebunan karet", "Perikanan laut dan ekspor hasil laut"],
+    correctAnswer: 1,
+    materi: "Geografi – Kondisi Geografis Negara", tujuanPembelajaran: "Menganalisis hubungan kondisi geografis dengan potensi ekonomi suatu negara", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-20", type: "PG", number: 20,
-    question: "Berikut ini yang termasuk sumber energi tak terbarukan adalah ...",
-    options: ["Angin", "Matahari", "Batu bara", "Air"],
-    correctAnswer: 2,
-    materi: "Sumber Energi", tujuanPembelajaran: "Membedakan energi terbarukan dan tak terbarukan", levelKognitif: "C2"
+    question: "Berdasarkan letak geografisnya, Indonesia dijuluki sebagai 'negara kepulauan terbesar di dunia'. Keuntungan strategis yang diperoleh Indonesia dari posisi geografis tersebut adalah ...",
+    options: ["Indonesia mudah diserang dari berbagai arah laut", "Indonesia menjadi jalur perdagangan internasional dan memiliki keanekaragaman hayati yang sangat kaya", "Indonesia sulit menjalin hubungan dengan negara lain karena terpisah lautan", "Indonesia harus mengeluarkan biaya besar untuk menjaga perbatasan laut"],
+    correctAnswer: 1,
+    materi: "Geografi – Kondisi Geografis Indonesia", tujuanPembelajaran: "Menganalisis keuntungan posisi geografis Indonesia", levelKognitif: "C4"
   },
-
-  // Bumi & Alam Semesta (C1-C3)
   {
     id: "ipas-pg-21", type: "PG", number: 21,
-    question: "Lapisan terluar bumi yang kita tinggali disebut ...",
-    options: ["Inti bumi", "Mantel bumi", "Kerak bumi", "Atmosfer"],
+    question: "Perhatikan daftar benua berikut: Asia, Afrika, Amerika, Eropa, Australia, Antartika. Benua TERLUAS dan TERKECIL berturut-turut adalah ...",
+    options: ["Afrika dan Australia", "Asia dan Antartika", "Asia dan Australia", "Amerika dan Eropa"],
     correctAnswer: 2,
-    materi: "Struktur Bumi", tujuanPembelajaran: "Mengidentifikasi lapisan bumi", levelKognitif: "C1"
+    materi: "Geografi – Benua di Dunia", tujuanPembelajaran: "Membandingkan ukuran benua-benua di dunia", levelKognitif: "C2"
   },
+
+  // ============================================================
+  // BAB 4: INDONESIA DAN MASYARAKAT DUNIA (Hubungan Antarnegara)
+  // ============================================================
+
   {
     id: "ipas-pg-22", type: "PG", number: 22,
-    question: "Rotasi bumi menyebabkan terjadinya ...",
-    options: ["Pergantian musim", "Siang dan malam", "Pasang surut air laut", "Gerhana matahari"],
+    question: "Indonesia mengekspor kelapa sawit ke berbagai negara, sementara mengimpor bahan baku pesawat terbang dari luar negeri. Kegiatan impor dilakukan karena ...",
+    options: ["Indonesia tidak mampu memproduksi bahan baku apapun", "Beberapa barang lebih efisien atau murah diproduksi di negara lain karena perbedaan sumber daya", "Indonesia lebih suka produk luar negeri", "Pemerintah melarang produksi bahan baku tertentu di dalam negeri"],
     correctAnswer: 1,
-    materi: "Rotasi dan Revolusi Bumi", tujuanPembelajaran: "Menjelaskan akibat rotasi bumi", levelKognitif: "C2"
+    materi: "Hubungan Antarnegara – Ekspor Impor", tujuanPembelajaran: "Menjelaskan alasan suatu negara melakukan impor", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-23", type: "PG", number: 23,
-    question: "Planet yang paling dekat dengan matahari dalam tata surya kita adalah ...",
-    options: ["Venus", "Bumi", "Merkurius", "Mars"],
-    correctAnswer: 2,
-    materi: "Tata Surya", tujuanPembelajaran: "Menyebutkan urutan planet dalam tata surya", levelKognitif: "C1"
+    question: "Batik, Keris, Angklung, dan Kebaya telah diakui UNESCO sebagai Warisan Budaya Takbenda Indonesia. Pengakuan ini penting karena ...",
+    options: ["Indonesia mendapat hadiah uang dari UNESCO", "Pengakuan internasional melindungi warisan budaya dari klaim pihak lain dan mendorong pelestarian", "UNESCO mengambil alih kepemilikan batik dari Indonesia", "Indonesia bisa melarang negara lain memakai batik"],
+    correctAnswer: 1,
+    materi: "Hubungan Antarnegara – Warisan Budaya", tujuanPembelajaran: "Menjelaskan makna pengakuan UNESCO terhadap budaya Indonesia", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-24", type: "PG", number: 24,
-    question: "Gerhana matahari terjadi ketika ...",
-    options: ["Bumi berada di antara matahari dan bulan", "Bulan berada di antara matahari dan bumi", "Matahari berada di antara bumi dan bulan", "Bumi mengelilingi matahari"],
+    question: "Globalisasi menyebabkan anak-anak Indonesia semakin familiar dengan budaya asing (Korean pop, makanan cepat saji, game online) dibanding budaya lokal. Dampak NEGATIF globalisasi terhadap budaya ini dapat diatasi dengan ...",
+    options: ["Menutup diri dari semua pengaruh asing dan memboikot produk impor", "Menyaring budaya asing yang masuk, memperkuat pendidikan budaya lokal, dan bangga menggunakan produk dalam negeri", "Membiarkan globalisasi berjalan karena dianggap kemajuan yang tidak bisa dihentikan", "Mewajibkan semua anak belajar satu jenis kesenian asing saja"],
     correctAnswer: 1,
-    materi: "Gerhana", tujuanPembelajaran: "Menjelaskan terjadinya gerhana matahari", levelKognitif: "C2"
+    materi: "Hubungan Antarnegara – Globalisasi", tujuanPembelajaran: "Merancang solusi terhadap dampak negatif globalisasi", levelKognitif: "C5"
   },
   {
     id: "ipas-pg-25", type: "PG", number: 25,
-    question: "Revolusi bumi mengelilingi matahari menyebabkan terjadinya ...",
-    options: ["Siang dan malam", "Pergantian musim/tahun", "Gerhana bulan", "Angin dan hujan"],
+    question: "APEC (Asia-Pacific Economic Cooperation) adalah forum kerja sama yang diikuti Indonesia. Tujuan utama APEC adalah ...",
+    options: ["Membentuk satu negara besar di kawasan Asia Pasifik", "Meningkatkan pertumbuhan ekonomi dan perdagangan bebas di kawasan Asia Pasifik", "Mengatur masalah keamanan dan pertahanan negara-negara Asia", "Menyatukan mata uang seluruh negara Asia menjadi satu"],
     correctAnswer: 1,
-    materi: "Rotasi dan Revolusi Bumi", tujuanPembelajaran: "Menjelaskan akibat revolusi bumi", levelKognitif: "C2"
+    materi: "Hubungan Antarnegara – Kerja Sama Internasional", tujuanPembelajaran: "Menjelaskan tujuan organisasi kerja sama internasional", levelKognitif: "C2"
   },
-
-  // Teknologi & Lingkungan (C2-C4)
   {
     id: "ipas-pg-26", type: "PG", number: 26,
-    question: "Penggunaan plastik secara berlebihan dapat mencemari lingkungan karena plastik ...",
-    options: ["Mudah terurai oleh tanah", "Sulit terurai dan tahan lama", "Membuat tanah subur", "Diserap oleh air hujan"],
+    question: "Evaluasi pernyataan berikut: 'Globalisasi hanya menguntungkan negara maju dan merugikan negara berkembang seperti Indonesia.'\n\nPernyataan ini bersifat ...",
+    options: ["Benar sepenuhnya karena globalisasi selalu merugikan negara berkembang", "Tidak tepat sepenuhnya; globalisasi memberi peluang ekspor dan akses teknologi bagi Indonesia, meski ada tantangan persaingan", "Benar, karena Indonesia tidak mampu bersaing di pasar global", "Salah, karena globalisasi menguntungkan semua pihak secara merata"],
     correctAnswer: 1,
-    materi: "Pencemaran Lingkungan", tujuanPembelajaran: "Mengidentifikasi dampak pencemaran plastik", levelKognitif: "C2"
+    materi: "Hubungan Antarnegara – Globalisasi", tujuanPembelajaran: "Mengevaluasi dampak globalisasi terhadap negara berkembang", levelKognitif: "C5"
   },
+
+  // ============================================================
+  // BAB 5: MENJELAJAHI BUMI DAN ANTARIKSA (Tata Surya)
+  // ============================================================
+
   {
     id: "ipas-pg-27", type: "PG", number: 27,
-    question: "Kegiatan berikut yang dapat membantu menjaga kelestarian lingkungan adalah ...",
-    options: ["Membakar sampah sembarangan", "Menebang pohon di hutan", "Menanam pohon kembali (reboisasi)", "Membuang limbah ke sungai"],
-    correctAnswer: 2,
-    materi: "Pelestarian Lingkungan", tujuanPembelajaran: "Menganalisis cara menjaga lingkungan", levelKognitif: "C3"
+    question: "Rotasi Bumi adalah perputaran Bumi pada porosnya. Akibat langsung dari rotasi Bumi adalah ...",
+    options: ["Terjadinya pergantian musim panas dan dingin", "Terjadinya siang dan malam serta perbedaan waktu di berbagai tempat", "Terjadinya gerhana matahari dan gerhana bulan", "Terjadinya pasang surut air laut"],
+    correctAnswer: 1,
+    materi: "Tata Surya – Rotasi dan Revolusi", tujuanPembelajaran: "Menjelaskan akibat rotasi Bumi", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-28", type: "PG", number: 28,
-    question: "Teknologi yang memanfaatkan energi angin untuk menghasilkan listrik adalah ...",
-    options: ["Panel surya", "Kincir angin/turbin angin", "PLTA", "Generator diesel"],
+    question: "Planet Venus dijuluki 'Bintang Kejora' dan memiliki suhu permukaan (~465°C) lebih panas dari Merkurius, meskipun Merkurius lebih dekat ke Matahari. Alasan yang PALING TEPAT adalah ...",
+    options: ["Venus lebih besar dari Merkurius sehingga menyerap lebih banyak panas", "Atmosfer tebal Venus mengandung CO₂ yang menyebabkan efek rumah kaca ekstrem sehingga panas terperangkap", "Venus berputar lebih cepat sehingga menghasilkan panas gesekan", "Merkurius memiliki perisai yang memantulkan panas matahari"],
     correctAnswer: 1,
-    materi: "Teknologi Energi", tujuanPembelajaran: "Mengidentifikasi teknologi energi terbarukan", levelKognitif: "C2"
+    materi: "Tata Surya – Planet", tujuanPembelajaran: "Menganalisis karakteristik planet-planet dalam tata surya", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-29", type: "PG", number: 29,
-    question: "Berikut ini yang termasuk teknologi sederhana dalam kehidupan sehari-hari adalah ...",
-    options: ["Roket", "Satelit", "Katrol untuk mengangkat beban", "Kapal selam"],
-    correctAnswer: 2,
-    materi: "Teknologi Sederhana", tujuanPembelajaran: "Mengidentifikasi teknologi sederhana", levelKognitif: "C2"
+    question: "Urutan planet dari yang PALING DEKAT ke Matahari adalah ...",
+    options: ["Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus", "Venus, Merkurius, Bumi, Mars, Jupiter, Saturnus, Neptunus, Uranus", "Merkurius, Venus, Mars, Bumi, Jupiter, Saturnus, Uranus, Neptunus", "Bumi, Venus, Merkurius, Mars, Jupiter, Saturnus, Uranus, Neptunus"],
+    correctAnswer: 0,
+    materi: "Tata Surya – Planet", tujuanPembelajaran: "Menyebutkan urutan planet dari Matahari", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-30", type: "PG", number: 30,
-    question: "Pemanasan global (global warming) disebabkan oleh meningkatnya kadar gas ... di atmosfer.",
-    options: ["Oksigen", "Nitrogen", "Karbon dioksida", "Hidrogen"],
-    correctAnswer: 2,
-    materi: "Perubahan Iklim", tujuanPembelajaran: "Menjelaskan penyebab pemanasan global", levelKognitif: "C2"
+    question: "Planet Saturnus dikenal karena memiliki cincin yang indah. Cincin Saturnus tersebut tersusun dari ...",
+    options: ["Awan tebal dari gas hidrogen dan helium", "Jutaan partikel es, batuan, dan debu berbagai ukuran", "Kawah meteor yang mengelilingi planet", "Bulan-bulan kecil yang bergerak sangat cepat"],
+    correctAnswer: 1,
+    materi: "Tata Surya – Planet", tujuanPembelajaran: "Mendeskripsikan ciri khas planet Saturnus", levelKognitif: "C1"
   },
-
-  // Siklus Air (C1-C3)
   {
     id: "ipas-pg-31", type: "PG", number: 31,
-    question: "Urutan tahapan siklus air yang benar adalah ...",
-    options: [
-      "Evaporasi → Kondensasi → Presipitasi → Infiltrasi",
-      "Presipitasi → Evaporasi → Kondensasi → Infiltrasi",
-      "Infiltrasi → Presipitasi → Kondensasi → Evaporasi",
-      "Kondensasi → Evaporasi → Infiltrasi → Presipitasi"
-    ],
-    correctAnswer: 0,
-    materi: "Siklus Air", tujuanPembelajaran: "Mengurutkan tahapan siklus air", levelKognitif: "C2"
+    question: "Pluto tidak lagi diklasifikasikan sebagai planet sejak tahun 2006 oleh International Astronomical Union (IAU). Alasan utama perubahan status Pluto menjadi 'planet kurcaci' adalah ...",
+    options: ["Pluto terlalu kecil dibanding bulan Bumi", "Pluto tidak memenuhi kriteria planet: belum membersihkan orbitnya dari benda-benda lain di sekitarnya", "Pluto tidak memiliki satelit atau bulan", "Pluto terlalu jauh dari Matahari untuk dikategorikan planet"],
+    correctAnswer: 1,
+    materi: "Tata Surya – Benda Langit", tujuanPembelajaran: "Menjelaskan mengapa Pluto tidak lagi disebut planet", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-32", type: "PG", number: 32,
-    question: "Sebuah daerah mengalami pembangunan gedung dengan permukaan beton yang luas. Akibatnya air hujan tidak dapat meresap ke dalam tanah. Dampak jangka panjang yang paling mungkin terjadi adalah ...",
-    options: [
-      "Kualitas air tanah menjadi lebih baik",
-      "Cadangan air tanah sebagai sumber air bersih akan berkurang",
-      "Sumur-sumur warga akan menjadi lebih dalam",
-      "Jumlah air hujan akan semakin meningkat"
-    ],
+    question: "Komet sering disebut 'bintang berekor' ketika mendekati Matahari. Ekor komet selalu mengarah menjauhi Matahari karena ...",
+    options: ["Komet bergerak sangat cepat menjauhi Matahari", "Angin surya mendorong gas dan debu komet ke arah yang menjauhi Matahari", "Gravitasi planet-planet besar menarik ekor komet", "Suhu sangat dingin di belakang komet membentuk es menjadi ekor"],
     correctAnswer: 1,
-    materi: "Siklus Air dan Lingkungan", tujuanPembelajaran: "Menganalisis dampak alih fungsi lahan terhadap siklus air", levelKognitif: "C4"
+    materi: "Tata Surya – Benda Langit", tujuanPembelajaran: "Menjelaskan karakteristik komet", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-33", type: "PG", number: 33,
-    question: "Proses berubahnya air menjadi uap air karena panas matahari dalam siklus air disebut ...",
-    options: ["Kondensasi", "Presipitasi", "Infiltrasi", "Evaporasi"],
-    correctAnswer: 3,
-    materi: "Siklus Air", tujuanPembelajaran: "Menyebutkan nama proses dalam siklus air", levelKognitif: "C1"
+    question: "Gerhana Matahari total terjadi ketika ...",
+    options: ["Bumi berada di antara Matahari dan Bulan sehingga Bulan masuk ke bayangan Bumi", "Bulan berada tepat di antara Matahari dan Bumi sehingga sinar Matahari terhalang sampai ke Bumi", "Matahari berada di antara Bumi dan Bulan sehingga Bumi gelap", "Bumi dan Bulan berada pada posisi yang sama dari Matahari"],
+    correctAnswer: 1,
+    materi: "Tata Surya – Gerhana", tujuanPembelajaran: "Menjelaskan proses terjadinya gerhana Matahari", levelKognitif: "C2"
   },
-
-  // Sifat Cahaya (C1-C3)
   {
     id: "ipas-pg-34", type: "PG", number: 34,
-    question: "Perhatikan gambar berikut.\nSinar senter yang diarahkan ke cermin datar akan memantul. Peristiwa ini membuktikan bahwa cahaya memiliki sifat ...",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Reflection_angles.svg/320px-Reflection_angles.svg.png",
-    options: ["Merambat lurus", "Dapat dipantulkan", "Dapat dibiaskan", "Menembus benda bening"],
+    question: "Revolusi Bumi mengelilingi Matahari membutuhkan waktu sekitar 365¼ hari. Akibat dari revolusi Bumi adalah ...",
+    options: ["Terjadinya siang dan malam secara bergantian setiap 24 jam", "Terjadinya pergantian musim dan pembuatan kalender masehi (1 tahun = 365 hari)", "Terjadinya perbedaan waktu antara kota-kota di Indonesia", "Terjadinya pasang surut air laut setiap hari"],
     correctAnswer: 1,
-    materi: "Sifat Cahaya", tujuanPembelajaran: "Mengidentifikasi sifat-sifat cahaya", levelKognitif: "C2"
+    materi: "Tata Surya – Rotasi dan Revolusi", tujuanPembelajaran: "Menjelaskan akibat revolusi Bumi", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-35", type: "PG", number: 35,
-    question: "Ketika sinar matahari melewati kaca bening, cahaya dapat menembus kaca tersebut. Sifat cahaya yang ditunjukkan oleh peristiwa tersebut adalah ...",
-    options: ["Cahaya merambat lurus", "Cahaya dapat dipantulkan", "Cahaya menembus benda bening", "Cahaya dapat dibiaskan"],
-    correctAnswer: 2,
-    materi: "Sifat Cahaya", tujuanPembelajaran: "Mengidentifikasi sifat-sifat cahaya", levelKognitif: "C2"
+    question: "Sabuk asteroid terletak di antara orbit planet Mars dan Jupiter. Jika sebuah asteroid terlepas dari sabuknya dan masuk ke atmosfer Bumi, maka ...",
+    options: ["Asteroid akan langsung jatuh utuh ke permukaan Bumi", "Sebagian besar asteroid akan terbakar di atmosfer (menjadi meteor/bintang jatuh), hanya yang besar yang jatuh sebagai meteorit", "Asteroid akan ditangkap gravitasi Bulan terlebih dahulu", "Semua asteroid akan memantul kembali ke luar angkasa"],
+    correctAnswer: 1,
+    materi: "Tata Surya – Benda Langit", tujuanPembelajaran: "Menganalisis apa yang terjadi ketika benda langit memasuki atmosfer Bumi", levelKognitif: "C4"
   },
 
-  // Zona Waktu Indonesia (C2-C3)
+  // ============================================================
+  // BAB 6: GAWAT! BENARKAH ENERGI DI BUMI AKAN HABIS? (Energi)
+  // ============================================================
+
   {
     id: "ipas-pg-36", type: "PG", number: 36,
-    question: "Pertandingan final sepak bola dimulai pukul 20.30 WIB di Jakarta. Jika teman Andi yang berada di Papua (WIT) ingin menonton siaran langsung pertandingan tersebut, ia harus menonton pada pukul ...",
-    options: ["18.30 WIT", "19.30 WIT", "21.30 WIT", "22.30 WIT"],
-    correctAnswer: 3,
-    materi: "Zona Waktu Indonesia", tujuanPembelajaran: "Menghitung perbedaan zona waktu Indonesia", levelKognitif: "C3"
+    question: "Batu bara, minyak bumi, dan gas alam disebut bahan bakar fosil karena ...",
+    options: ["Ditemukan di dalam fosil dinosaurus yang berumur jutaan tahun", "Terbentuk dari sisa-sisa organisme hidup (tumbuhan dan hewan) yang terkubur jutaan tahun lalu dan mengalami tekanan tinggi", "Ditambang dari batuan yang berada di bawah gunung berapi", "Dibuat oleh manusia dari bahan-bahan alami secara kimia"],
+    correctAnswer: 1,
+    materi: "Energi – Tak Terbarukan", tujuanPembelajaran: "Menjelaskan asal usul bahan bakar fosil", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-37", type: "PG", number: 37,
-    question: "Indonesia dibagi menjadi tiga zona waktu. Kota Makassar berada di zona waktu ...",
-    options: ["WIB (Waktu Indonesia Barat)", "WITA (Waktu Indonesia Tengah)", "WIT (Waktu Indonesia Timur)", "GMT (Greenwich Mean Time)"],
+    question: "Indonesia memiliki potensi besar untuk mengembangkan energi panas bumi (geotermal). Sumber energi ini tersedia melimpah di Indonesia karena ...",
+    options: ["Indonesia memiliki banyak sungai besar yang mengalir deras", "Indonesia berada di cincin api Pasifik dengan banyak gunung berapi aktif yang menyimpan panas bumi", "Indonesia mendapat sinar matahari sepanjang tahun", "Indonesia memiliki hutan tropis yang luas sebagai sumber biomassa"],
     correctAnswer: 1,
-    materi: "Zona Waktu Indonesia", tujuanPembelajaran: "Mengidentifikasi zona waktu di Indonesia", levelKognitif: "C1"
+    materi: "Energi – Terbarukan", tujuanPembelajaran: "Menjelaskan potensi energi terbarukan di Indonesia", levelKognitif: "C3"
   },
-
-  // Geografi Indonesia (C1-C2)
   {
     id: "ipas-pg-38", type: "PG", number: 38,
-    question: "Perhatikan peta Indonesia berikut.\nSamudera yang terletak di sebelah timur wilayah Indonesia adalah Samudera ...",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Indonesia_%28orthographic_projection%29.svg/320px-Indonesia_%28orthographic_projection%29.svg.png",
-    options: ["Samudera Hindia", "Samudera Atlantik", "Samudera Pasifik", "Samudera Arktik"],
-    correctAnswer: 2,
-    materi: "Geografi Indonesia", tujuanPembelajaran: "Mengidentifikasi letak geografis Indonesia", levelKognitif: "C1"
+    question: "Perhatikan daftar sumber energi:\n(1) Matahari  (2) Angin  (3) Batu bara  (4) Minyak bumi  (5) Air  (6) Gas alam\n\nYang termasuk energi TERBARUKAN adalah ...",
+    options: ["(1), (2), (3)", "(1), (2), (5)", "(3), (4), (6)", "(2), (4), (5)"],
+    correctAnswer: 1,
+    materi: "Energi – Terbarukan vs Tak Terbarukan", tujuanPembelajaran: "Membedakan sumber energi terbarukan dan tak terbarukan", levelKognitif: "C3"
   },
-
-  // Tata Surya - lanjutan (C2-C3)
   {
     id: "ipas-pg-39", type: "PG", number: 39,
-    question: "Perhatikan tabel berikut:\n| No | Nama Planet | Ciri-ciri |\n|---|---|---|\n| 1 | Mars | Planet terbesar di Tata Surya |\n| 2 | Jupiter | Satu-satunya planet yang ada kehidupan |\n| 3 | Bumi | Memiliki cincin yang terlihat jelas |\n| 4 | Saturnus | Disebut Planet Merah |\n\nPasangan nama planet dan ciri-cirinya yang TEPAT adalah ...",
-    options: ["1-A, 2-B, 3-C, 4-D", "1-D, 2-A, 3-B, 4-C", "1-B, 2-D, 3-A, 4-C", "1-D, 2-C, 3-A, 4-B"],
+    question: "Penggunaan panel surya (solar panel) di rumah-rumah dapat mengurangi ketergantungan pada listrik dari PLN yang menggunakan batu bara. Evaluasi pernyataan berikut: 'Panel surya adalah solusi sempurna untuk krisis energi Indonesia.'\n\nPernyataan ini ...",
+    options: ["Benar sepenuhnya karena Indonesia mendapat sinar matahari melimpah", "Tidak sepenuhnya benar; panel surya baik tapi masih ada tantangan biaya awal yang tinggi, penyimpanan energi malam hari, dan tidak cocok di semua wilayah", "Salah karena panel surya tidak efektif di iklim tropis", "Benar, karena panel surya sudah bisa menggantikan seluruh kebutuhan energi Indonesia"],
     correctAnswer: 1,
-    materi: "Tata Surya", tujuanPembelajaran: "Mencocokkan planet dengan ciri-cirinya", levelKognitif: "C3"
+    materi: "Energi – Terbarukan", tujuanPembelajaran: "Mengevaluasi kelebihan dan keterbatasan energi surya", levelKognitif: "C5"
   },
 
-  // Akibat Rotasi Bumi (C2)
+  // ============================================================
+  // BAB 7: BUMI KITA TERANCAM BAHAYA (Lingkungan)
+  // ============================================================
+
   {
     id: "ipas-pg-40", type: "PG", number: 40,
-    question: "Perhatikan pernyataan berikut:\n1. Terjadinya siang dan malam\n2. Terjadinya pergantian musim\n3. Adanya gerak semu harian Matahari, Bulan, dan bintang\n4. Terjadinya perbedaan lamanya siang dan malam sepanjang tahun\n5. Terjadinya pembelokan arah angin dan arus laut (efek Coriolis)\n\nYang merupakan akibat dari ROTASI BUMI adalah ...",
-    options: ["1, 2, dan 3", "1, 3, dan 5", "2, 4, dan 5", "3, 4, dan 5"],
+    question: "Pembabatan hutan (deforestasi) besar-besaran untuk perkebunan kelapa sawit di Kalimantan menyebabkan berbagai dampak lingkungan. Dampak PALING LANGSUNG yang dirasakan adalah ...",
+    options: ["Meningkatnya produksi minyak goreng dalam negeri", "Hilangnya habitat orangutan dan satwa endemik, banjir, erosi, dan peningkatan emisi karbon", "Meningkatnya pariwisata alam di Kalimantan", "Bertambahnya lahan pertanian pangan untuk masyarakat"],
     correctAnswer: 1,
-    materi: "Rotasi dan Revolusi Bumi", tujuanPembelajaran: "Mengidentifikasi akibat rotasi bumi", levelKognitif: "C2"
+    materi: "Lingkungan – Ancaman dan Dampak", tujuanPembelajaran: "Menganalisis dampak deforestasi terhadap lingkungan", levelKognitif: "C4"
   },
-
-  // ===== SOAL BERGAMBAR & ANALISIS (C3-C5) =====
   {
     id: "ipas-pg-41", type: "PG", number: 41,
-    question: "Perhatikan jaring-jaring makanan berikut:\nRumput → Belalang → Katak → Ular → Elang\nRumput → Tikus → Ular → Elang\nKatak → Elang\n\nJika populasi ular punah dari ekosistem tersebut, dampak yang paling tepat adalah ...",
-    options: [
-      "Populasi rumput meningkat karena tidak ada yang memakan belalang dan tikus",
-      "Populasi tikus dan belalang meningkat tidak terkendali, sementara populasi elang berkurang",
-      "Ekosistem tetap seimbang karena masih ada organisme lain yang mengisi peran ular",
-      "Populasi elang meningkat karena lebih banyak katak dan tikus tersedia"
-    ],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Deforestation_in_Borneo.jpg/400px-Deforestation_in_Borneo.jpg",
+    question: "Perhatikan gambar di atas yang menunjukkan kondisi hutan Kalimantan yang gundul akibat pembabatan. Jika kondisi ini terus berlanjut, dampak yang akan terjadi pada siklus air di wilayah tersebut adalah ...",
+    options: ["Air hujan akan lebih banyak meresap ke dalam tanah karena tidak ada pohon yang menghalangi", "Berkurangnya penyerapan air, meningkatnya limpasan air permukaan, sehingga rawan banjir saat hujan dan kekeringan di musim kemarau", "Iklim daerah menjadi lebih sejuk karena tidak ada pohon yang menghalangi angin", "Tidak ada pengaruh terhadap siklus air karena hujan berasal dari awan"],
     correctAnswer: 1,
-    materi: "Jaring-jaring Makanan", tujuanPembelajaran: "Menganalisis dampak perubahan populasi pada jaring-jaring makanan", levelKognitif: "C4"
+    materi: "Lingkungan – Siklus Air dan Deforestasi", tujuanPembelajaran: "Menganalisis hubungan deforestasi dengan gangguan siklus air", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-42", type: "PG", number: 42,
-    question: "Perhatikan diagram fotosintesis berikut. Sebuah percobaan menempatkan tanaman di ruangan kedap cahaya selama 7 hari. Pernyataan yang PALING TEPAT menjelaskan kondisi tanaman tersebut adalah ...",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Photosynthesis_en.svg/400px-Photosynthesis_en.svg.png",
-    options: [
-      "Tanaman tetap hidup karena masih bisa bernapas menggunakan oksigen dari udara",
-      "Tanaman layu dan mati karena proses fotosintesis berhenti sehingga tidak ada glukosa yang dihasilkan",
-      "Tanaman tumbuh lebih cepat karena tidak terganggu oleh sinar matahari",
-      "Tanaman menghasilkan lebih banyak oksigen di tempat gelap melalui proses lain"
-    ],
+    question: "Reboisasi (penanaman kembali hutan) merupakan salah satu upaya pelestarian lingkungan. Manfaat UTAMA reboisasi bagi lingkungan adalah ...",
+    options: ["Menghasilkan kayu untuk dijual sehingga menambah pendapatan negara", "Memulihkan ekosistem hutan, mencegah erosi, menjaga ketersediaan air, dan menyerap karbon dioksida dari udara", "Mempercantik tampilan alam sehingga meningkatkan pariwisata", "Menyediakan bahan bakar kayu untuk masyarakat sekitar hutan"],
     correctAnswer: 1,
-    materi: "Fotosintesis", tujuanPembelajaran: "Menganalisis pengaruh cahaya terhadap keberlangsungan hidup tumbuhan", levelKognitif: "C4"
+    materi: "Lingkungan – Pelestarian", tujuanPembelajaran: "Menjelaskan manfaat reboisasi", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-43", type: "PG", number: 43,
-    question: "Perhatikan diagram siklus air berikut. Pembukaan lahan hutan secara besar-besaran di daerah hulu sungai berdampak pada siklus air, yaitu ...",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Water_cycle.png/480px-Water_cycle.png",
-    options: [
-      "Evaporasi meningkat drastis karena lebih banyak sinar matahari langsung mengenai tanah",
-      "Kondensasi lebih cepat terjadi karena suhu udara meningkat akibat berkurangnya pohon",
-      "Infiltrasi berkurang sehingga aliran permukaan (run-off) meningkat dan risiko banjir bertambah",
-      "Presipitasi bertambah karena lebih banyak uap air naik dari tanah yang gundul"
-    ],
-    correctAnswer: 2,
-    materi: "Siklus Air dan Ekosistem", tujuanPembelajaran: "Menganalisis pengaruh deforestasi terhadap siklus air", levelKognitif: "C4"
+    question: "Seorang pengusaha mengajukan izin membuka tambang batu bara di dalam kawasan hutan lindung dengan alasan membuka lapangan kerja bagi masyarakat. Evaluasi keputusan yang paling bijak berdasarkan prinsip pembangunan berkelanjutan adalah ...",
+    options: ["Izin harus diberikan karena lapangan kerja lebih penting dari hutan", "Izin tidak layak diberikan; alternatif yang lebih baik adalah mengembangkan ekowisata atau pertanian berkelanjutan yang memberikan manfaat jangka panjang tanpa merusak hutan", "Izin bisa diberikan asalkan pengusaha menanam pohon di tempat lain", "Keputusan diserahkan sepenuhnya kepada masyarakat setempat"],
+    correctAnswer: 1,
+    materi: "Lingkungan – Pembangunan Berkelanjutan", tujuanPembelajaran: "Mengevaluasi keputusan berdasarkan prinsip pembangunan berkelanjutan", levelKognitif: "C5"
   },
   {
     id: "ipas-pg-44", type: "PG", number: 44,
-    question: "Perhatikan posisi benda-benda langit berikut:\n🌞 Matahari — 🌍 Bumi — 🌕 Bulan\n(ketiga benda langit berada dalam satu garis lurus, dengan Bumi di tengah)\n\nFenomena astronomi apa yang sedang terjadi berdasarkan posisi tersebut?",
-    options: [
-      "Gerhana matahari total karena Bulan menghalangi sinar Matahari",
-      "Gerhana matahari sebagian karena posisi tidak sempurna lurus",
-      "Gerhana bulan total karena Bumi menghalangi sinar Matahari sampai ke Bulan",
-      "Gerhana bulan sebagian karena hanya sebagian Bulan masuk ke bayangan Bumi"
-    ],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Water_cycle.png/480px-Water_cycle.png",
+    question: "Perhatikan diagram siklus air di atas. Proses penguapan air dari permukaan laut dan danau yang kemudian naik ke atmosfer disebut ...",
+    options: ["Presipitasi", "Kondensasi", "Evaporasi", "Infiltrasi"],
     correctAnswer: 2,
-    materi: "Gerhana", tujuanPembelajaran: "Mengidentifikasi jenis gerhana berdasarkan posisi benda langit", levelKognitif: "C3"
+    materi: "Lingkungan – Siklus Air", tujuanPembelajaran: "Menjelaskan tahapan dalam siklus air", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-45", type: "PG", number: 45,
-    question: "Perhatikan gambar sistem pencernaan manusia berikut. Seorang pasien didiagnosis mengalami gangguan pada penyerapan vitamin dan mineral dari makanan. Organ yang PALING MUNGKIN mengalami gangguan pada pasien tersebut adalah ...",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Digestive_system_diagram_en.svg/220px-Digestive_system_diagram_en.svg.png",
-    options: [
-      "Lambung, karena di sanalah pencernaan kimiawi makanan berlangsung",
-      "Usus halus, karena usus halus adalah tempat utama penyerapan sari makanan, vitamin, dan mineral",
-      "Usus besar, karena usus besar menyerap semua nutrisi sebelum dibuang",
-      "Hati, karena hati menghasilkan empedu untuk proses pencernaan"
-    ],
-    correctAnswer: 1,
-    materi: "Sistem Pencernaan Manusia", tujuanPembelajaran: "Mengidentifikasi fungsi organ sistem pencernaan", levelKognitif: "C3"
+    question: "Pencemaran sungai oleh limbah pabrik menyebabkan ikan-ikan mati. Analisis rantai dampak yang paling tepat dari peristiwa ini adalah ...",
+    options: ["Limbah pabrik → sungai tercemar → ikan mati → nelayan kehilangan mata pencaharian → kemiskinan meningkat", "Limbah pabrik → ikan mati → sungai tercemar → nelayan pindah daerah → sungai bersih sendiri", "Limbah pabrik → ikan terkontaminasi → ikan berevolusi menjadi kebal racun → ekosistem stabil kembali", "Limbah pabrik → air sungai panas → ikan bermigrasi → nelayan mendapat ikan di tempat baru"],
+    correctAnswer: 0,
+    materi: "Lingkungan – Pencemaran", tujuanPembelajaran: "Menganalisis rantai dampak pencemaran lingkungan", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-46", type: "PG", number: 46,
-    question: "Data biomassa dalam suatu ekosistem sawah:\n• Padi: 10.000 kg\n• Tikus: 1.000 kg\n• Ular sawah: 100 kg\n• Elang: 10 kg\n\nPola penurunan biomassa di setiap tingkat trofik ini terjadi karena ...",
-    options: [
-      "Organisme di tingkat atas lebih boros dalam menggunakan energi",
-      "Sebagian besar energi (sekitar 90%) hilang sebagai panas pada setiap perpindahan tingkat trofik",
-      "Hewan di tingkat atas memilih untuk tidak memakan seluruh mangsanya",
-      "Cuaca dan iklim memengaruhi jumlah organisme di tingkat atas"
-    ],
+    question: "Program 3R (Reduce, Reuse, Recycle) merupakan strategi pengelolaan sampah yang efektif. Contoh penerapan REUSE (menggunakan kembali) dalam kehidupan sehari-hari adalah ...",
+    options: ["Memilah sampah plastik untuk didaur ulang menjadi bahan baru", "Menggunakan tas belanja kain yang sama berkali-kali untuk mengurangi kantong plastik sekali pakai", "Mengurangi jumlah pembelian barang yang menghasilkan banyak sampah", "Mengolah sampah organik menjadi pupuk kompos"],
     correctAnswer: 1,
-    materi: "Piramida Ekologi dan Aliran Energi", tujuanPembelajaran: "Menganalisis aliran energi dalam piramida ekologi", levelKognitif: "C4"
+    materi: "Lingkungan – Pengelolaan Sampah", tujuanPembelajaran: "Memberi contoh penerapan 3R dalam kehidupan", levelKognitif: "C3"
   },
+
+  // ============================================================
+  // SOAL LINTAS BAB – HOTS (C4-C5)
+  // ============================================================
+
   {
     id: "ipas-pg-47", type: "PG", number: 47,
-    question: "Gas metana (CH₄) dari Tempat Pembuangan Akhir (TPA) sampah berkontribusi pada pemanasan global. Tindakan yang PALING tepat dan berkelanjutan untuk mengatasi masalah ini sambil menghasilkan manfaat ekonomi adalah ...",
-    options: [
-      "Menutup semua TPA dan memindahkan sampah ke laut dalam",
-      "Membakar gas metana di TPA agar langsung terurai menjadi CO₂ yang lebih aman",
-      "Mengolah gas metana dari TPA menjadi biogas sebagai bahan bakar alternatif untuk rumah tangga",
-      "Menyuntikkan gas metana kembali ke dalam tanah agar tidak mencemari udara"
-    ],
-    correctAnswer: 2,
-    materi: "Energi Terbarukan dan Lingkungan", tujuanPembelajaran: "Mengevaluasi solusi energi berkelanjutan dari limbah organik", levelKognitif: "C5"
+    question: "Perubahan iklim global menyebabkan suhu Bumi meningkat rata-rata 1,2°C sejak era industri. Dampak yang BUKAN disebabkan oleh perubahan iklim adalah ...",
+    options: ["Mencairnya es di kutub yang menaikkan permukaan laut", "Meningkatnya frekuensi bencana cuaca ekstrem (badai, banjir, kekeringan)", "Pergeseran musim yang mengganggu pola tanam pertanian", "Bertambahnya jumlah planet di tata surya akibat panas berlebih"],
+    correctAnswer: 3,
+    materi: "Lintas Bab – Perubahan Iklim", tujuanPembelajaran: "Menganalisis dampak perubahan iklim global", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-48", type: "PG", number: 48,
-    question: "Pelangi terbentuk setelah hujan ketika cahaya matahari melewati tetesan-tetesan air di udara. Proses fisika yang menyebabkan cahaya putih matahari terurai menjadi spektrum warna merah, jingga, kuning, hijau, biru, nila, ungu pada pelangi adalah ...",
-    options: [
-      "Refleksi — cahaya dipantulkan oleh permukaan tetesan air ke berbagai arah",
-      "Dispersi — cahaya putih dibiaskan dengan sudut berbeda-beda sesuai panjang gelombangnya saat melewati tetesan air",
-      "Difraksi — cahaya melentur saat melewati celah sempit antara tetesan air",
-      "Polarisasi — tetesan air menyaring warna tertentu dan melewatkan warna lainnya"
-    ],
+    question: "Indonesia merupakan negara dengan jumlah gunung berapi aktif terbanyak di dunia karena berada di 'Cincin Api Pasifik'. Hal ini terjadi karena ...",
+    options: ["Indonesia dekat dengan Matahari sehingga panas dalam bumi tinggi", "Indonesia terletak di pertemuan beberapa lempeng tektonik besar yang aktif bergerak", "Indonesia memiliki curah hujan tinggi yang mengaktifkan gunung berapi", "Gunung berapi Indonesia sudah ada sejak terbentuknya Bumi miliaran tahun lalu"],
     correctAnswer: 1,
-    materi: "Sifat Cahaya — Dispersi", tujuanPembelajaran: "Menjelaskan mekanisme dispersi cahaya pada pelangi", levelKognitif: "C3"
+    materi: "Geografi – Fenomena Alam Indonesia", tujuanPembelajaran: "Menjelaskan penyebab banyaknya gunung berapi di Indonesia", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-49", type: "PG", number: 49,
-    question: "Gerhana matahari hanya terjadi saat fase bulan baru, tetapi tidak setiap bulan baru menghasilkan gerhana matahari. Penjelasan ilmiah yang paling tepat adalah ...",
-    options: [
-      "Ukuran Bulan terlalu kecil dibandingkan Matahari sehingga tidak bisa menghalangi sinar Matahari sepenuhnya",
-      "Bidang orbit Bulan mengelilingi Bumi miring sekitar 5° terhadap bidang orbit Bumi mengelilingi Matahari, sehingga bayangan Bulan tidak selalu jatuh ke Bumi",
-      "Jarak Bumi ke Matahari selalu berubah setiap bulan sehingga posisi tidak pernah lurus",
-      "Rotasi Bumi yang cepat membuat bayangan Bulan bergerak terlalu cepat untuk diamati"
-    ],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Digestive_system_diagram_en.svg/220px-Digestive_system_diagram_en.svg.png",
+    question: "Meski gambar sistem pencernaan di atas merupakan materi kelas sebelumnya, integrasi IPAS kelas 6 mengkaitkannya dengan sejarah. Dokter Soetomo mendirikan Budi Utomo 1908 dengan misi meningkatkan pendidikan. Kaitannya: pendidikan kesehatan mengajarkan pentingnya menjaga sistem pencernaan dengan makan bergizi. Makanan bergizi yang mendukung sistem gerak (tulang kuat) pada anak usia 6 SD adalah yang mengandung ...",
+    options: ["Lemak tinggi dan gula banyak untuk energi cepat", "Kalsium, fosfor, dan vitamin D untuk pembentukan tulang yang kuat", "Hanya protein tinggi karena otot membutuhkan protein", "Vitamin C saja karena berfungsi sebagai antioksidan"],
     correctAnswer: 1,
-    materi: "Gerhana dan Orbit", tujuanPembelajaran: "Menganalisis mengapa gerhana tidak terjadi setiap bulan", levelKognitif: "C3"
-  },
-  {
-    id: "ipas-pg-50", type: "PG", number: 50,
-    question: "Unta mampu bertahan di gurun yang sangat panas tanpa minum selama berminggu-minggu. Dari adaptasi berikut, manakah yang BERFUNGSI LANGSUNG untuk menghemat dan menyimpan cadangan air dalam tubuh unta?",
-    options: [
-      "Kaki yang lebar dan tebal untuk berjalan di atas pasir panas tanpa tenggelam",
-      "Kemampuan menutup lubang hidung rapat saat badai pasir melanda",
-      "Punuk yang berisi lemak — lemak dapat dioksidasi menjadi air metabolik saat dibutuhkan",
-      "Bulu tebal di sekitar mata untuk melindungi dari debu dan sinar UV"
-    ],
-    correctAnswer: 2,
-    materi: "Adaptasi Makhluk Hidup", tujuanPembelajaran: "Menganalisis bentuk adaptasi hewan terhadap lingkungan ekstrem", levelKognitif: "C4"
+    materi: "Sistem Gerak – Gizi dan Kesehatan Tulang", tujuanPembelajaran: "Mengaitkan nutrisi dengan kesehatan sistem gerak", levelKognitif: "C3"
   },
 ];
 
 const is: ISQuestion[] = [
+  // BAB 1 – Sistem Gerak & Saraf
   {
-    id: "ipas-is-1", type: "IS", number: 26,
-    question: "Proses pembuatan makanan oleh tumbuhan menggunakan cahaya matahari disebut ...",
-    acceptedAnswers: ["fotosintesis"],
-    modelAnswer: "Fotosintesis",
-    materi: "Tumbuhan", tujuanPembelajaran: "Menyebutkan istilah proses pembuatan makanan tumbuhan", levelKognitif: "C1"
+    id: "ipas-is-1", type: "IS", number: 50,
+    question: "Kelainan tulang punggung yang melengkung ke samping (membentuk huruf S atau C) disebut ...",
+    acceptedAnswers: ["skoliosis"],
+    modelAnswer: "Skoliosis",
+    materi: "Sistem Gerak – Kelainan Tulang", tujuanPembelajaran: "Menyebutkan jenis kelainan tulang", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-2", type: "IS", number: 27,
-    question: "Hewan yang memakan tumbuhan dan daging disebut hewan ...",
-    acceptedAnswers: ["omnivora"],
-    modelAnswer: "Omnivora",
-    materi: "Klasifikasi Hewan", tujuanPembelajaran: "Mengklasifikasikan jenis hewan berdasarkan makanannya", levelKognitif: "C1"
+    id: "ipas-is-2", type: "IS", number: 51,
+    question: "Saat tanganmu tidak sengaja menyentuh api dan langsung menarik tangan sebelum otak memerintahkan, peristiwa itu disebut gerak ...",
+    acceptedAnswers: ["refleks", "gerak refleks"],
+    modelAnswer: "Refleks (gerak refleks)",
+    materi: "Sistem Saraf", tujuanPembelajaran: "Membedakan gerak refleks dan gerak sadar", levelKognitif: "C2"
   },
   {
-    id: "ipas-is-3", type: "IS", number: 28,
-    question: "Organ yang memompa darah ke seluruh tubuh manusia adalah ...",
-    acceptedAnswers: ["jantung"],
-    modelAnswer: "Jantung",
-    materi: "Organ Tubuh Manusia", tujuanPembelajaran: "Menyebutkan fungsi jantung", levelKognitif: "C1"
+    id: "ipas-is-3", type: "IS", number: 52,
+    question: "Otot yang cara kerjanya tidak dapat dikendalikan oleh kemauan kita (di luar kesadaran) dan terdapat pada organ-organ dalam seperti usus dan lambung disebut otot ...",
+    acceptedAnswers: ["polos", "otot polos"],
+    modelAnswer: "Otot polos",
+    materi: "Sistem Gerak – Otot", tujuanPembelajaran: "Menyebutkan jenis-jenis otot berdasarkan cara kerjanya", levelKognitif: "C1"
+  },
+
+  // BAB 2 – Sejarah Indonesia
+  {
+    id: "ipas-is-4", type: "IS", number: 53,
+    question: "Sistem tanam paksa yang diterapkan Belanda pada tahun 1830 yang mewajibkan rakyat menyerahkan 1/5 tanahnya untuk tanaman ekspor disebut ...",
+    acceptedAnswers: ["cultuurstelsel", "tanam paksa", "sistem tanam paksa"],
+    modelAnswer: "Cultuurstelsel (Tanam Paksa)",
+    materi: "Sejarah – Penjajahan Belanda", tujuanPembelajaran: "Menyebutkan nama kebijakan penjajahan Belanda", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-4", type: "IS", number: 29,
-    question: "Perubahan wujud dari cair menjadi gas disebut ...",
-    acceptedAnswers: ["menguap", "penguapan", "evaporasi"],
-    modelAnswer: "Menguap/Penguapan",
-    materi: "Perubahan Wujud Zat", tujuanPembelajaran: "Menyebutkan jenis perubahan wujud zat", levelKognitif: "C1"
+    id: "ipas-is-5", type: "IS", number: 54,
+    question: "Peristiwa pengasingan Soekarno-Hatta ke luar Jakarta oleh golongan muda sebelum Proklamasi terjadi di kota ...",
+    acceptedAnswers: ["rengasdengklok", "rengas dengklok"],
+    modelAnswer: "Rengasdengklok",
+    materi: "Sejarah – Proklamasi", tujuanPembelajaran: "Menyebutkan tempat peristiwa Rengasdengklok", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-5", type: "IS", number: 30,
-    question: "Lapisan gas yang menyelimuti bumi dan melindungi dari radiasi matahari disebut ...",
-    acceptedAnswers: ["atmosfer"],
-    modelAnswer: "Atmosfer",
-    materi: "Lapisan Bumi", tujuanPembelajaran: "Menyebutkan nama lapisan pelindung bumi", levelKognitif: "C1"
+    id: "ipas-is-6", type: "IS", number: 55,
+    question: "Organisasi pergerakan nasional pertama di Indonesia yang didirikan pada 20 Mei 1908 adalah ...",
+    acceptedAnswers: ["budi utomo", "budi oetomo"],
+    modelAnswer: "Budi Utomo",
+    materi: "Sejarah – Pergerakan Nasional", tujuanPembelajaran: "Menyebutkan organisasi pergerakan nasional pertama", levelKognitif: "C1"
+  },
+
+  // BAB 3 & 4 – Geografi & Hubungan Antarnegara
+  {
+    id: "ipas-is-7", type: "IS", number: 56,
+    question: "Pegunungan yang menjadi batas alam antara Benua Eropa dan Benua Asia adalah Pegunungan ...",
+    acceptedAnswers: ["ural", "pegunungan ural"],
+    modelAnswer: "Ural",
+    materi: "Geografi – Benua", tujuanPembelajaran: "Menyebutkan batas alam antara Eropa dan Asia", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-6", type: "IS", number: 31,
-    question: "Gerakan bumi mengelilingi porosnya sendiri disebut ...",
-    acceptedAnswers: ["rotasi", "rotasi bumi"],
-    modelAnswer: "Rotasi",
-    materi: "Rotasi dan Revolusi Bumi", tujuanPembelajaran: "Membedakan rotasi dan revolusi", levelKognitif: "C1"
+    id: "ipas-is-8", type: "IS", number: 57,
+    question: "Kegiatan menjual barang/jasa dari dalam negeri ke luar negeri disebut ..., sedangkan membeli barang dari luar negeri disebut ...",
+    acceptedAnswers: ["ekspor dan impor", "ekspor, impor"],
+    modelAnswer: "Ekspor (menjual ke luar negeri) dan Impor (membeli dari luar negeri)",
+    materi: "Hubungan Antarnegara – Perdagangan", tujuanPembelajaran: "Membedakan kegiatan ekspor dan impor", levelKognitif: "C2"
   },
   {
-    id: "ipas-is-7", type: "IS", number: 32,
-    question: "Benda yang tidak dapat menghantarkan listrik disebut ...",
-    acceptedAnswers: ["isolator"],
-    modelAnswer: "Isolator",
-    materi: "Listrik", tujuanPembelajaran: "Membedakan konduktor dan isolator", levelKognitif: "C1"
+    id: "ipas-is-9", type: "IS", number: 58,
+    question: "Batik dan Angklung telah diakui UNESCO sebagai warisan budaya takbenda Indonesia. Nama lembaga dunia yang memberikan pengakuan tersebut adalah ...",
+    acceptedAnswers: ["unesco", "UNESCO"],
+    modelAnswer: "UNESCO (United Nations Educational, Scientific and Cultural Organization)",
+    materi: "Hubungan Antarnegara – Warisan Budaya", tujuanPembelajaran: "Menyebutkan lembaga internasional yang mengakui warisan budaya", levelKognitif: "C1"
   },
+
+  // BAB 5 – Tata Surya
   {
-    id: "ipas-is-8", type: "IS", number: 33,
-    question: "Hubungan yang menguntungkan kedua belah pihak disebut simbiosis ...",
-    acceptedAnswers: ["mutualisme"],
-    modelAnswer: "Mutualisme",
-    materi: "Simbiosis", tujuanPembelajaran: "Menyebutkan jenis simbiosis", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-9", type: "IS", number: 34,
-    question: "Planet terbesar dalam tata surya adalah ...",
-    acceptedAnswers: ["jupiter"],
+    id: "ipas-is-10", type: "IS", number: 59,
+    question: "Planet terbesar dalam tata surya kita dengan lebih dari 79 satelit adalah planet ...",
+    acceptedAnswers: ["jupiter", "yupiter"],
     modelAnswer: "Jupiter",
-    materi: "Tata Surya", tujuanPembelajaran: "Menyebutkan nama-nama planet", levelKognitif: "C1"
+    materi: "Tata Surya – Planet", tujuanPembelajaran: "Menyebutkan planet terbesar dalam tata surya", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-10", type: "IS", number: 35,
-    question: "Penghijauan kembali lahan yang gundul dengan menanam pohon disebut ...",
-    acceptedAnswers: ["reboisasi", "penghijauan"],
+    id: "ipas-is-11", type: "IS", number: 60,
+    question: "Perputaran Bumi pada porosnya yang menyebabkan terjadinya siang dan malam disebut ...",
+    acceptedAnswers: ["rotasi", "rotasi bumi"],
+    modelAnswer: "Rotasi Bumi",
+    materi: "Tata Surya – Rotasi", tujuanPembelajaran: "Menyebutkan nama gerak rotasi Bumi", levelKognitif: "C1"
+  },
+  {
+    id: "ipas-is-12", type: "IS", number: 61,
+    question: "Benda langit yang tersusun dari es, debu, dan batuan, serta memiliki ekor panjang saat mendekati Matahari disebut ...",
+    acceptedAnswers: ["komet", "bintang berekor"],
+    modelAnswer: "Komet",
+    materi: "Tata Surya – Benda Langit", tujuanPembelajaran: "Menyebutkan ciri-ciri komet", levelKognitif: "C1"
+  },
+
+  // BAB 6 & 7 – Energi & Lingkungan
+  {
+    id: "ipas-is-13", type: "IS", number: 62,
+    question: "Energi yang berasal dari panas dalam Bumi dan dimanfaatkan dengan cara mengebor ke dalam tanah untuk mengambil uap panasnya disebut energi ...",
+    acceptedAnswers: ["panas bumi", "geotermal", "geothermal"],
+    modelAnswer: "Panas bumi (Geotermal)",
+    materi: "Energi – Terbarukan", tujuanPembelajaran: "Menyebutkan jenis energi terbarukan", levelKognitif: "C1"
+  },
+  {
+    id: "ipas-is-14", type: "IS", number: 63,
+    question: "Penanaman kembali pohon-pohon di hutan yang telah gundul disebut ...",
+    acceptedAnswers: ["reboisasi", "penghijauan kembali"],
     modelAnswer: "Reboisasi",
-    materi: "Pelestarian Lingkungan", tujuanPembelajaran: "Menyebutkan istilah upaya pelestarian lingkungan", levelKognitif: "C1"
+    materi: "Lingkungan – Pelestarian", tujuanPembelajaran: "Menyebutkan upaya pelestarian hutan", levelKognitif: "C1"
   },
   {
-    id: "ipas-is-11", type: "IS", number: 36,
-    question: "Perubahan wujud dari gas menjadi cair disebut ...",
-    acceptedAnswers: ["mengembun", "pengembunan", "kondensasi"],
-    modelAnswer: "Mengembun/Kondensasi",
-    materi: "Perubahan Wujud Zat", tujuanPembelajaran: "Menyebutkan jenis perubahan wujud zat", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-12", type: "IS", number: 37,
-    question: "Gaya tarik yang dimiliki magnet terhadap benda-benda tertentu disebut gaya ...",
-    acceptedAnswers: ["magnet", "magnetis"],
-    modelAnswer: "Magnet/Magnetis",
-    materi: "Gaya", tujuanPembelajaran: "Menyebutkan jenis-jenis gaya", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-13", type: "IS", number: 38,
-    question: "Tahapan dalam siklus air di mana uap air berubah menjadi awan atau titik-titik air karena suhu udara mendingin disebut ...",
-    acceptedAnswers: ["kondensasi", "pengembunan"],
-    modelAnswer: "Kondensasi (pengembunan)",
-    materi: "Siklus Air", tujuanPembelajaran: "Menyebutkan nama proses dalam siklus air", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-14", type: "IS", number: 39,
-    question: "Indonesia dibagi menjadi tiga zona waktu. Zona waktu untuk wilayah Papua dan Maluku yang paling timur adalah ...",
-    acceptedAnswers: ["WIT", "waktu indonesia timur"],
-    modelAnswer: "WIT (Waktu Indonesia Timur)",
-    materi: "Zona Waktu Indonesia", tujuanPembelajaran: "Menyebutkan zona waktu Indonesia", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-15", type: "IS", number: 40,
-    question: "Fauna endemik Indonesia yang terkenal dan hanya ditemukan di Pulau Komodo, Flores, dan sekitarnya di Nusa Tenggara Timur (NTT) adalah ...",
-    acceptedAnswers: ["komodo", "biawak komodo"],
-    modelAnswer: "Komodo (Biawak Komodo)",
-    materi: "Keanekaragaman Hayati Indonesia", tujuanPembelajaran: "Menyebutkan fauna endemik Indonesia", levelKognitif: "C1"
-  },
-  {
-    id: "ipas-is-16", type: "IS", number: 41,
-    question: "Rena menanam kecambah di dalam kotak kardus yang hanya memiliki satu lubang kecil di salah satu sisinya. Setelah beberapa hari, batang kecambah membengkok ke arah lubang cahaya tersebut. Respons tumbuhan yang bergerak menuju sumber cahaya ini disebut ...",
-    acceptedAnswers: ["fototropisme", "fototropi", "gerak fototropisme"],
-    modelAnswer: "Fototropisme (gerak tumbuhan menuju sumber cahaya)",
-    materi: "Gerak Tumbuhan", tujuanPembelajaran: "Mengidentifikasi jenis gerak tropisme pada tumbuhan", levelKognitif: "C2"
-  },
-  {
-    id: "ipas-is-17", type: "IS", number: 42,
-    question: "Dalam rantai makanan: Padi → Tikus → Ular sawah → Elang. Petani membasmi semua ular sawah menggunakan pestisida berlebihan. Hewan yang populasinya akan meningkat tidak terkendali dan merugikan petani adalah ...",
-    acceptedAnswers: ["tikus", "tikus sawah"],
-    modelAnswer: "Tikus sawah (karena predator alaminya, ular sawah, telah dibasmi)",
-    materi: "Jaring-jaring Makanan", tujuanPembelajaran: "Menganalisis dampak perubahan populasi dalam rantai makanan", levelKognitif: "C3"
-  },
-  {
-    id: "ipas-is-18", type: "IS", number: 43,
-    question: "Saat banjir merendam sawah dalam waktu lama, tanaman padi banyak yang mati. Hal ini terjadi karena akar padi tidak dapat menyerap ... yang dibutuhkan untuk proses respirasi sel akar.",
-    acceptedAnswers: ["oksigen", "o2", "udara"],
-    modelAnswer: "Oksigen (O₂) — akar memerlukan oksigen untuk respirasi aerob menghasilkan energi",
-    materi: "Respirasi Tumbuhan", tujuanPembelajaran: "Menjelaskan kebutuhan oksigen pada akar tumbuhan", levelKognitif: "C2"
+    id: "ipas-is-15", type: "IS", number: 64,
+    question: "Program pengelolaan sampah yang terdiri dari mengurangi (Reduce), memakai ulang (Reuse), dan mendaur ulang (Recycle) disingkat ...",
+    acceptedAnswers: ["3r", "3R", "reduce reuse recycle"],
+    modelAnswer: "3R (Reduce, Reuse, Recycle)",
+    materi: "Lingkungan – Pengelolaan Sampah", tujuanPembelajaran: "Menyebutkan program pengelolaan sampah", levelKognitif: "C1"
   },
 ];
 
 const ut: UTQuestion[] = [
+  // BAB 1 – Sistem Gerak
   {
-    id: "ipas-ut-1", type: "UT", number: 38,
-    question: "Jelaskan proses fotosintesis! Sebutkan bahan-bahan yang diperlukan, tempat terjadinya, dan hasil yang diperoleh!",
-    modelAnswer: "Fotosintesis adalah proses pembuatan makanan oleh tumbuhan. Bahan yang dibutuhkan adalah air (H₂O), karbon dioksida (CO₂), dan cahaya matahari. Proses ini terjadi di daun, tepatnya di klorofil (zat hijau daun). Hasil fotosintesis adalah glukosa (gula) sebagai makanan tumbuhan dan oksigen (O₂) yang dilepas ke udara.",
-    keyPoints: ["Menyebutkan bahan: air, CO₂, cahaya matahari", "Tempat di daun/klorofil", "Hasil: glukosa dan oksigen", "Penjelasan runtut dan benar"],
-    materi: "Fotosintesis", tujuanPembelajaran: "Menjelaskan proses fotosintesis secara lengkap", levelKognitif: "C2"
+    id: "ipas-ut-1", type: "UT", number: 65,
+    question: "Jelaskan perbedaan antara otot lurik, otot polos, dan otot jantung! Sertakan:\na) Lokasi di tubuh\nb) Cara kerja (sadar/tidak sadar)\nc) Satu contoh penyakit/gangguan yang menyerang masing-masing otot",
+    modelAnswer: "Otot Lurik:\na) Lokasi: menempel pada rangka/tulang (lengan, kaki, wajah)\nb) Cara kerja: sadar (dapat dikendalikan kemauan)\nc) Contoh gangguan: kram otot (kontraksi mendadak), atrofi otot (mengecil akibat tidak digunakan)\n\nOtot Polos:\na) Lokasi: organ dalam (lambung, usus, pembuluh darah)\nb) Cara kerja: tidak sadar (bekerja otomatis)\nc) Contoh gangguan: kram perut (lambung dan usus berkontraksi tidak normal)\n\nOtot Jantung:\na) Lokasi: hanya di jantung\nb) Cara kerja: tidak sadar, bekerja terus menerus tanpa lelah\nc) Contoh gangguan: serangan jantung (otot jantung kekurangan pasokan darah)",
+    keyPoints: ["Lokasi ketiga otot disebutkan", "Cara kerja (sadar/tidak) dijelaskan", "Contoh gangguan masing-masing disebutkan"],
+    materi: "Sistem Gerak – Otot", tujuanPembelajaran: "Membandingkan jenis-jenis otot manusia", levelKognitif: "C4"
+  },
+  // BAB 2 – Sejarah
+  {
+    id: "ipas-ut-2", type: "UT", number: 66,
+    question: "Perlawanan rakyat Indonesia sebelum 1908 seringkali gagal mengusir penjajah, namun setelah lahirnya organisasi pergerakan nasional, perjuangan mulai berhasil.\n\nAnalisis:\na) Sebutkan 3 faktor utama kegagalan perlawanan rakyat sebelum 1908\nb) Jelaskan bagaimana pergerakan nasional (setelah Budi Utomo 1908) mengubah strategi perjuangan\nc) Pelajaran apa yang bisa diambil dari perjuangan ini untuk kehidupan kita hari ini?",
+    modelAnswer: "a) 3 Faktor kegagalan sebelum 1908:\n1. Perlawanan bersifat kedaerahan/lokal, tidak terkoordinasi secara nasional\n2. Belanda menerapkan politik devide et impera (adu domba) untuk memecah belah rakyat\n3. Perbedaan persenjataan sangat jauh: rakyat dengan senjata tradisional vs. Belanda dengan senjata modern\n\nb) Perubahan strategi setelah 1908:\n- Perjuangan beralih dari senjata ke pendidikan, kesadaran nasional, dan organisasi modern\n- Muncul pemimpin nasional yang menyatukan berbagai kelompok melampaui batas suku\n- Sumpah Pemuda 1928 menegaskan identitas nasional: satu tanah air, bangsa, dan bahasa\n\nc) Pelajaran untuk hari ini:\n- Persatuan jauh lebih kuat daripada perjuangan sendiri-sendiri\n- Pendidikan adalah senjata utama untuk kemajuan bangsa\n- Perbedaan latar belakang tidak menghalangi kerja sama demi tujuan bersama",
+    keyPoints: ["3 faktor kegagalan disebutkan dengan jelas", "Perubahan strategi pergerakan nasional dijelaskan", "Pelajaran relevan untuk masa kini"],
+    materi: "Sejarah – Perlawanan dan Pergerakan Nasional", tujuanPembelajaran: "Menganalisis perubahan strategi perjuangan bangsa Indonesia", levelKognitif: "C4"
+  },
+  // BAB 3 & 4 – Geografi & Globalisasi
+  {
+    id: "ipas-ut-3", type: "UT", number: 67,
+    question: "Bandingkan kondisi geografis dua negara: Swiss (Eropa – dikitari Pegunungan Alpen) dan Belanda (Eropa – dataran rendah di bawah permukaan laut).\n\nJelaskan:\na) Karakteristik geografis utama masing-masing negara\nb) Bagaimana kondisi geografis memengaruhi mata pencaharian utama penduduk\nc) Apa tantangan utama yang dihadapi masing-masing negara akibat kondisi geografisnya",
+    modelAnswer: "Swiss:\na) Geografis: dikelilingi Pegunungan Alpen yang sangat tinggi, tidak memiliki akses langsung ke laut\nb) Mata pencaharian: pariwisata pegunungan (ski, hiking), perbankan internasional, industri jam tangan dan cokelat presisi, peternakan sapi perah\nc) Tantangan: lahan pertanian terbatas karena topografi bergunung-gunung, harus mengimpor banyak bahan pangan\n\nBelanda:\na) Geografis: sebagian besar wilayah di bawah permukaan laut, harus dikelola dengan sistem tanggul (dike) dan pompa air canggih\nb) Mata pencaharian: pertanian intensif (bunga tulip, keju Gouda), perdagangan internasional (Pelabuhan Rotterdam terbesar Eropa), industri pengolahan air\nc) Tantangan: ancaman banjir dan naiknya permukaan laut akibat perubahan iklim",
+    keyPoints: ["Karakteristik geografis kedua negara dijelaskan", "Hubungan geografis dengan mata pencaharian dianalisis", "Tantangan masing-masing negara disebutkan"],
+    materi: "Geografi – Kondisi Geografis Negara", tujuanPembelajaran: "Menganalisis hubungan geografis dengan kehidupan penduduk", levelKognitif: "C4"
+  },
+  // BAB 4 – Globalisasi
+  {
+    id: "ipas-ut-4", type: "UT", number: 68,
+    question: "Globalisasi membawa dampak positif sekaligus negatif bagi Indonesia, terutama di bidang budaya.\n\nBuatlah analisis:\na) Sebutkan 2 dampak positif globalisasi di bidang budaya bagi Indonesia\nb) Sebutkan 2 dampak negatif globalisasi di bidang budaya\nc) Bagaimana sikap yang sebaiknya dimiliki generasi muda Indonesia dalam menghadapi globalisasi? Berikan alasanmu!",
+    modelAnswer: "a) Dampak positif globalisasi budaya:\n1. Indonesia dapat memperkenalkan budaya lokal (batik, wayang, gamelan) ke dunia internasional melalui internet dan media sosial, meningkatkan citra bangsa\n2. Indonesia mendapat akses ke teknologi dan ilmu pengetahuan dari negara-negara maju yang mempercepat pembangunan\n\nb) Dampak negatif globalisasi budaya:\n1. Generasi muda lebih mengenal budaya asing (K-pop, Hollywood) daripada budaya daerah sendiri, mengancam kelestarian budaya lokal\n2. Masuknya gaya hidup konsumtif dan individualistik dari budaya Barat yang bertentangan dengan nilai gotong royong dan kebersamaan masyarakat Indonesia\n\nc) Sikap yang sebaiknya dimiliki:\nSikap selektif dan adaptif: menerima pengaruh positif globalisasi (teknologi, inovasi, keterbukaan) sambil tetap mempertahankan dan bangga dengan identitas budaya lokal. Prinsip: 'saringlah yang baik, pertahankan yang asli Indonesia.' Caranya: aktif belajar dan mempraktikkan seni budaya daerah, menggunakan produk lokal, dan menjadi duta budaya Indonesia di era digital.",
+    keyPoints: ["2 dampak positif globalisasi budaya disebutkan", "2 dampak negatif disebutkan", "Sikap menghadapi globalisasi dijelaskan dengan alasan"],
+    materi: "Hubungan Antarnegara – Globalisasi", tujuanPembelajaran: "Mengevaluasi dampak globalisasi dan merumuskan sikap yang tepat", levelKognitif: "C5"
+  },
+  // BAB 5 – Tata Surya
+  {
+    id: "ipas-ut-5", type: "UT", number: 69,
+    question: "Jelaskan perbedaan antara ROTASI dan REVOLUSI Bumi!\n\nSertakan dalam jawabanmu:\na) Definisi masing-masing\nb) Waktu yang dibutuhkan\nc) Akibat atau dampak yang ditimbulkan dalam kehidupan kita sehari-hari",
+    modelAnswer: "Rotasi Bumi:\na) Definisi: perputaran Bumi pada porosnya (sumbu imaginer dari kutub utara ke kutub selatan)\nb) Waktu: ±24 jam (1 hari)\nc) Akibat: (1) Terjadinya siang dan malam bergantian – bagian Bumi yang menghadap Matahari siang, yang membelakangi malam; (2) Perbedaan waktu antara kota-kota di belahan Bumi berbeda (WIB, WITA, WIT di Indonesia)\n\nRevolusi Bumi:\na) Definisi: peredaran Bumi mengelilingi Matahari dalam orbitnya\nb) Waktu: ±365¼ hari (1 tahun)\nc) Akibat: (1) Pergantian musim (di negara empat musim: semi, panas, gugur, dingin); (2) Dasar pembuatan kalender masehi (1 tahun = 365 hari, 4 tahun sekali ada tahun kapur = 366 hari karena ¼ hari dikumpulkan)\n\nIndonesia hanya memiliki dua musim (hujan dan kemarau) karena terletak di garis khatulistiwa.",
+    keyPoints: ["Definisi rotasi dan revolusi jelas", "Waktu yang dibutuhkan disebutkan", "Akibat masing-masing minimal 2 dampak"],
+    materi: "Tata Surya – Rotasi dan Revolusi", tujuanPembelajaran: "Membedakan rotasi dan revolusi Bumi beserta dampaknya", levelKognitif: "C4"
+  },
+  // BAB 5 – Tata Surya (HOTS)
+  {
+    id: "ipas-ut-6", type: "UT", number: 70,
+    question: "Perhatikan data planet-planet berikut:\n• Merkurius: terdekat ke Matahari, hampir tidak punya atmosfer, suhu siang +430°C / malam -180°C\n• Venus: nomor 2 dari Matahari, atmosfer tebal CO₂, suhu rata-rata +465°C\n• Mars: nomor 4, atmosfer tipis CO₂, suhu rata-rata -60°C, ada bukti air beku\n\nBerdasarkan data tersebut, analisislah:\na) Mengapa Venus lebih panas dari Merkurius meski Merkurius lebih dekat ke Matahari?\nb) Mengapa suhu Merkurius sangat ekstrem (siang sangat panas, malam sangat dingin)?\nc) Para ilmuwan sedang meneliti apakah Mars bisa dihuni manusia di masa depan. Berdasarkan data di atas, apa tantangan terbesar yang harus diatasi?",
+    modelAnswer: "a) Venus lebih panas dari Merkurius karena efek rumah kaca ekstrem: atmosfer Venus yang sangat tebal mengandung 96% CO₂, gas yang sangat efektif memerangkap panas. Panas dari Matahari masuk ke Venus tetapi tidak bisa keluar karena terhalang atmosfer tebal ini. Merkurius yang hampir tidak punya atmosfer tidak bisa menyimpan panas.\n\nb) Suhu Merkurius sangat ekstrem karena hampir tidak memiliki atmosfer yang berfungsi sebagai 'selimut': saat menghadap Matahari, tidak ada apa pun yang memantulkan atau menyerap panas sehingga sangat panas. Saat membelakangi Matahari, tidak ada atmosfer yang menahan panas sehingga langsung sangat dingin.\n\nc) Tantangan terbesar menghuni Mars:\n1. Atmosfer tipis dan kurangnya oksigen – manusia tidak bisa bernapas langsung\n2. Suhu rata-rata -60°C sangat dingin untuk kehidupan manusia normal\n3. Radiasi kosmik tinggi karena tidak ada medan magnet dan atmosfer pelindung\n4. Harus membawa atau memproduksi air dan makanan sendiri (meski ada es di kutub Mars)",
+    keyPoints: ["Penjelasan efek rumah kaca Venus benar", "Alasan suhu ekstrem Merkurius karena ketiadaan atmosfer", "Minimal 3 tantangan menghuni Mars disebutkan"],
+    materi: "Tata Surya – Karakteristik Planet", tujuanPembelajaran: "Menganalisis karakteristik planet berdasarkan data", levelKognitif: "C4"
+  },
+  // BAB 6 – Energi
+  {
+    id: "ipas-ut-7", type: "UT", number: 71,
+    question: "Indonesia sangat bergantung pada bahan bakar fosil (batu bara, minyak bumi) untuk pembangkit listrik. Namun, para ahli memperingatkan bahwa cadangan fosil Indonesia semakin menipis dan penggunaannya merusak lingkungan.\n\nBuatlah rencana transisi energi untuk Indonesia:\na) Sebutkan 3 potensi energi terbarukan yang dimiliki Indonesia beserta alasannya\nb) Jelaskan satu tantangan utama dalam peralihan ke energi terbarukan\nc) Apa peran yang bisa kamu lakukan sebagai pelajar SD dalam mendukung transisi energi ini?",
+    modelAnswer: "a) 3 Potensi energi terbarukan Indonesia:\n1. Energi panas bumi (geotermal): Indonesia memiliki 40% cadangan panas bumi dunia karena berada di Cincin Api Pasifik dengan 127 gunung berapi aktif\n2. Energi surya (matahari): Indonesia berada di garis khatulistiwa mendapat sinar matahari sepanjang tahun ±12 jam/hari\n3. Energi air (hidro): Indonesia memiliki banyak sungai deras seperti di Kalimantan dan Papua yang cocok untuk PLTA (Pembangkit Listrik Tenaga Air)\n\nb) Tantangan utama:\nBiaya investasi awal yang sangat tinggi untuk membangun infrastruktur energi terbarukan (panel surya, turbin angin, PLTA) sehingga butuh waktu lama untuk balik modal. Selain itu, teknologinya masih harus banyak diimpor dari luar negeri.\n\nc) Peran pelajar SD:\n- Menghemat listrik di rumah: mematikan lampu dan elektronik yang tidak digunakan\n- Menggunakan kendaraan sepeda atau berjalan kaki untuk jarak dekat\n- Mengurangi plastik sekali pakai (produksi plastik membutuhkan energi fosil)\n- Menanam pohon karena pohon menyerap CO₂ hasil pembakaran fosil",
+    keyPoints: ["3 potensi energi terbarukan Indonesia dengan alasan", "Tantangan transisi energi dijelaskan", "Peran pelajar SD yang konkret dan realistis"],
+    materi: "Energi – Terbarukan", tujuanPembelajaran: "Merancang solusi transisi energi berbasis potensi lokal", levelKognitif: "C5"
+  },
+  // BAB 7 – Lingkungan
+  {
+    id: "ipas-ut-8", type: "UT", number: 72,
+    question: "Seorang ilmuwan lingkungan menyatakan: 'Manusia adalah ancaman terbesar bagi kelestarian Bumi.'\n\nEvaluasi pernyataan tersebut dengan:\na) Berikan 3 bukti konkret aktivitas manusia yang merusak lingkungan Bumi\nb) Berikan 1 contoh aktivitas manusia yang justru memperbaiki lingkungan\nc) Apakah kamu setuju dengan pernyataan ilmuwan tersebut? Tuliskan argumentasimu!",
+    modelAnswer: "a) 3 Bukti aktivitas manusia merusak lingkungan:\n1. Deforestasi masif: pembabatan hutan tropis di Kalimantan dan Sumatera untuk perkebunan sawit menyebabkan hilangnya habitat orangutan, banjir, dan emisi karbon besar\n2. Pencemaran plastik: jutaan ton sampah plastik masuk ke laut setiap tahun, membunuh hewan laut dan memasuki rantai makanan\n3. Pembakaran bahan bakar fosil: emisi CO₂ dan gas rumah kaca dari kendaraan dan industri menyebabkan pemanasan global dan perubahan iklim\n\nb) Aktivitas manusia yang memperbaiki lingkungan:\nProgram reboisasi seperti 'One Man One Tree' di Indonesia dan proyek restorasi terumbu karang di Raja Ampat yang melibatkan komunitas lokal untuk memulihkan ekosistem yang rusak.\n\nc) Argumentasi:\n[Setuju] Saya setuju, karena tidak ada spesies lain di Bumi yang mengubah lingkungan secara masif dan global seperti manusia. Manusia telah menghabiskan sumber daya yang terbentuk jutaan tahun hanya dalam beberapa ratus tahun. Namun, manusia juga satu-satunya spesies yang memiliki kemampuan untuk menyadari kerusakan ini dan mengambil tindakan perbaikan. Maka tantangan terbesar adalah mengubah perilaku dan sistem ekonomi manusia sebelum kerusakan melampaui titik yang tidak bisa dipulihkan.",
+    keyPoints: ["3 bukti kerusakan lingkungan oleh manusia", "1 contoh perbaikan lingkungan oleh manusia", "Argumentasi setuju/tidak dengan dasar yang kuat"],
+    materi: "Lingkungan – Aktivitas Manusia", tujuanPembelajaran: "Mengevaluasi dampak aktivitas manusia terhadap lingkungan", levelKognitif: "C5"
+  },
+  // Lintas Bab – HOTS
+  {
+    id: "ipas-ut-9", type: "UT", number: 73,
+    question: "Integrasikan pemahamanmu tentang SEJARAH dan LINGKUNGAN:\n\nPada masa penjajahan Belanda, hutan-hutan di Jawa dibabat besar-besaran untuk perkebunan tebu dan kopi dalam sistem tanam paksa. \n\na) Jelaskan dampak lingkungan yang kemungkinan terjadi saat itu\nb) Apakah ada kaitan antara kerusakan lingkungan era kolonial dengan masalah lingkungan Jakarta (banjir, kekeringan) saat ini? Jelaskan!\nc) Apa yang bisa dipelajari dari sejarah ini untuk kebijakan lingkungan Indonesia ke depan?",
+    modelAnswer: "a) Dampak lingkungan masa tanam paksa:\n- Pembabatan hutan Jawa besar-besaran menyebabkan erosi tanah, berkurangnya daerah resapan air, dan kepunahan spesies hewan dan tumbuhan endemik Jawa\n- Perkebunan monokultur (satu jenis tanaman) merusak keanekaragaman hayati tanah\n- Eksploitasi berlebihan menyebabkan lahan pertanian rakyat menjadi kurang subur\n\nb) Kaitan dengan masalah Jakarta masa kini:\nYa, ada kaitan historis. Berkurangnya tutupan hutan di Jawa (termasuk di hulu-hulu sungai yang mengalir ke Jakarta seperti Ciliwung) sejak era kolonial hingga kini terus berlanjut. Tanpa hutan yang cukup di dataran tinggi Bogor-Puncak, air hujan tidak terserap melainkan langsung mengalir ke sungai dalam jumlah besar sehingga banjir di Jakarta sulit dihindari.\n\nc) Pelajaran untuk kebijakan Indonesia:\n- Tidak boleh mengorbankan lingkungan demi keuntungan ekonomi jangka pendek\n- Hutan harus dilindungi sebagai 'infrastruktur alam' yang menopang kehidupan jutaan orang di hilir\n- Kebijakan pembangunan harus berprinsip keberlanjutan: memenuhi kebutuhan generasi sekarang tanpa mengorbankan kemampuan generasi mendatang",
+    keyPoints: ["Dampak lingkungan tanam paksa dijelaskan", "Kaitan historis dengan masalah Jakarta sekarang", "Pelajaran untuk kebijakan masa depan"],
+    materi: "Lintas Bab – Sejarah dan Lingkungan", tujuanPembelajaran: "Mengintegrasikan pemahaman sejarah dan lingkungan", levelKognitif: "C5"
   },
   {
-    id: "ipas-ut-2", type: "UT", number: 39,
-    question: "Buatlah sebuah rantai makanan yang terdiri dari minimal 5 organisme! Tuliskan peran setiap organisme (produsen, konsumen I, II, III, atau pengurai)!",
-    modelAnswer: "Contoh rantai makanan:\nRumput (Produsen) → Belalang (Konsumen I/Herbivora) → Katak (Konsumen II/Karnivora) → Ular (Konsumen III/Karnivora) → Elang (Konsumen IV/Karnivora)\nSetelah mati, semua organisme diuraikan oleh Jamur/Bakteri (Pengurai/Dekomposer).",
-    keyPoints: ["Rantai makanan minimal 5 organisme", "Mencantumkan produsen", "Mencantumkan minimal 3 konsumen", "Menyebutkan peran masing-masing", "Urutan tanda panah benar"],
-    materi: "Rantai Makanan", tujuanPembelajaran: "Membuat dan menganalisis rantai makanan", levelKognitif: "C4"
-  },
-  {
-    id: "ipas-ut-3", type: "UT", number: 40,
-    question: "Jelaskan perbedaan antara rotasi dan revolusi bumi! Sebutkan masing-masing satu akibat yang ditimbulkan!",
-    modelAnswer: "Rotasi bumi adalah gerakan bumi berputar pada porosnya sendiri. Akibat rotasi: terjadinya siang dan malam. Revolusi bumi adalah gerakan bumi mengelilingi matahari dalam satu tahun (365 hari). Akibat revolusi: terjadinya pergantian musim dan perbedaan lamanya siang dan malam di berbagai tempat.",
-    keyPoints: ["Definisi rotasi benar", "Akibat rotasi: siang dan malam", "Definisi revolusi benar", "Akibat revolusi: pergantian musim/tahun"],
-    materi: "Rotasi dan Revolusi Bumi", tujuanPembelajaran: "Membedakan rotasi dan revolusi beserta akibatnya", levelKognitif: "C2"
-  },
-  {
-    id: "ipas-ut-4", type: "UT", number: 41,
-    question: "Apa yang dimaksud dengan pemanasan global? Sebutkan 2 penyebab dan 2 dampaknya bagi kehidupan di bumi!",
-    modelAnswer: "Pemanasan global adalah meningkatnya suhu rata-rata permukaan bumi secara bertahap akibat meningkatnya konsentrasi gas rumah kaca di atmosfer.\nPenyebab: (1) Pembakaran bahan bakar fosil (minyak, batu bara) yang menghasilkan CO₂; (2) Penebangan hutan yang mengurangi penyerap CO₂.\nDampak: (1) Mencairnya es di kutub yang menyebabkan naiknya permukaan laut; (2) Perubahan cuaca ekstrem dan musim tidak menentu.",
-    keyPoints: ["Definisi pemanasan global benar", "Menyebutkan 2 penyebab yang tepat", "Menyebutkan 2 dampak yang tepat", "Penjelasan logis dan berkaitan"],
-    materi: "Perubahan Iklim", tujuanPembelajaran: "Menganalisis penyebab dan dampak pemanasan global", levelKognitif: "C4"
-  },
-  {
-    id: "ipas-ut-5", type: "UT", number: 42,
-    question: "Jelaskan perbedaan antara perubahan fisika dan perubahan kimia! Berikan 2 contoh masing-masing!",
-    modelAnswer: "Perubahan fisika adalah perubahan zat yang tidak menghasilkan zat baru, dan bersifat sementara (dapat kembali ke wujud semula). Contoh: air membeku menjadi es, kertas dipotong-potong.\nPerubahan kimia adalah perubahan zat yang menghasilkan zat baru dengan sifat berbeda, dan bersifat permanen (tidak dapat kembali). Contoh: kertas dibakar menjadi abu, besi berkarat.",
-    keyPoints: ["Definisi perubahan fisika benar", "2 contoh perubahan fisika", "Definisi perubahan kimia benar", "2 contoh perubahan kimia"],
-    materi: "Perubahan Materi", tujuanPembelajaran: "Membedakan perubahan fisika dan kimia disertai contoh", levelKognitif: "C4"
-  },
-  {
-    id: "ipas-ut-6", type: "UT", number: 43,
-    question: "Sebutkan dan jelaskan 3 jenis simbiosis! Berikan 1 contoh untuk setiap jenis simbiosis!",
-    modelAnswer: "1. Simbiosis Mutualisme: hubungan yang menguntungkan kedua pihak. Contoh: lebah dan bunga (lebah mendapat nektar, bunga terbantu penyerbukan).\n2. Simbiosis Komensalisme: hubungan yang menguntungkan satu pihak tanpa merugikan pihak lain. Contoh: ikan remora dan hiu (remora mendapat sisa makanan hiu, hiu tidak dirugikan).\n3. Simbiosis Parasitisme: hubungan yang menguntungkan satu pihak tetapi merugikan pihak lain. Contoh: benalu dan pohon mangga (benalu mendapat makanan, pohon mangga dirugikan).",
-    keyPoints: ["Menyebutkan 3 jenis simbiosis", "Penjelasan mutualisme benar + contoh", "Penjelasan komensalisme benar + contoh", "Penjelasan parasitisme benar + contoh"],
-    materi: "Simbiosis", tujuanPembelajaran: "Menjelaskan jenis-jenis simbiosis beserta contohnya", levelKognitif: "C2"
-  },
-  {
-    id: "ipas-ut-7", type: "UT", number: 44,
-    question: "Jelaskan proses terjadinya siklus air! Sebutkan minimal 4 tahapan dalam siklus air dan jelaskan masing-masing!",
-    modelAnswer: "Siklus air adalah pergerakan air yang terus-menerus di bumi. Tahapannya:\n1. Evaporasi: air di laut, sungai, dan danau menguap menjadi uap air karena panas matahari.\n2. Kondensasi: uap air naik ke atmosfer, mendingin, dan berubah menjadi awan (titik-titik air).\n3. Presipitasi: air dari awan jatuh ke bumi sebagai hujan, salju, atau hujan es.\n4. Infiltrasi: sebagian air hujan meresap ke dalam tanah menjadi air tanah.\n5. Run-off/Aliran permukaan: air mengalir di permukaan tanah menuju sungai dan akhirnya kembali ke laut.",
-    keyPoints: ["Definisi siklus air benar", "Evaporasi: penguapan air", "Kondensasi: pembentukan awan", "Presipitasi: hujan turun", "Infiltrasi: meresap ke tanah"],
-    materi: "Siklus Air", tujuanPembelajaran: "Menjelaskan proses terjadinya siklus air", levelKognitif: "C2"
-  },
-  {
-    id: "ipas-ut-8", type: "UT", number: 45,
-    question: "Jelaskan mengapa membuang sampah ke sungai dan membangun rumah di daerah aliran sungai (DAS) dapat memberikan dampak negatif bagi lingkungan dan masyarakat! Sebutkan minimal 2 dampak negatifnya!",
-    modelAnswer: "Membuang sampah ke sungai dan membangun di DAS berdampak buruk karena:\n1. Menyebabkan banjir: sampah menyumbat aliran air sehingga ketika hujan deras, air meluap dan menyebabkan banjir.\n2. Pencemaran air: sampah mencemari air sungai sehingga tidak layak digunakan untuk keperluan sehari-hari.\n3. Kerusakan ekosistem sungai: organisme air seperti ikan dan tumbuhan air mati karena kualitas air menurun.\n4. Erosi tanah: bangunan di pinggir sungai merusak vegetasi yang menahan tanah sehingga terjadi erosi.",
-    keyPoints: ["Menyebutkan 2 dampak negatif", "Dampak banjir disebutkan", "Dampak pencemaran air", "Penjelasan logis dan berkaitan"],
-    materi: "Pelestarian Lingkungan", tujuanPembelajaran: "Menganalisis dampak kerusakan lingkungan sungai", levelKognitif: "C4"
-  },
-  {
-    id: "ipas-ut-9", type: "UT", number: 46,
-    question: "Di sebuah ekosistem danau, fitoplankton (tumbuhan mikroskopis) berperan sebagai produsen utama. Akibat pembuangan limbah pabrik tekstil, populasi fitoplankton berkurang drastis hingga 90%.\n\nAnalisis dampak yang terjadi terhadap:\na) Populasi ikan kecil yang memakan fitoplankton\nb) Populasi ikan besar pemangsa ikan kecil\nc) Kadar oksigen terlarut dalam air danau\n\nSertakan penjelasan ilmiah untuk setiap poin!",
-    modelAnswer: "a) Ikan kecil: Populasinya berkurang drastis karena kehilangan sumber makanan utama (fitoplankton). Ikan kecil kelaparan dan tidak dapat berkembang biak dengan normal.\n\nb) Ikan besar: Juga akan berkurang secara signifikan karena makanannya (ikan kecil) berkurang — ini disebut efek domino/kaskade trofik dalam ekosistem. Ketika satu tingkat trofik terganggu, efeknya menjalar ke tingkat di atasnya.\n\nc) Kadar oksigen: Menurun tajam karena fitoplankton adalah penghasil oksigen utama di perairan melalui fotosintesis. Tanpa fitoplankton, kadar O₂ terlarut turun (hipoksia), sehingga ikan dan organisme air lain mati karena kekurangan oksigen.\n\nKesimpulan: Hilangnya satu organisme produsen dapat menyebabkan keruntuhan seluruh jaring-jaring makanan dalam ekosistem (trophic cascade).",
-    keyPoints: [
-      "Ikan kecil berkurang karena kehilangan sumber makanan",
-      "Ikan besar berkurang karena efek domino/kaskade trofik",
-      "Kadar O₂ berkurang karena fitoplankton adalah produsen oksigen melalui fotosintesis",
-      "Penjelasan hubungan antar organisme logis dan menggunakan istilah ilmiah"
-    ],
-    materi: "Ekosistem Perairan dan Pencemaran", tujuanPembelajaran: "Menganalisis dampak gangguan pada ekosistem perairan", levelKognitif: "C4"
-  },
-  {
-    id: "ipas-ut-10", type: "UT", number: 47,
-    question: "Indonesia memiliki keanekaragaman hayati terkaya ke-2 di dunia, namun banyak spesies endemik yang terancam punah akibat kerusakan habitat dan perburuan liar.\n\nRancang sebuah program pelestarian untuk salah satu spesies endemik Indonesia yang kamu pilih! Program harus mencakup:\n1. Nama spesies dan status ancaman kepunahannya\n2. Dua penyebab utama ancaman kepunahannya\n3. Satu strategi pelestarian in-situ dan satu strategi ex-situ\n4. Peran yang bisa dilakukan siswa sekolah dalam mendukung pelestarian",
-    modelAnswer: "Contoh jawaban: Orangutan Sumatera (Pongo abelii)\n\n1. Status: Kritis (Critically Endangered) — hanya tersisa sekitar 13.000 ekor di alam liar.\n\n2. Penyebab: (a) Deforestasi masif untuk konversi hutan menjadi perkebunan kelapa sawit menghancurkan habitat alami; (b) Perburuan dan perdagangan ilegal anak orangutan sebagai hewan peliharaan.\n\n3. Strategi in-situ: Perluasan dan penguatan perlindungan kawasan Taman Nasional Gunung Leuser — patroli anti-perburuan intensif, koridor ekologi untuk menghubungkan habitat yang terfragmentasi.\nStrategi ex-situ: Program rehabilitasi di pusat penyelamatan orangutan (seperti SOCP) untuk orangutan yang disita dari perdagangan ilegal, lalu dilepasliarkan kembali ke habitat yang dilindungi.\n\n4. Peran siswa: tidak membeli/memelihara satwa liar dilindungi; kampanye di media sosial; memilih produk yang bersertifikat tidak merusak hutan; edukasi keluarga tentang pentingnya pelestarian.",
-    keyPoints: [
-      "Menyebutkan spesies endemik Indonesia yang terancam punah dengan status ancamannya",
-      "Mengidentifikasi 2 penyebab kepunahan yang relevan",
-      "Strategi in-situ yang konkret (perlindungan habitat alami)",
-      "Strategi ex-situ yang berbeda (penangkaran/rehabilitasi)",
-      "Peran siswa yang realistis disebutkan"
-    ],
-    materi: "Keanekaragaman Hayati dan Konservasi", tujuanPembelajaran: "Merancang program pelestarian spesies endemik Indonesia", levelKognitif: "C5"
+    id: "ipas-ut-10", type: "UT", number: 74,
+    question: "Rancang sebuah proyek sains sederhana untuk membuktikan bahwa CAHAYA MATAHARI (energi surya) dapat digunakan sebagai sumber energi!\n\nProyekmu harus mencakup:\na) Judul proyek dan tujuan\nb) Alat dan bahan yang dibutuhkan (minimal 4)\nc) Langkah-langkah pelaksanaan (minimal 4 langkah)\nd) Hasil yang diharapkan dan hubungannya dengan konsep energi terbarukan",
+    modelAnswer: "a) Judul: 'Memasak dengan Kompor Tenaga Surya Sederhana'\nTujuan: Membuktikan bahwa energi matahari dapat diubah menjadi energi panas untuk memanaskan air atau makanan\n\nb) Alat dan bahan:\n1. Kardus bekas berukuran sedang\n2. Kertas aluminium foil\n3. Plastik transparan (wrap atau kantong plastik bening)\n4. Lakban/isolasi hitam\n5. Gelas berisi air\n6. Termometer\n\nc) Langkah-langkah:\n1. Lapisi bagian dalam kardus dengan aluminium foil (sisi mengkilap ke dalam) untuk memantulkan sinar matahari\n2. Buat sudut kemiringan di salah satu sisi kardus untuk mengarahkan cahaya ke titik fokus\n3. Letakkan gelas berisi air di titik fokus pantulan cahaya\n4. Tutup bagian atas dengan plastik transparan untuk memerangkap panas (efek rumah kaca miniatur)\n5. Arahkan kompor ke Matahari dan tunggu 30-60 menit\n6. Ukur suhu air sebelum dan sesudah menggunakan termometer\n\nd) Hasil yang diharapkan:\nSuhu air meningkat secara signifikan (bisa mencapai 60-80°C pada hari cerah). Ini membuktikan bahwa energi surya (cahaya matahari) dapat diubah menjadi energi panas – prinsip yang sama digunakan panel surya dan kolektor surya termal skala besar. Ini relevan dengan konsep energi terbarukan karena matahari adalah sumber energi yang tidak akan habis dalam skala kehidupan manusia.",
+    keyPoints: ["Judul dan tujuan proyek jelas", "Minimal 4 alat/bahan disebutkan", "Minimal 4 langkah percobaan", "Hasil dihubungkan dengan konsep energi terbarukan"],
+    materi: "Energi – Proyek Sains", tujuanPembelajaran: "Merancang proyek sains untuk membuktikan pemanfaatan energi surya", levelKognitif: "C5"
   },
 ];
 
@@ -661,15 +593,15 @@ export const ipasBank: SubjectQuestionBank = {
   is,
   ut,
   sessions: [
-    // Sesi 1: Dasar (C1-C2, termasuk 2 soal bergambar)
-    { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,41,43], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
-    // Sesi 2: Menengah (C2-C3, termasuk 3 soal bergambar)
-    { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,31,32,33,34,42,44,45], is: [1,2,3,4,5,6,7,8,9,13], ut: [1,2,3,4,7] },
-    // Sesi 3: Menengah-Tinggi (C3-C4, banyak soal bergambar)
-    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,31,34,36,37,42,43,44,45,46,47], is: [0,2,4,6,8,12,13,14,15,16], ut: [0,2,4,7,8] },
-    // Sesi 4: Tinggi (C3-C5, soal analisis + bergambar)
-    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,31,36,37,38,41,42,43,45,46,48], is: [2,3,4,5,6,7,8,9,13,17], ut: [2,3,4,5,9] },
-    // Sesi 5: Paling Sulit (C4-C5, dominan analisis dan evaluasi)
-    { pg: [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,33,35,39,41,43,45,46,47,48,49], is: [0,1,3,5,7,11,14,15,16,18], ut: [0,1,6,7,9] },
+    // Sesi 1: Dasar – Bab 1, 2, 5 (C1-C2)
+    { pg: [0,1,2,4,5,6,7,8,9,10,11,12,14,16,17,18,19,20,27,29,30,33,34,36,38], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
+    // Sesi 2: Menengah – Bab 1-5 campur (C2-C3)
+    { pg: [0,2,3,5,6,8,9,11,12,13,14,15,16,17,18,21,22,23,24,25,27,28,31,32,33], is: [1,2,3,4,5,6,7,8,9,10], ut: [0,1,2,4,5] },
+    // Sesi 3: Menengah-Tinggi – Bab 3-7 (C3-C4)
+    { pg: [3,4,6,7,9,10,13,14,15,19,20,21,22,23,24,25,28,31,32,35,37,38,40,42,45], is: [2,3,4,5,6,7,8,9,10,11], ut: [1,2,3,4,5] },
+    // Sesi 4: Tinggi – semua bab HOTS (C4-C5)
+    { pg: [3,4,7,9,10,13,14,15,19,20,22,23,24,25,26,28,31,32,35,37,39,40,41,42,43], is: [3,4,5,6,7,8,9,10,11,12], ut: [2,3,4,5,6] },
+    // Sesi 5: Paling Sulit – HOTS + lintas bab (C4-C5 dominan)
+    { pg: [3,4,7,10,13,14,15,19,20,22,23,24,25,26,28,31,35,37,38,39,40,42,43,45,46], is: [5,6,7,8,9,10,11,12,13,14], ut: [3,4,5,6,7,8,9] },
   ],
 };
