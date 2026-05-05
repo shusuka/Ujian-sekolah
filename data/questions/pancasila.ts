@@ -243,6 +243,127 @@ export const pancasilaBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Meneladani sikap para perumus Pancasila",
       levelKognitif: "C3",
     },
+    // ===== SOAL TINGKAT LANJUT (C4-C5) =====
+    {
+      question: "Perhatikan dua kasus berikut:\n(1) Siswa A mendapat nilai 90 karena rajin belajar; siswa B mendapat nilai 60 karena malas\n(2) Semua siswa mendapat jatah buku yang sama meski kemampuannya berbeda\n\nKasus yang mencerminkan KEADILAN SOSIAL sesuai Sila Kelima Pancasila adalah...",
+      options: [
+        "Kasus (1) – karena nilai sesuai dengan usaha masing-masing",
+        "Kasus (2) – karena semua mendapat hak yang sama persis",
+        "Keduanya mencerminkan keadilan sosial dengan cara yang berbeda",
+        "Keduanya tidak mencerminkan keadilan sosial Pancasila"
+      ],
+      correctAnswer: 2,
+      materi: "Makna nilai-nilai Pancasila",
+      tujuanPembelajaran: "Menganalisis penerapan Sila Kelima Pancasila",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Di era media sosial, banyak anak seusia kalian terpengaruh budaya asing dan mulai meninggalkan budaya daerah. Evaluasi ancaman ini terhadap Sila Ketiga Pancasila (Persatuan Indonesia) dan rumuskan solusinya...",
+      options: [
+        "Bukan ancaman karena globalisasi adalah kemajuan yang harus diterima",
+        "Ancaman nyata; solusinya adalah menutup diri dari semua budaya asing",
+        "Ancaman nyata; solusinya adalah menyaring budaya asing dan aktif melestarikan budaya daerah melalui pendidikan dan festival budaya",
+        "Bukan ancaman karena Pancasila tidak mengatur masalah budaya"
+      ],
+      correctAnswer: 2,
+      materi: "Bhinneka Tunggal Ika",
+      tujuanPembelajaran: "Mengevaluasi ancaman terhadap persatuan dan merumuskan solusi",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Seorang pejabat daerah mengeluarkan peraturan yang bertentangan dengan UUD 1945. Lembaga negara yang berwenang menguji apakah peraturan tersebut bertentangan dengan UUD 1945 adalah...",
+      options: ["DPR (Dewan Perwakilan Rakyat)", "Presiden", "Mahkamah Konstitusi (MK)", "Komisi Pemberantasan Korupsi (KPK)"],
+      correctAnswer: 2,
+      materi: "Lembaga-lembaga negara",
+      tujuanPembelajaran: "Memahami fungsi lembaga-lembaga negara",
+      levelKognitif: "C3",
+    },
+    {
+      question: "Perhatikan situasi: Sekolah akan membangun kantin baru, tetapi ada dua kelompok siswa yang berbeda pendapat soal lokasi. Kelompok A ingin di depan sekolah, kelompok B ingin di belakang. Proses pengambilan keputusan yang PALING sesuai dengan Sila Keempat Pancasila adalah...",
+      options: [
+        "Kepala sekolah memutuskan sendiri tanpa melibatkan siswa",
+        "Kelompok yang lebih banyak anggotanya langsung menang",
+        "Mengadakan forum musyawarah dengan perwakilan semua pihak untuk mencari solusi terbaik bersama",
+        "Mengundi secara acak tanpa pertimbangan"
+      ],
+      correctAnswer: 2,
+      materi: "Musyawarah dan kesepakatan bersama",
+      tujuanPembelajaran: "Menerapkan prinsip musyawarah mufakat sesuai Sila Keempat",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Hak warga negara Indonesia yang dijamin oleh UUD 1945 antara lain hak mendapat pendidikan. Namun di pedalaman Papua, banyak anak yang belum bisa sekolah karena keterbatasan infrastruktur. Analisis yang tepat berdasarkan nilai Pancasila adalah...",
+      options: [
+        "Hal ini wajar karena daerah pedalaman memang sulit dijangkau",
+        "Ini merupakan pelanggaran Sila Kelima; negara wajib hadir memastikan hak pendidikan merata ke seluruh wilayah NKRI",
+        "Orang tua di Papua yang bertanggung jawab, bukan negara",
+        "Anak-anak Papua tidak perlu sekolah formal karena mereka punya kearifan lokal"
+      ],
+      correctAnswer: 1,
+      materi: "Norma, hak, dan kewajiban",
+      tujuanPembelajaran: "Menganalisis pemenuhan hak warga negara",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Seseorang membuang sampah di jalan umum karena beranggapan 'itu urusan petugas kebersihan.' Norma manakah yang PALING dilanggar oleh orang tersebut?",
+      options: [
+        "Norma agama saja",
+        "Norma hukum saja",
+        "Norma kesopanan saja",
+        "Norma kesopanan dan dapat juga norma hukum (jika ada perda tentang kebersihan)"
+      ],
+      correctAnswer: 3,
+      materi: "Norma, hak, dan kewajiban",
+      tujuanPembelajaran: "Menganalisis jenis norma yang dilanggar dalam situasi nyata",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Indonesia adalah negara Bhinneka Tunggal Ika. Pernyataan yang TEPAT tentang keberagaman Indonesia sebagai kekuatan (bukan kelemahan) adalah...",
+      options: [
+        "Keberagaman selalu menjadi sumber konflik yang melemahkan bangsa",
+        "Keberagaman memperkaya khazanah budaya, sumber daya manusia, dan daya tarik pariwisata Indonesia di mata dunia",
+        "Keberagaman harus dihilangkan agar bangsa lebih bersatu",
+        "Hanya suku Jawa yang paling berperan dalam pembangunan bangsa"
+      ],
+      correctAnswer: 1,
+      materi: "Bhinneka Tunggal Ika",
+      tujuanPembelajaran: "Mengevaluasi keberagaman sebagai kekuatan bangsa",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Pemerintah daerah X mengeluarkan kebijakan yang mengutamakan warga asli daerah dalam penerimaan pegawai dan menolak warga dari provinsi lain. Evaluasi kebijakan ini berdasarkan nilai-nilai Pancasila...",
+      options: [
+        "Kebijakan ini baik karena melindungi warga asli daerah",
+        "Kebijakan ini bertentangan dengan Sila Ketiga (Persatuan) dan Sila Kelima (Keadilan) karena memecah belah persatuan dan melanggar hak warga negara",
+        "Kebijakan ini sesuai Pancasila karena mengutamakan kepentingan daerah",
+        "Kebijakan ini tidak melanggar Pancasila selama tidak merugikan orang lain"
+      ],
+      correctAnswer: 1,
+      materi: "Wilayah NKRI",
+      tujuanPembelajaran: "Mengevaluasi kebijakan berdasarkan nilai-nilai Pancasila",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Lembaga negara yang bertugas membuat undang-undang bersama presiden dan mengawasi jalannya pemerintahan adalah...",
+      options: ["Mahkamah Agung (MA)", "Dewan Perwakilan Rakyat (DPR)", "Komisi Yudisial (KY)", "Badan Pemeriksa Keuangan (BPK)"],
+      correctAnswer: 1,
+      materi: "Lembaga-lembaga negara",
+      tujuanPembelajaran: "Memahami fungsi lembaga legislatif",
+      levelKognitif: "C2",
+    },
+    {
+      question: "Pancasila lahir dari nilai-nilai asli bangsa Indonesia. Pernyataan ini mendukung pentingnya generasi muda mempelajari dan mengamalkan Pancasila karena...",
+      options: [
+        "Pancasila adalah kewajiban hukum yang jika dilanggar akan dihukum",
+        "Pancasila bukan nilai asing yang dipaksakan, melainkan cerminan jati diri bangsa yang harus dijaga kelestariannya",
+        "Mempelajari Pancasila hanya untuk keperluan ujian sekolah",
+        "Pancasila hanya berlaku untuk pejabat pemerintah"
+      ],
+      correctAnswer: 1,
+      materi: "Makna nilai-nilai Pancasila",
+      tujuanPembelajaran: "Mengevaluasi pentingnya Pancasila bagi generasi muda",
+      levelKognitif: "C5",
+    },
   ],
   is: [
     {
@@ -341,6 +462,31 @@ export const pancasilaBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Menyajikan hasil identifikasi sikap menghormati keberagaman budaya",
       levelKognitif: "C4",
     },
+    // ===== IS TINGKAT LANJUT =====
+    {
+      question: "Di kelas, ada teman yang selalu memaksakan pendapatnya dan tidak mau mendengar orang lain saat diskusi. Berdasarkan nilai Pancasila Sila Keempat, jelaskan apa yang seharusnya dilakukan teman tersebut!",
+      acceptedAnswers: ["mendengarkan", "menghargai", "musyawarah", "menerima pendapat lain"],
+      modelAnswer: "Seharusnya ia mendengarkan dan menghargai pendapat teman lain, karena Sila Keempat mengajarkan musyawarah mufakat yang menghormati hak setiap orang untuk berpendapat dan mencari solusi terbaik bersama.",
+      materi: "Musyawarah dan kesepakatan bersama",
+      tujuanPembelajaran: "Menerapkan nilai musyawarah dalam kehidupan",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Analisis: apakah sikap seseorang yang hanya mau berteman dengan satu suku saja bertentangan dengan nilai Pancasila? Jelaskan alasanmu!",
+      acceptedAnswers: ["bertentangan", "melanggar", "tidak sesuai", "sila ketiga", "persatuan"],
+      modelAnswer: "Ya, bertentangan dengan Sila Ketiga (Persatuan Indonesia) dan Sila Kedua (Kemanusiaan yang Adil dan Beradab). Pancasila mengajarkan persatuan dalam keberagaman; kita harus menghargai semua orang tanpa membedakan suku, agama, atau ras.",
+      materi: "Bhinneka Tunggal Ika",
+      tujuanPembelajaran: "Menganalisis perilaku yang bertentangan dengan nilai Pancasila",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Sebutkan satu contoh KEWAJIBAN warga negara terhadap lingkungan yang jika dilanggar dapat menimbulkan dampak bagi orang banyak!",
+      acceptedAnswers: ["tidak membuang sampah", "menjaga kebersihan", "tidak merusak lingkungan", "merawat fasilitas umum"],
+      modelAnswer: "Tidak membuang sampah sembarangan. Jika dilanggar, dapat menyebabkan banjir yang merugikan banyak warga (dampak: kerusakan harta benda, penyakit, dan terganggunya aktivitas warga).",
+      materi: "Norma, hak, dan kewajiban",
+      tujuanPembelajaran: "Menganalisis kewajiban warga negara dan dampaknya",
+      levelKognitif: "C4",
+    },
   ],
   ut: [
     {
@@ -383,12 +529,29 @@ export const pancasilaBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Menunjukkan perilaku gotong royong untuk menjaga persatuan",
       levelKognitif: "C4",
     },
+    // ===== UT TINGKAT LANJUT =====
+    {
+      question: "Di daerahmu terdapat tiga kelompok warga yang berbeda suku: Jawa, Batak, dan Betawi. Mereka hidup berdampingan dengan damai. Analisis bagaimana nilai-nilai Pancasila (sebutkan minimal 3 sila) dapat menjadi landasan kerukunan mereka!",
+      modelAnswer: "Landasan kerukunan berdasarkan Pancasila:\n1. Sila Pertama: Warga menghormati perbedaan agama dan kepercayaan masing-masing kelompok\n2. Sila Kedua: Setiap warga diperlakukan secara manusiawi dan adil tanpa memandang asal suku\n3. Sila Ketiga: Perbedaan suku tidak menjadi penghalang untuk bersatu demi kepentingan bersama\n4. Sila Keempat: Setiap keputusan bersama diambil melalui musyawarah, bukan dominasi satu suku\n5. Sila Kelima: Manfaat pembangunan lingkungan dinikmati secara adil oleh semua kelompok\nDengan menghayati kelima sila, keberagaman justru menjadi kekuatan bukan sumber perpecahan.",
+      keyPoints: ["Minimal 3 sila dikaitkan", "Penjelasan konkret per sila", "Kesimpulan keberagaman sebagai kekuatan"],
+      materi: "Hubungan sila-sila Pancasila",
+      tujuanPembelajaran: "Menganalisis keterkaitan nilai Pancasila dalam kehidupan nyata",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Seorang siswa berargumen: 'Kita tidak perlu mempelajari Pancasila karena itu hanya teori dan tidak ada gunanya dalam kehidupan sehari-hari.' Buatlah sanggahan yang kuat terhadap argumen tersebut dengan memberikan minimal 3 contoh nyata manfaat Pancasila dalam kehidupan!",
+      modelAnswer: "Sanggahan: Pancasila sangat relevan dalam kehidupan sehari-hari. Contoh nyata:\n1. Sila Kedua: Ketika kita membantu teman yang kesulitan tanpa pamrih, kita sedang mengamalkan kemanusiaan yang adil dan beradab\n2. Sila Keempat: Ketika kelas berdiskusi memilih tema pentas seni dan semua pendapat didengar, itulah musyawarah Pancasila dalam praktik\n3. Sila Kelima: Ketika sekolah memberikan beasiswa kepada siswa kurang mampu agar semua mendapat kesempatan yang sama, itulah keadilan sosial\n4. Sila Ketiga: Ketika kita bergaul dengan teman dari berbagai daerah tanpa diskriminasi, kita menjaga persatuan Indonesia\nPancasila bukan sekadar teori; ia adalah panduan hidup yang tercermin dalam tindakan sehari-hari.",
+      keyPoints: ["Sanggahan disertai argumen logis", "Minimal 3 contoh nyata disebutkan", "Mengkaitkan contoh dengan sila yang relevan"],
+      materi: "Makna nilai-nilai Pancasila",
+      tujuanPembelajaran: "Mengevaluasi relevansi Pancasila dalam kehidupan sehari-hari",
+      levelKognitif: "C5",
+    },
   ],
   sessions: [
     { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
     { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], is: [1,2,3,4,5,6,7,8,9,10], ut: [1,2,3,4,0] },
-    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,0,1] },
-    { pg: [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4,5,6,7,8,9], is: [3,4,5,6,7,8,9,10,11,0], ut: [3,4,0,1,2] },
-    { pg: [20,21,22,23,24,25,26,27,28,29,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], is: [4,5,6,7,8,9,10,11,0,1], ut: [4,0,1,2,3] },
+    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,31,32,33,34,35,36,37,38,39], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,6] },
+    { pg: [10,11,12,13,14,15,20,21,22,23,24,25,26,27,28,29,30,32,34,36,38,39,1,3,5], is: [3,4,5,6,7,8,9,10,11,12], ut: [3,4,5,6,0] },
+    { pg: [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,0,1,2,3,4], is: [5,6,7,8,9,10,11,12,13,14], ut: [4,5,6,0,1] },
   ],
 };

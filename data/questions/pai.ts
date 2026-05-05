@@ -251,6 +251,127 @@ export const paiBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Memahami takdir mubram dan takdir mu'allaq",
       levelKognitif: "C2",
     },
+    // ===== SOAL PG TINGKAT LANJUT (C4-C5) =====
+    {
+      question: "Perhatikan dua peristiwa berikut:\n(1) Rafi lahir dengan kondisi buta sejak lahir\n(2) Dina berhasil meraih juara kelas karena tekun belajar\n\nBerdasarkan konsep takdir, analisis yang TEPAT adalah...",
+      options: [
+        "Keduanya merupakan takdir mubram karena sudah ditentukan Allah",
+        "Peristiwa (1) takdir mubram; peristiwa (2) takdir mu'allaq karena dipengaruhi ikhtiar",
+        "Keduanya adalah takdir mu'allaq karena bisa diubah",
+        "Peristiwa (1) takdir mu'allaq; peristiwa (2) takdir mubram"
+      ],
+      correctAnswer: 1,
+      materi: "Takdir mubram dan takdir mu'allaq",
+      tujuanPembelajaran: "Membedakan takdir mubram dan mu'allaq dalam contoh nyata",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Asmaul Husna 'As-Samad' berarti Allah adalah tempat bergantung segala sesuatu. Penerapan keyakinan As-Samad dalam kehidupan sehari-hari yang PALING TEPAT adalah...",
+      options: [
+        "Hanya berdoa tanpa usaha karena semua bergantung pada Allah",
+        "Berusaha maksimal lalu bertawakal kepada Allah karena Dia-lah sumber segalanya",
+        "Bergantung kepada manusia lain yang lebih kuat dan kaya",
+        "Tidak perlu berdoa karena Allah sudah tahu kebutuhan kita"
+      ],
+      correctAnswer: 1,
+      materi: "Asmau al-husna: Al-Malik, Al-Aziz, Al-Qayyum, As-Samad",
+      tujuanPembelajaran: "Menerapkan keyakinan terhadap asmaul husna dalam kehidupan",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Q.S. al-Hujurat/49:13 mengajarkan bahwa manusia diciptakan bersuku-suku dan berbangsa-bangsa agar saling mengenal. Evaluasi pernyataan berikut: 'Karena berbeda agama, kita tidak perlu berteman dengan orang non-Muslim.' Kesimpulan yang TEPAT berdasarkan ayat tersebut adalah...",
+      options: [
+        "Pernyataan tersebut benar karena agama Islam mengajarkan eksklusivitas",
+        "Pernyataan tersebut salah; Islam mengajarkan ukhuwah basyariyah – persaudaraan sesama manusia tanpa batas agama dalam pergaulan sosial",
+        "Pernyataan tersebut benar karena berteman dengan non-Muslim dapat merusak akidah",
+        "Pernyataan tersebut benar karena itulah yang diperintahkan Q.S. al-Hujurat"
+      ],
+      correctAnswer: 1,
+      materi: "Q.S. al-Hujurat/49:13",
+      tujuanPembelajaran: "Mengevaluasi penerapan Q.S. al-Hujurat/49:13 dalam kehidupan",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Seorang Muslim mendapat tawaran pekerjaan dengan gaji tinggi, namun produk yang dijual mengandung unsur haram. Berdasarkan dasar hukum halal-haram dalam Islam, keputusan yang BENAR adalah...",
+      options: [
+        "Menerima pekerjaan karena gaji tinggi dan keluarga butuh makan",
+        "Menolak pekerjaan karena rezeki yang halal lebih berkah meski sedikit",
+        "Menerima dulu, nanti bisa berhenti jika sudah punya tabungan",
+        "Bertanya ke teman dulu sebelum memutuskan"
+      ],
+      correctAnswer: 1,
+      materi: "Dasar hukum penentuan halal dan haram",
+      tujuanPembelajaran: "Menganalisis penerapan hukum halal-haram dalam kehidupan",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Nabi Muhammad SAW berhijrah ke Madinah dan membangun masyarakat Islam yang kuat. Bandingkan kondisi Islam di Makkah SEBELUM hijrah dengan kondisi di Madinah SETELAH hijrah. Kesimpulan yang PALING TEPAT adalah...",
+      options: [
+        "Kondisi Islam di Makkah lebih kuat karena merupakan kota suci",
+        "Kondisi Islam di Makkah: tertindas dan dibatasi; di Madinah: bebas berkembang, punya negara, dan pusat peradaban",
+        "Tidak ada perbedaan antara kondisi Islam di Makkah dan Madinah",
+        "Di Makkah Islam lebih maju karena ada Ka'bah"
+      ],
+      correctAnswer: 1,
+      materi: "Kisah hijrah nabi Muhammad saw. di Madinah",
+      tujuanPembelajaran: "Menganalisis perbandingan kondisi Islam sebelum dan sesudah hijrah",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Khalifah Abu Bakar menggunakan seluruh hartanya untuk berdakwah bersama Rasulullah. Ketika menjadi khalifah, ia menolak kenaikan gaji meski disarankan para sahabat. Keteladanan Abu Bakar yang PALING RELEVAN untuk diterapkan pelajar saat ini adalah...",
+      options: [
+        "Menghabiskan semua uang jajan untuk sedekah",
+        "Mendahulukan kepentingan bersama di atas kepentingan pribadi dan bersikap zuhud (tidak rakus harta)",
+        "Menolak semua pemberian dari orang tua",
+        "Tidak perlu belajar keras karena Abu Bakar pun tidak banyak bersekolah"
+      ],
+      correctAnswer: 1,
+      materi: "Kisah keteladanan Khalifah Abu Bakar Shiddiq r.a.",
+      tujuanPembelajaran: "Menerapkan keteladanan sahabat Nabi dalam kehidupan sehari-hari",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Perhatikan pernyataan: 'Seseorang yang berpuasa sunnah Senin-Kamis tetapi masih sering menyakiti hati orang lain dengan kata-kata kasar.' Evaluasi ibadah orang tersebut berdasarkan tujuan puasa dalam Islam...",
+      options: [
+        "Puasanya tetap sah dan sempurna karena syarat puasa hanya menahan makan dan minum",
+        "Puasanya kurang bermakna karena tujuan puasa adalah melatih pengendalian diri dan akhlak mulia, bukan sekadar menahan lapar",
+        "Puasanya tidak sah karena orang tersebut berbuat dosa",
+        "Puasanya sempurna karena ia sudah menjalankan sunnah Nabi"
+      ],
+      correctAnswer: 1,
+      materi: "Hikmah puasa sunnah",
+      tujuanPembelajaran: "Mengevaluasi kualitas ibadah puasa berdasarkan tujuannya",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Dalam ilmu tajwid, apabila nun sukun atau tanwin bertemu dengan huruf waw (و), maka hukum bacaannya adalah...",
+      options: ["Idzhar halqi", "Ikhfa haqiqi", "Idgham bighunnah", "Iqlab"],
+      correctAnswer: 2,
+      materi: "Ilmu tajwid",
+      tujuanPembelajaran: "Menerapkan hukum bacaan nun sukun dan tanwin",
+      levelKognitif: "C3",
+    },
+    {
+      question: "Q.S. al-Insyirah ayat 5-6 menyebutkan 'sesungguhnya bersama kesulitan ada kemudahan' (diulang dua kali). Pelajaran terdalam yang dapat diambil dari pengulangan ini adalah...",
+      options: [
+        "Bahwa setiap orang pasti akan kaya jika bersabar",
+        "Allah menegaskan bahwa setiap satu kesulitan disertai minimal dua kemudahan, sehingga kita tidak boleh berputus asa",
+        "Bahwa kemudahan hanya datang bagi orang-orang tertentu",
+        "Bahwa kita boleh pasif menunggu kemudahan tanpa usaha"
+      ],
+      correctAnswer: 1,
+      materi: "Q.S. al-Insyirah",
+      tujuanPembelajaran: "Menganalisis kandungan Q.S. al-Insyirah secara mendalam",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Saat melaksanakan haji, jamaah wajib menghindari larangan ihram. Salah satu larangan ihram bagi laki-laki adalah...",
+      options: ["Tidak boleh membunuh binatang buruan", "Memakai baju yang dijahit", "Menebang pohon di sekitar Makkah", "Semua jawaban A dan B benar"],
+      correctAnswer: 3,
+      materi: "Manasik haji",
+      tujuanPembelajaran: "Memahami larangan-larangan dalam ihram haji",
+      levelKognitif: "C3",
+    },
   ],
   is: [
     {
@@ -349,6 +470,31 @@ export const paiBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Memahami tanda-tanda hari akhir",
       levelKognitif: "C2",
     },
+    // ===== IS TINGKAT LANJUT =====
+    {
+      question: "Seorang teman mengajak kamu untuk berbohong kepada guru demi menghindari hukuman. Jelaskan satu sifat wajib Rasul yang harus kamu pegang dan mengapa!",
+      acceptedAnswers: ["sidiq", "jujur", "amanah", "tidak boleh berbohong"],
+      modelAnswer: "Sidiq (jujur). Seorang mukmin harus berpegang pada sifat sidiq seperti Rasulullah karena kejujuran adalah dasar akhlak mulia dan berbohong termasuk perbuatan tercela yang dilarang Islam.",
+      materi: "Sifat wajib bagi rasul",
+      tujuanPembelajaran: "Menerapkan sifat wajib Rasul dalam situasi nyata",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Beriman kepada hari akhir seharusnya membuat seseorang lebih berhati-hati dalam bertindak. Tuliskan satu perubahan nyata yang harus dilakukan seseorang dalam kehidupan sehari-hari sebagai bukti imannya kepada hari akhir!",
+      acceptedAnswers: ["berbuat baik", "menghindari dosa", "menjaga lisan", "amal saleh", "tidak menzalimi"],
+      modelAnswer: "Contoh: menjaga lisan dari berkata kasar dan bohong karena semua ucapan akan dihisab di hari akhir; atau rajin beramal saleh karena akan dipertanggungjawabkan di hadapan Allah.",
+      materi: "Hikmah beriman kepada hari akhir",
+      tujuanPembelajaran: "Menerapkan hikmah iman kepada hari akhir",
+      levelKognitif: "C4",
+    },
+    {
+      question: "Apa perbedaan antara TOLERANSI SOSIAL yang boleh dilakukan Muslim dan TOLERANSI IBADAH yang tidak boleh dilakukan? Berikan contoh masing-masing!",
+      acceptedAnswers: ["toleransi sosial boleh", "berbeda dalam ibadah", "tidak ikut ibadah", "bergaul boleh"],
+      modelAnswer: "Toleransi sosial boleh: bergaul, bekerja sama, dan saling menghormati dengan pemeluk agama lain. Toleransi ibadah tidak boleh: ikut-ikutan beribadah agama lain atau mencampurkan cara ibadah (sinkretisme). Contoh: boleh menghadiri undangan pesta non-Muslim tetapi tidak boleh ikut ritual ibadahnya.",
+      materi: "Sikap saling menghormati dan menghargai pemeluk agama yang berbeda",
+      tujuanPembelajaran: "Menganalisis batasan toleransi dalam Islam",
+      levelKognitif: "C4",
+    },
   ],
   ut: [
     {
@@ -399,12 +545,29 @@ export const paiBank: SubjectQuestionBank = {
       tujuanPembelajaran: "Memahami Q.S. al-Kafirun",
       levelKognitif: "C1",
     },
+    // ===== UT TINGKAT LANJUT =====
+    {
+      question: "Rafi adalah seorang siswa kelas 6 yang rajin beribadah, namun ia sering mengejek teman yang kurang mampu. Berdasarkan pemahamanmu tentang akhlak Islam, evaluasi perilaku Rafi dan jelaskan bagaimana seharusnya ia bersikap!",
+      modelAnswer: "Evaluasi: Perilaku Rafi tidak mencerminkan akhlak Islam yang sesungguhnya. Ibadah yang baik harus tercermin dalam akhlak mulia kepada sesama manusia. Islam mengajarkan bahwa iman yang sempurna tidak hanya ditunjukkan lewat ibadah ritual, tetapi juga melalui perlakuan baik kepada sesama.\n\nSeharusnya: Rafi harus menghormati dan menghargai semua teman tanpa memandang status ekonomi, karena dalam Islam semua manusia setara di hadapan Allah. Yang membedakan adalah ketakwaan, bukan kekayaan (Q.S. al-Hujurat:13).",
+      keyPoints: ["Menilai ibadah saja tidak cukup tanpa akhlak baik", "Mengkaitkan dengan Q.S. al-Hujurat tentang kesetaraan manusia", "Menyebutkan sikap yang seharusnya dilakukan"],
+      materi: "Akhlak terhadap sesama manusia",
+      tujuanPembelajaran: "Mengevaluasi perilaku berdasarkan nilai-nilai akhlak Islam",
+      levelKognitif: "C5",
+    },
+    {
+      question: "Bandingkan jasa dan keteladanan Khalifah Abu Bakar Shiddiq dengan Khalifah Umar bin Khattab! Sebutkan minimal 2 jasa dan 1 keteladanan dari masing-masing khalifah!",
+      modelAnswer: "Abu Bakar Shiddiq r.a.:\nJasa: (1) Memerangi kaum murtad dan nabi palsu agar Islam tetap utuh; (2) Menginisiasi pengumpulan (pembukuan) Al-Qur'an setelah banyak penghafal wafat di Perang Yamamah\nKeteladanan: Dermawan – menginfakkan seluruh hartanya di jalan Allah; setia dan percaya penuh kepada Rasulullah\n\nUmar bin Khattab r.a.:\nJasa: (1) Memperluas wilayah Islam ke Persia dan Romawi; (2) Membentuk sistem administrasi negara Islam (baitul mal, kalender Hijriah)\nKeteladanan: Hidup sederhana meski memimpin kekhalifahan besar; adil tanpa memandang status sosial",
+      keyPoints: ["2 jasa Abu Bakar disebutkan", "1 keteladanan Abu Bakar", "2 jasa Umar disebutkan", "1 keteladanan Umar"],
+      materi: "Kisah keteladanan Khalifah Abu Bakar dan Umar r.a.",
+      tujuanPembelajaran: "Membandingkan keteladanan para khalifah",
+      levelKognitif: "C4",
+    },
   ],
   sessions: [
     { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
     { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], is: [1,2,3,4,5,6,7,8,9,10], ut: [1,2,3,4,5] },
-    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,0] },
-    { pg: [15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4,5,6,7,8,9], is: [3,4,5,6,7,8,9,10,11,0], ut: [3,4,5,0,1] },
-    { pg: [20,21,22,23,24,25,26,27,28,29,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14], is: [4,5,6,7,8,9,10,11,0,1], ut: [4,5,0,1,2] },
+    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,31,32,33,34,35,36,37,38,39], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,6] },
+    { pg: [10,11,12,13,14,15,20,21,22,23,24,25,26,27,28,29,30,32,34,36,37,38,39,1,3], is: [3,4,5,6,7,8,9,10,11,12], ut: [3,4,5,6,7] },
+    { pg: [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,0,1,2,3,4], is: [5,6,7,8,9,10,11,12,13,14], ut: [5,6,7,0,1] },
   ],
 };

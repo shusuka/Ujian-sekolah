@@ -231,6 +231,188 @@ const pg: PGQuestion[] = [
     correctAnswer: 3,
     materi: "Menulis Paragraf", tujuanPembelajaran: "Memahami ciri-ciri paragraf yang baik", levelKognitif: "C2"
   },
+
+  // ===== SOAL TINGKAT LANJUT (C3-C5) =====
+  {
+    id: "bind-pg-31", type: "PG", number: 31,
+    question: "Bacalah kutipan cerpen berikut.\n\n'Tidak ada yang terasa berbeda hari itu. Rania berjalan ke sekolah sendirian melewati taman yang sunyi dan jalan yang mulai ramai. Namun di lubuk hatinya, ia tahu bahwa hari ini akan mengubah segalanya.'\n\nUnsur latar (setting) yang terdapat dalam kutipan cerpen tersebut adalah ...",
+    options: [
+      "Rania — tokoh utama yang berjalan sendirian",
+      "Taman yang sunyi dan jalan yang mulai ramai — tempat",
+      "Perasaan Rania yang cemas akan perubahan — konflik batin",
+      "Tidak ada yang terasa berbeda — tema cerita"
+    ],
+    correctAnswer: 1,
+    materi: "Cerpen – Unsur Intrinsik (Latar)", tujuanPembelajaran: "Mengidentifikasi unsur latar dalam cerpen", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-32", type: "PG", number: 32,
+    question: "Cerpen yang menggunakan kata ganti 'aku' sebagai tokoh utama yang menceritakan pengalamannya sendiri menggunakan sudut pandang ...",
+    options: [
+      "Orang ketiga serba tahu",
+      "Orang ketiga terbatas",
+      "Orang pertama pelaku utama",
+      "Orang kedua"
+    ],
+    correctAnswer: 2,
+    materi: "Cerpen – Sudut Pandang", tujuanPembelajaran: "Mengidentifikasi sudut pandang dalam cerpen", levelKognitif: "C2"
+  },
+  {
+    id: "bind-pg-33", type: "PG", number: 33,
+    question: "Bagian surat resmi yang memuat tujuan atau topik penulisan surat secara singkat sebelum isi surat dimulai disebut ...",
+    options: [
+      "Kepala surat (kop surat)",
+      "Perihal",
+      "Salam pembuka",
+      "Lampiran"
+    ],
+    correctAnswer: 1,
+    materi: "Surat Resmi", tujuanPembelajaran: "Mengidentifikasi bagian-bagian surat resmi", levelKognitif: "C2"
+  },
+  {
+    id: "bind-pg-34", type: "PG", number: 34,
+    question: "Kalimat 'Ayah membaca koran ketika ibu memasak di dapur' termasuk kalimat majemuk ...",
+    options: [
+      "Setara (koordinatif) dengan konjungsi 'dan'",
+      "Bertingkat (subordinatif) dengan klausa waktu",
+      "Rapatan (elliptical)",
+      "Setara berlawanan dengan konjungsi 'tetapi'"
+    ],
+    correctAnswer: 1,
+    materi: "Kalimat Majemuk", tujuanPembelajaran: "Mengidentifikasi jenis kalimat majemuk", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-35", type: "PG", number: 35,
+    question: "Pilihan kata yang BAKU sesuai Kamus Besar Bahasa Indonesia (KBBI) terdapat pada kalimat ...",
+    options: [
+      "Ia menggunakan jadual yang sangat padat minggu ini",
+      "Analisa data tersebut perlu segera diperbaiki",
+      "Kita harus aktif dan kreatif dalam proses belajar",
+      "Apotik itu terletak tepat di sebelah halte bis kota"
+    ],
+    correctAnswer: 2,
+    materi: "Kata Baku", tujuanPembelajaran: "Menggunakan kata baku sesuai KBBI", levelKognitif: "C2"
+  },
+  {
+    id: "bind-pg-36", type: "PG", number: 36,
+    question: "Teks laporan hasil observasi berbeda dari teks deskripsi. Ciri khas teks laporan hasil observasi adalah ...",
+    options: [
+      "Mendeskripsikan objek secara detail dengan sudut pandang emosional",
+      "Bersifat subjektif berdasarkan pengalaman dan perasaan penulis",
+      "Bersifat ilmiah dan objektif, menggolongkan objek secara sistematis berdasarkan fakta",
+      "Berisi alur cerita yang menggambarkan pengalaman pribadi penulis"
+    ],
+    correctAnswer: 2,
+    materi: "Teks Laporan Hasil Observasi", tujuanPembelajaran: "Membedakan teks laporan observasi dan teks deskripsi", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-37", type: "PG", number: 37,
+    question: "Judul berita: 'Pelajar SD di Bandung Juarai Kompetisi Sains Nasional di Jakarta pada Kamis Kemarin'\n\nUnsur WHERE (Di mana) dalam judul berita tersebut adalah ...",
+    options: [
+      "Pelajar SD — pelaku berita",
+      "Kompetisi sains nasional — peristiwa",
+      "Jakarta — tempat berlangsungnya kompetisi",
+      "Kamis kemarin — waktu kejadian"
+    ],
+    correctAnswer: 2,
+    materi: "Teks Berita – Unsur 5W1H", tujuanPembelajaran: "Mengidentifikasi unsur berita 5W1H", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-38", type: "PG", number: 38,
+    question: "Konfiks 'per-an' pada kata 'pertemuan', 'pertanian', dan 'perjuangan' umumnya menyatakan makna ...",
+    options: [
+      "Pelaku yang melakukan perbuatan tersebut",
+      "Tempat, proses, atau hasil dari suatu perbuatan",
+      "Alat yang digunakan untuk melakukan perbuatan",
+      "Cara atau metode melakukan perbuatan"
+    ],
+    correctAnswer: 1,
+    materi: "Morfologi – Konfiks", tujuanPembelajaran: "Menjelaskan makna konfiks per-an", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-39", type: "PG", number: 39,
+    question: "Perhatikan teks berikut:\n'Penggunaan plastik sekali pakai mengancam ekosistem laut. Jutaan hewan laut mati tiap tahun karena menelan plastik. Sudah saatnya kita beralih ke produk ramah lingkungan. Jadilah bagian dari solusi, bukan masalah!'\n\nBagian yang merupakan AJAKAN/IMBAUAN dalam teks persuasi di atas adalah ...",
+    options: [
+      "Kalimat 1 — fakta tentang plastik",
+      "Kalimat 2 — data korban hewan laut",
+      "Kalimat 3 dan 4 — ajakan beralih dan menjadi bagian solusi",
+      "Kalimat 2 dan 3 — kombinasi fakta dan ajakan"
+    ],
+    correctAnswer: 2,
+    materi: "Teks Persuasi – Struktur", tujuanPembelajaran: "Mengidentifikasi bagian ajakan dalam teks persuasi", levelKognitif: "C4"
+  },
+  {
+    id: "bind-pg-40", type: "PG", number: 40,
+    question: "Bacalah teks ini: 'Kota X adalah kota terbersih di Indonesia berdasarkan survei Komunitas Peduli Lingkungan tahun 2023, yang melibatkan 500 warga dari 10 kota.'\n\nPernyataan yang PALING TEPAT dalam menilai keandalan informasi ini adalah ...",
+    options: [
+      "Informasi dapat dipercaya sepenuhnya karena ada data survei",
+      "Informasi perlu dikritisi karena hanya berdasarkan satu sumber dengan sampel terbatas",
+      "Informasi pasti benar karena ditulis dengan angka yang spesifik",
+      "Informasi tidak valid karena tidak disertai foto bukti"
+    ],
+    correctAnswer: 1,
+    materi: "Membaca Kritis", tujuanPembelajaran: "Menilai kredibilitas informasi dalam teks", levelKognitif: "C5"
+  },
+  {
+    id: "bind-pg-41", type: "PG", number: 41,
+    question: "Pertanyaan wawancara yang PALING EFEKTIF untuk menggali informasi mendalam dari narasumber adalah ...",
+    options: [
+      "'Kamu setuju, kan, bahwa kegiatan ini berhasil?' — menggiring jawaban",
+      "'Apakah kamu suka kegiatan ini?' — hanya dijawab ya/tidak",
+      "'Bagaimana dampak kegiatan ini terhadap lingkungan menurut Anda?' — open-ended",
+      "'Apa dan bagaimana dan mengapa kegiatan ini dibuat?' — terlalu banyak dalam satu pertanyaan"
+    ],
+    correctAnswer: 2,
+    materi: "Teks Wawancara", tujuanPembelajaran: "Menyusun pertanyaan wawancara yang efektif", levelKognitif: "C3"
+  },
+  {
+    id: "bind-pg-42", type: "PG", number: 42,
+    question: "Perhatikan ciri-ciri karya sastra lama berikut:\n(1) Setiap bait terdiri dari 2 baris\n(2) Baris pertama menyatakan syarat/sebab, baris kedua menyatakan akibat/nasihat\n(3) Rima a-a (kedua baris berakhiran sama)\n\nJenis karya sastra yang memiliki ciri-ciri di atas adalah ...",
+    options: [
+      "Pantun",
+      "Syair",
+      "Gurindam",
+      "Seloka"
+    ],
+    correctAnswer: 2,
+    materi: "Karya Sastra Lama – Gurindam", tujuanPembelajaran: "Membedakan pantun, syair, dan gurindam", levelKognitif: "C2"
+  },
+  {
+    id: "bind-pg-43", type: "PG", number: 43,
+    question: "Perhatikan kutipan cerpen:\n'Saat pengumuman juara dibacakan, Arif tidak mendengar namanya disebut. Ia menunduk dan berusaha menahan air mata. Padahal ia sudah berlatih berbulan-bulan untuk lomba ini.'\n\nJenis konflik yang dialami tokoh Arif adalah konflik ...",
+    options: [
+      "Eksternal — antara Arif dan juri perlombaan",
+      "Internal — Arif berjuang menahan kekecewaan dalam dirinya sendiri",
+      "Eksternal — antara Arif dan peserta lain yang menang",
+      "Tidak ada konflik karena Arif hanya diam"
+    ],
+    correctAnswer: 1,
+    materi: "Cerpen – Konflik", tujuanPembelajaran: "Mengidentifikasi jenis konflik dalam cerpen", levelKognitif: "C4"
+  },
+  {
+    id: "bind-pg-44", type: "PG", number: 44,
+    question: "Teks yang berisi penjelasan tentang proses terjadinya suatu fenomena alam atau sosial (seperti: mengapa terjadi gempa bumi, bagaimana terbentuknya pelangi) secara ilmiah disebut teks ...",
+    options: [
+      "Prosedur",
+      "Eksplanasi",
+      "Persuasi",
+      "Narasi"
+    ],
+    correctAnswer: 1,
+    materi: "Teks Eksplanasi", tujuanPembelajaran: "Mengidentifikasi jenis teks eksplanasi", levelKognitif: "C1"
+  },
+  {
+    id: "bind-pg-45", type: "PG", number: 45,
+    question: "Perhatikan dua kalimat ini:\nA: 'Anak itu berlari meninggalkan sekolah.'\nB: 'Seperti kilat, si bocah melesat meninggalkan gedung sekolah yang sudah membosankannya.'\n\nPerbedaan efek kedua kalimat pada pembaca adalah ...",
+    options: [
+      "Kalimat A lebih efektif karena lebih singkat dan langsung",
+      "Kalimat B lebih hidup dan emosional karena menggunakan majas perbandingan dan deskripsi yang detail",
+      "Kalimat A lebih baik karena menggunakan bahasa yang baku",
+      "Keduanya memiliki efek yang sama karena menyampaikan informasi yang identik"
+    ],
+    correctAnswer: 1,
+    materi: "Gaya Bahasa – Analisis Efek", tujuanPembelajaran: "Menganalisis efek penggunaan gaya bahasa terhadap pembaca", levelKognitif: "C5"
+  },
 ];
 
 const is: ISQuestion[] = [
@@ -318,6 +500,48 @@ const is: ISQuestion[] = [
     modelAnswer: "Cantik/Elok/Molek/Bagus",
     materi: "Kosakata", tujuanPembelajaran: "Menentukan sinonim kata", levelKognitif: "C1"
   },
+  {
+    id: "bind-is-13", type: "IS", number: 38,
+    question: "Teks yang bertujuan menjelaskan proses terjadinya suatu peristiwa alam atau sosial, seperti proses terjadinya gempa bumi atau terbentuknya pelangi, secara ilmiah disebut teks ...",
+    acceptedAnswers: ["eksplanasi", "teks eksplanasi"],
+    modelAnswer: "Teks eksplanasi",
+    materi: "Jenis Teks", tujuanPembelajaran: "Menyebutkan nama teks berdasarkan tujuannya", levelKognitif: "C1"
+  },
+  {
+    id: "bind-is-14", type: "IS", number: 39,
+    question: "Kalimat 'Hatiku hancur berkeping-keping mendengar kabar sedih itu' menggunakan majas ...",
+    acceptedAnswers: ["hiperbola"],
+    modelAnswer: "Hiperbola (ungkapan berlebih-lebihan untuk menekankan perasaan)",
+    materi: "Majas", tujuanPembelajaran: "Mengidentifikasi majas hiperbola dalam kalimat", levelKognitif: "C2"
+  },
+  {
+    id: "bind-is-15", type: "IS", number: 40,
+    question: "Kata 'jadwal', 'apotek', dan 'izin' merupakan contoh penulisan kata yang ...",
+    acceptedAnswers: ["baku", "kata baku"],
+    modelAnswer: "Kata baku (sesuai KBBI) — bukan jadual, apotik, atau ijin",
+    materi: "Kata Baku", tujuanPembelajaran: "Membedakan kata baku dan tidak baku", levelKognitif: "C2"
+  },
+  {
+    id: "bind-is-16", type: "IS", number: 41,
+    question: "Identifikasi jenis kalimat: 'Ibu memasak nasi sementara ayah membersihkan halaman rumah.' Kalimat tersebut adalah kalimat majemuk ...",
+    acceptedAnswers: ["setara", "koordinatif", "majemuk setara"],
+    modelAnswer: "Kalimat majemuk setara — dua kejadian setara yang terjadi bersamaan",
+    materi: "Kalimat Majemuk", tujuanPembelajaran: "Mengidentifikasi jenis kalimat majemuk", levelKognitif: "C3"
+  },
+  {
+    id: "bind-is-17", type: "IS", number: 42,
+    question: "Dalam alur cerpen, bagian cerita yang menuju titik puncak ketegangan/masalah sebelum mulai diselesaikan disebut bagian ...",
+    acceptedAnswers: ["klimaks", "puncak konflik", "puncak"],
+    modelAnswer: "Klimaks (puncak konflik)",
+    materi: "Alur Cerpen", tujuanPembelajaran: "Menyebutkan tahapan alur dalam cerpen", levelKognitif: "C1"
+  },
+  {
+    id: "bind-is-18", type: "IS", number: 43,
+    question: "Penulis cerpen yang menggunakan sudut pandang 'dia' (orang ketiga) dan mengetahui pikiran, perasaan, serta tindakan SEMUA tokoh secara lengkap menggunakan sudut pandang ...",
+    acceptedAnswers: ["orang ketiga serba tahu", "serba tahu", "omniscient", "orang ketiga"],
+    modelAnswer: "Sudut pandang orang ketiga serba tahu (omniscient narrator)",
+    materi: "Cerpen – Sudut Pandang", tujuanPembelajaran: "Mengidentifikasi sudut pandang serba tahu", levelKognitif: "C2"
+  },
 ];
 
 const ut: UTQuestion[] = [
@@ -358,10 +582,34 @@ const ut: UTQuestion[] = [
   },
   {
     id: "bind-ut-6", type: "UT", number: 43,
-    question: "Tulislah sebuah teks persuasi (mengajak) dengan tema 'Menjaga Kebersihan Lingkungan Sekolah' dalam 2-3 paragraf! Gunakan kata-kata ajakan yang tepat!",
+    question: "Tulislah sebuah teks persuasi (mengajak) dengan tema 'Menjaga Kebersihan Lingkungan Sekolah' dalam 2-3 paragraf! Gunakan kata-kata ajakan yang tepat, disertai minimal 2 argumen pendukung dan 1 ajakan/imbauan yang jelas!",
     modelAnswer: "Menjaga Kebersihan Lingkungan Sekolah\n\nSekolah adalah rumah kedua bagi kita semua. Di sinilah kita belajar, bermain, dan menghabiskan sebagian besar waktu kita. Oleh karena itu, marilah kita jaga kebersihan sekolah kita bersama-sama!\n\nAyolah kita mulai dari hal-hal kecil yang mudah dilakukan. Buanglah sampah pada tempatnya, jangan mencoret-coret dinding atau meja, dan bersihkan kelas kita setiap hari. Kita juga dapat membuat jadwal piket yang teratur agar semua murid bergiliran membersihkan kelas.\n\nSekolah yang bersih akan membuat kita nyaman belajar dan terhindar dari penyakit. Ingat, kebersihan adalah tanggung jawab kita bersama. Ayo jadikan sekolah kita tempat yang bersih, sehat, dan menyenangkan!",
     keyPoints: ["Teks berisi ajakan (persuasi)", "Menggunakan kata ajakan (marilah, ayolah, ayo, dsb)", "Tema kebersihan lingkungan sekolah terpenuhi", "2-3 paragraf ditulis", "Alasan/argumen mendukung ajakan ada"],
     materi: "Teks Persuasi", tujuanPembelajaran: "Menulis teks persuasi dengan bahasa yang tepat", levelKognitif: "C5"
+  },
+  {
+    id: "bind-ut-7", type: "UT", number: 44,
+    question: "Bacalah kutipan cerpen berikut!\n\n'Zahra menatap layar ponsel yang menampilkan nilai ujiannya — 45. Ia menghela napas panjang. Berbulan-bulan ia belajar diam-diam agar bisa membuktikan dirinya kepada teman-teman yang selalu meremehkannya. Namun hasilnya jauh dari harapan. Ia tidak menangis. Ia hanya berpikir: kalau gagal sekali, berarti ia harus mencoba seratus kali.'\n\nJawab pertanyaan berikut:\n1. Siapa tokoh utama dan bagaimana wataknya? Berikan buktinya dari teks!\n2. Apa konflik yang dialami tokoh? (internal/eksternal)\n3. Apa tema cerita berdasarkan kutipan?\n4. Sudut pandang apa yang digunakan penulis?",
+    modelAnswer: "1. Tokoh utama: Zahra. Watak: pantang menyerah/gigih — dibuktikan oleh kalimat 'kalau gagal sekali, berarti ia harus mencoba seratus kali.'\n2. Konflik: Internal — Zahra menghadapi kekecewaan mendalam dalam dirinya setelah nilai rendah, meskipun sudah belajar keras. Ia berjuang menata hati untuk tidak menyerah.\n3. Tema: Kegigihan dan semangat pantang menyerah dalam menghadapi kegagalan.\n4. Sudut pandang: Orang ketiga serba tahu — penulis menggunakan 'ia' dan mengetahui pikiran batin Zahra.",
+    keyPoints: [
+      "Tokoh Zahra disebutkan dengan watak yang tepat dan bukti dari teks",
+      "Konflik internal Zahra diidentifikasi dengan benar",
+      "Tema pantang menyerah/kegigihan disebutkan",
+      "Sudut pandang orang ketiga (serba tahu) disebutkan"
+    ],
+    materi: "Cerpen – Analisis Unsur Intrinsik", tujuanPembelajaran: "Menganalisis unsur intrinsik cerpen secara terpadu", levelKognitif: "C4"
+  },
+  {
+    id: "bind-ut-8", type: "UT", number: 45,
+    question: "Bacalah puisi berikut!\n\nSurat untuk Bumi\nKau beri kami nafas sejuk\nKau beri kami air jernih\nKami balas dengan racun mengepul\nKami balas dengan sampah menggunung\n\nKau menangis diam-diam\nDi balik hujan yang tak biasa\nBanjir, longsor, dan panas yang menyengat\nItulah tangisanmu yang kami abaikan\n\nAnalisis puisi di atas dengan menjawab:\n1. Apa tema puisi tersebut?\n2. Temukan satu majas dalam puisi dan jelaskan efeknya bagi pembaca!\n3. Apa pesan/amanat yang ingin disampaikan penyair?",
+    modelAnswer: "1. Tema: Kerusakan lingkungan hidup akibat perilaku manusia yang tidak bertanggung jawab.\n\n2. Majas: 'Kau menangis diam-diam' dan 'itulah tangisanmu' → Majas personifikasi (bumi diberi sifat manusia yang bisa menangis). Efek: Memberikan gambaran yang kuat dan menyentuh hati bahwa bumi sedang 'menderita'. Pembaca lebih tergerak secara emosional untuk peduli pada lingkungan.\n\n3. Pesan/amanat: Manusia harus berhenti merusak alam dan mulai menghargai lingkungan yang telah memberi kehidupan. Jika tidak, bencana alam (banjir, longsor, panas ekstrem) akan terus terjadi sebagai 'balasan' alam atas ulah manusia.",
+    keyPoints: [
+      "Tema kerusakan lingkungan/alam disebutkan dengan tepat",
+      "Majas personifikasi diidentifikasi dengan benar dari teks",
+      "Efek majas bagi pembaca dijelaskan dengan logis",
+      "Pesan/amanat relevan dengan isi dan tema puisi"
+    ],
+    materi: "Puisi – Analisis Majas dan Amanat", tujuanPembelajaran: "Menganalisis majas dan pesan dalam puisi", levelKognitif: "C4"
   },
 ];
 
@@ -370,10 +618,15 @@ export const bindonesiaBank: SubjectQuestionBank = {
   is,
   ut,
   sessions: [
+    // Sesi 1: Dasar (ide pokok, kosakata, teks sederhana)
     { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
+    // Sesi 2: Menengah-Bawah (teks deskripsi, persuasi, majas, pantun)
     { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], is: [1,2,3,4,5,6,7,8,9,10], ut: [1,2,3,4,5] },
-    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,1,3,5,7,9,11,13,15,17,19], is: [0,2,4,6,8,10,1,3,5,7], ut: [0,2,4,1,3] },
-    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,0] },
-    { pg: [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,0,2,4,6,8,10,12,14,16,18], is: [0,1,3,5,7,9,11,2,4,6], ut: [0,1,2,4,5] },
+    // Sesi 3: Menengah (mix lama + baru: teks laporan, cerpen, surat resmi)
+    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,1,3], is: [0,2,4,6,8,10,12,14,16,17], ut: [0,2,4,6,8] },
+    // Sesi 4: Tinggi (analisis teks, kalimat majemuk, kata baku, cerpen)
+    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,30,31,32,33,34,35,36,37,38,39], is: [2,3,4,5,6,7,8,9,12,13], ut: [2,3,4,6,7] },
+    // Sesi 5: Paling Sulit (C4-C5: evaluasi teks, analisis cerpen, menulis esai argumentasi)
+    { pg: [25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,1,3,5,7,9], is: [11,12,13,14,15,16,17,0,1,2], ut: [5,6,7,8,0] },
   ],
 };

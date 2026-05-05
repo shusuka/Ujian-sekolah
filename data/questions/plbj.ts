@@ -224,6 +224,128 @@ const pg: PGQuestion[] = [
     correctAnswer: 1,
     materi: "Kewargaan Jakarta", tujuanPembelajaran: "Menganalisis sikap warga yang baik terhadap lingkungan", levelKognitif: "C3"
   },
+
+  // ===== SOAL TINGKAT LANJUT (C4-C5) =====
+  {
+    id: "plbj-pg-31", type: "PG", number: 31,
+    question: "Fatahillah mengubah nama Sunda Kelapa menjadi Jayakarta pada tahun 1527 setelah mengalahkan Portugis. Makna sejarah dari peristiwa ini adalah ...",
+    options: [
+      "Portugis membangun kota baru untuk kepentingan dagang",
+      "Kemenangan Fatahillah melambangkan perjuangan mempertahankan wilayah dari penjajah asing",
+      "Belanda mulai menguasai pelabuhan Sunda Kelapa",
+      "Jakarta pertama kali menjadi ibu kota kerajaan Hindu"
+    ],
+    correctAnswer: 1,
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menganalisis makna sejarah perubahan nama kota Jakarta", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-32", type: "PG", number: 32,
+    question: "VOC (Belanda) mendirikan Batavia tahun 1619 dengan cara meratakan Jayakarta. Dampak pendudukan Belanda di Batavia terhadap masyarakat Betawi lokal adalah ...",
+    options: [
+      "Masyarakat Betawi hidup sejahtera dan bebas",
+      "Masyarakat Betawi dipaksa menjadi buruh, tanah dirampas, dan hak-hak mereka dibatasi",
+      "Belanda membantu masyarakat Betawi berkembang",
+      "Masyarakat Betawi diizinkan memimpin pemerintahan kota"
+    ],
+    correctAnswer: 1,
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menganalisis dampak penjajahan terhadap masyarakat Betawi", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-33", type: "PG", number: 33,
+    question: "Kota Jakarta menghadapi masalah banjir tahunan yang semakin parah. Dari berbagai solusi berikut, yang bersifat JANGKA PANJANG dan paling efektif adalah ...",
+    options: [
+      "Membagikan pompa air kepada setiap RW saat banjir datang",
+      "Menormalisasi sungai, menanam mangrove di pesisir, dan membatasi pembangunan di zona resapan air",
+      "Melarang warga tinggal di pinggir sungai tanpa menyediakan hunian pengganti",
+      "Menggali lebih banyak sumur di seluruh Jakarta"
+    ],
+    correctAnswer: 1,
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Mengevaluasi solusi jangka panjang masalah banjir Jakarta", levelKognitif: "C5"
+  },
+  {
+    id: "plbj-pg-34", type: "PG", number: 34,
+    question: "MRT Jakarta (Mass Rapid Transit) mulai beroperasi pada tahun 2019. Analisis dampak positif MRT terhadap kualitas hidup warga Jakarta ...",
+    options: [
+      "MRT hanya menguntungkan warga kaya yang mampu membeli tiket mahal",
+      "MRT mengurangi kemacetan, emisi karbon, dan waktu perjalanan sehingga meningkatkan produktivitas warga",
+      "MRT tidak berpengaruh karena kemacetan Jakarta tidak bisa diatasi",
+      "MRT merugikan pengemudi ojek dan angkot secara keseluruhan"
+    ],
+    correctAnswer: 1,
+    materi: "Transportasi Jakarta", tujuanPembelajaran: "Menganalisis dampak transportasi massal terhadap kualitas hidup", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-35", type: "PG", number: 35,
+    question: "Kesenian Betawi seperti lenong, gambang kromong, dan tanjidor semakin jarang ditampilkan akibat pengaruh budaya modern. Upaya TERBAIK yang dapat dilakukan sekolah untuk melestarikan seni Betawi adalah ...",
+    options: [
+      "Melarang siswa menikmati musik modern sama sekali",
+      "Memasukkan seni Betawi ke dalam kegiatan ekstrakurikuler dan pentas seni sekolah",
+      "Hanya menyimpan rekaman seni Betawi di museum tanpa pertunjukan hidup",
+      "Membiarkan seni Betawi berkembang sendiri tanpa intervensi sekolah"
+    ],
+    correctAnswer: 1,
+    materi: "Kebudayaan Betawi", tujuanPembelajaran: "Merancang upaya pelestarian kesenian Betawi", levelKognitif: "C5"
+  },
+  {
+    id: "plbj-pg-36", type: "PG", number: 36,
+    question: "Polusi udara di Jakarta masuk kategori tidak sehat pada beberapa hari dalam setahun. Hubungan sebab-akibat yang PALING TEPAT antara banyaknya kendaraan bermotor dan polusi udara adalah ...",
+    options: [
+      "Kendaraan bermotor menghasilkan oksigen yang dibutuhkan tanaman kota",
+      "Emisi gas buang kendaraan (CO, CO₂, NOₓ) meningkatkan polusi udara yang berdampak pada kesehatan warga",
+      "Semakin banyak kendaraan berarti semakin banyak warga yang sehat karena tidak perlu berjalan",
+      "Polusi udara Jakarta disebabkan oleh angin dari luar kota, bukan kendaraan lokal"
+    ],
+    correctAnswer: 1,
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Menganalisis hubungan sebab-akibat polusi udara Jakarta", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-37", type: "PG", number: 37,
+    question: "Tradisi Betawi 'Lebaran Betawi' diadakan untuk mempererat silaturahmi dan melestarikan budaya. Nilai UTAMA yang tercermin dari tradisi ini adalah ...",
+    options: [
+      "Nilai ekonomi karena banyak pedagang yang untung",
+      "Nilai persatuan, kebersamaan, dan pelestarian identitas budaya Betawi",
+      "Nilai persaingan antar suku untuk menunjukkan keunggulan budaya",
+      "Nilai formal karena diwajibkan oleh pemerintah DKI"
+    ],
+    correctAnswer: 1,
+    materi: "Tradisi Betawi", tujuanPembelajaran: "Menganalisis nilai yang terkandung dalam tradisi Betawi", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-38", type: "PG", number: 38,
+    question: "Jika setiap warga Jakarta membuang sampah pada tempatnya dan memilah sampah organik-anorganik, dampak jangka panjang yang diharapkan adalah ...",
+    options: [
+      "Sampah menumpuk di TPS karena tidak ada yang mengangkut",
+      "Pengurangan volume sampah di TPA, sungai lebih bersih, dan banjir berkurang",
+      "Petugas kebersihan kehilangan pekerjaan",
+      "Tidak ada dampak signifikan karena sampah Jakarta sudah terlanjur banyak"
+    ],
+    correctAnswer: 1,
+    materi: "Pengelolaan Lingkungan", tujuanPembelajaran: "Menganalisis dampak jangka panjang pengelolaan sampah", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-pg-39", type: "PG", number: 39,
+    question: "Kawasan Kota Tua Jakarta menyimpan berbagai bangunan bersejarah era kolonial. Mengapa penting untuk melestarikan kawasan tersebut? Alasan yang PALING TEPAT adalah ...",
+    options: [
+      "Karena bangunan tua lebih kuat dari bangunan modern",
+      "Karena Kota Tua adalah bukti sejarah perjuangan dan identitas kota Jakarta yang tak ternilai, serta aset pariwisata budaya",
+      "Karena biaya pembangunan bangunan baru lebih mahal",
+      "Karena pemerintah Belanda meminta Jakarta untuk menjaganya"
+    ],
+    correctAnswer: 1,
+    materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mengevaluasi pentingnya pelestarian kawasan bersejarah", levelKognitif: "C5"
+  },
+  {
+    id: "plbj-pg-40", type: "PG", number: 40,
+    question: "Permainan tradisional seperti congklak dan engklek semakin tergeser oleh game digital. Evaluasi dampak hilangnya permainan tradisional bagi anak-anak ...",
+    options: [
+      "Tidak ada dampak negatif karena game digital lebih mendidik",
+      "Anak kehilangan nilai kerja sama, kreativitas fisik, dan warisan budaya yang terkandung dalam permainan tradisional",
+      "Anak jadi lebih sehat karena bermain game di dalam ruangan terlindung dari panas",
+      "Permainan tradisional tidak memiliki nilai pendidikan apapun"
+    ],
+    correctAnswer: 1,
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Mengevaluasi dampak hilangnya permainan tradisional", levelKognitif: "C5"
+  },
 ];
 
 const is: ISQuestion[] = [
@@ -311,6 +433,28 @@ const is: ISQuestion[] = [
     modelAnswer: "Jakarta Utara (Penjaringan)",
     materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mengidentifikasi lokasi tempat bersejarah di Jakarta", levelKognitif: "C2"
   },
+  // ===== IS TINGKAT LANJUT =====
+  {
+    id: "plbj-is-13", type: "IS", number: 38,
+    question: "Banjir Jakarta semakin parah setiap tahun. Sebutkan SATU tindakan nyata yang bisa kamu lakukan sebagai pelajar SD untuk membantu mengurangi banjir di lingkungan sekitarmu!",
+    acceptedAnswers: ["tidak buang sampah sembarangan", "membuang sampah pada tempatnya", "membersihkan saluran air", "menanam pohon", "membuat biopori"],
+    modelAnswer: "Tidak membuang sampah sembarangan/ke sungai; atau ikut membersihkan saluran air di lingkungan; atau menanam pohon untuk menambah daerah resapan air.",
+    materi: "Lingkungan Jakarta", tujuanPembelajaran: "Merancang tindakan nyata mengurangi banjir Jakarta", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-is-14", type: "IS", number: 39,
+    question: "Fatahillah mengalahkan Portugis dan mengganti nama Sunda Kelapa menjadi Jayakarta pada tahun 1527. Apa arti nama 'Jayakarta'?",
+    acceptedAnswers: ["kota kemenangan", "kota kemenangan yang agung", "kota yang jaya", "kemenangan besar"],
+    modelAnswer: "Jayakarta artinya 'kota kemenangan yang agung' atau 'kota yang jaya/menang'.",
+    materi: "Sejarah Jakarta", tujuanPembelajaran: "Menjelaskan makna nama Jayakarta", levelKognitif: "C2"
+  },
+  {
+    id: "plbj-is-15", type: "IS", number: 40,
+    question: "Permainan tradisional congklak melatih kemampuan berhitung dan strategi. Sebutkan SATU nilai positif lain yang bisa dipelajari dari bermain permainan tradisional bersama teman!",
+    acceptedAnswers: ["kerja sama", "sportivitas", "kejujuran", "kesabaran", "menghargai lawan", "gotong royong", "sosial"],
+    modelAnswer: "Nilai positif: kerja sama (bermain bersama melatih koordinasi tim), sportivitas (menerima menang dan kalah dengan lapang dada), atau kesabaran dan kejujuran dalam mematuhi aturan permainan.",
+    materi: "Permainan Tradisional", tujuanPembelajaran: "Menganalisis nilai yang terkandung dalam permainan tradisional", levelKognitif: "C4"
+  },
 ];
 
 const ut: UTQuestion[] = [
@@ -356,6 +500,21 @@ const ut: UTQuestion[] = [
     keyPoints: ["Menyebutkan nama tradisi/perayaan yang dipilih", "Mendeskripsikan prosesi/kegiatan yang dilakukan", "Menyebutkan unsur budaya Betawi yang ada", "Cerita runtut dan berisi minimal 4-5 kalimat"],
     materi: "Tradisi Betawi", tujuanPembelajaran: "Menceritakan tradisi khas Betawi", levelKognitif: "C2"
   },
+  // ===== UT TINGKAT LANJUT =====
+  {
+    id: "plbj-ut-7", type: "UT", number: 44,
+    question: "Jakarta menghadapi masalah kemacetan yang parah setiap hari. Jelaskan:\na) Minimal 3 penyebab kemacetan di Jakarta\nb) Minimal 3 solusi yang bisa diterapkan pemerintah dan warga untuk mengurangi kemacetan\nc) Bagaimana peranmu sebagai pelajar dalam ikut mengurangi kemacetan?",
+    modelAnswer: "a) Penyebab kemacetan:\n1. Jumlah kendaraan pribadi yang terus bertambah tidak sebanding dengan luas jalan\n2. Tidak semua warga menggunakan transportasi umum\n3. Banyaknya persimpangan dan lampu merah yang tidak terkoordinasi\n\nb) Solusi:\n1. Pemerintah: memperluas dan meningkatkan kualitas transportasi umum (MRT, LRT, Transjakarta)\n2. Pemerintah: menerapkan kebijakan ganjil-genap dan parkir berbayar untuk mengurangi kendaraan pribadi\n3. Warga: beralih ke transportasi umum atau bersepeda untuk jarak dekat\n\nc) Peran pelajar:\n- Mengajak orang tua menggunakan transportasi umum\n- Jika dekat sekolah, berangkat berjalan kaki atau bersepeda\n- Tidak meminta diantar naik kendaraan pribadi jika bisa naik angkutan umum",
+    keyPoints: ["3 penyebab kemacetan disebutkan", "3 solusi (pemerintah & warga) dijelaskan", "Peran pelajar disebutkan secara konkret"],
+    materi: "Transportasi Jakarta", tujuanPembelajaran: "Menganalisis penyebab kemacetan dan merumuskan solusi", levelKognitif: "C4"
+  },
+  {
+    id: "plbj-ut-8", type: "UT", number: 45,
+    question: "Kebudayaan Betawi adalah warisan leluhur yang harus dijaga bersama. Menurutmu, mengapa penting menjaga kebudayaan Betawi di tengah arus globalisasi? Berikan argumentasimu dan sebutkan minimal 4 bentuk kebudayaan Betawi yang perlu dilestarikan beserta alasannya!",
+    modelAnswer: "Pentingnya menjaga kebudayaan Betawi:\nKebudayaan Betawi adalah identitas dan jiwa kota Jakarta. Di tengah globalisasi yang membawa masuk budaya asing dengan cepat, kebudayaan lokal bisa terkikis jika tidak dijaga. Kebudayaan Betawi juga merupakan aset wisata dan kebanggaan bangsa.\n\n4 bentuk kebudayaan Betawi yang perlu dilestarikan:\n1. Ondel-ondel – sebagai simbol ikonik Betawi yang merepresentasikan semangat dan penjaga masyarakat\n2. Tari Topeng Betawi – warisan seni pertunjukan yang mengandung nilai estetika dan cerita moral\n3. Kerak Telor – kuliner khas yang menjadi daya tarik wisata dan simbol kuliner Jakarta\n4. Tradisi Palang Pintu – mengandung nilai silaturahmi, seni silat, dan pantun Betawi yang kaya makna\n\nTanpa pelestarian aktif dari generasi muda, kebudayaan ini bisa punah dan Jakarta kehilangan jati dirinya.",
+    keyPoints: ["Argumen pentingnya melestarikan dijelaskan", "4 bentuk kebudayaan Betawi disebutkan", "Alasan pelestarian masing-masing ada", "Dikaitkan dengan konteks globalisasi"],
+    materi: "Kebudayaan Betawi", tujuanPembelajaran: "Mengevaluasi pentingnya pelestarian kebudayaan Betawi", levelKognitif: "C5"
+  },
 ];
 
 export const plbjBank: SubjectQuestionBank = {
@@ -365,8 +524,8 @@ export const plbjBank: SubjectQuestionBank = {
   sessions: [
     { pg: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], is: [0,1,2,3,4,5,6,7,8,9], ut: [0,1,2,3,4] },
     { pg: [5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29], is: [1,2,3,4,5,6,7,8,9,10], ut: [1,2,3,4,5] },
-    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,1,3,5,7,9,11,13,15,17,19], is: [0,2,4,6,8,10,1,3,5,7], ut: [0,2,4,1,3] },
-    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,0,1,2,3,4], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,0] },
-    { pg: [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,0,2,4,6,8,10,12,14,16,18], is: [0,1,3,5,7,9,11,2,4,6], ut: [0,1,2,4,5] },
+    { pg: [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,31,32,33,34,35,36,37,38,39], is: [0,2,4,6,8,10,11,12,1,3], ut: [0,2,4,6,1] },
+    { pg: [10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,30,31,32,33,34,35,36,37,38,39], is: [2,3,4,5,6,7,8,9,10,11], ut: [2,3,4,5,6] },
+    { pg: [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,0,1,2,3,4], is: [5,6,7,8,9,10,11,12,13,14], ut: [4,5,6,7,8] },
   ],
 };
