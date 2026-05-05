@@ -101,7 +101,18 @@ const pg: PGQuestion[] = [
   // Puisi & Sastra (C1-C3)
   {
     id: "bind-pg-14", type: "PG", number: 14,
-    question: "Perhatikan bait puisi berikut:\n'Tanah airku Indonesia\nNegeri elok amat kucinta\nTanah tumpah darahku yang mulia\nYang ku puja sepanjang masa'\n\nPuisi di atas mengungkapkan perasaan ...",
+    chartData: {
+      type: "table",
+      caption: "Struktur Bait Puisi",
+      headers: ["Baris", "Teks", "Analisis"],
+      rows: [
+        ["1", "Tanah airku Indonesia", "Menyebut tanah air secara langsung"],
+        ["2", "Negeri elok amat kucinta", "Ungkapan kecintaan terhadap negeri"],
+        ["3", "Tanah tumpah darahku yang mulia", "Ungkapan kebanggaan"],
+        ["4", "Yang ku puja sepanjang masa", "Cinta yang abadi/selamanya"],
+      ],
+    },
+    question: "Perhatikan bait puisi dan analisisnya di atas:\n'Tanah airku Indonesia\nNegeri elok amat kucinta\nTanah tumpah darahku yang mulia\nYang ku puja sepanjang masa'\n\nPuisi di atas mengungkapkan perasaan ...",
     options: ["Kesedihan akan keadaan alam", "Kecintaan terhadap tanah air", "Kebanggaan atas prestasi bangsa", "Kerinduan akan kampung halaman"],
     correctAnswer: 1,
     materi: "Puisi", tujuanPembelajaran: "Menafsirkan makna puisi", levelKognitif: "C2"
@@ -166,7 +177,18 @@ const pg: PGQuestion[] = [
   },
   {
     id: "bind-pg-22", type: "PG", number: 22,
-    question: "Kalimat fakta adalah kalimat yang ...",
+    chartData: {
+      type: "table",
+      caption: "Perbedaan Fakta dan Opini",
+      headers: ["Aspek", "Fakta", "Opini"],
+      rows: [
+        ["Pengertian", "Pernyataan yang dapat dibuktikan", "Pendapat/perasaan seseorang"],
+        ["Ciri bahasa", "Menggunakan data/angka/bukti nyata", "Kata: mungkin, sebaiknya, menurut saya, sepertinya"],
+        ["Contoh", "Jakarta adalah ibu kota Indonesia", "Menurut saya, Jakarta sangat macet"],
+        ["Sifat", "Objektif (tidak dipengaruhi pendapat)", "Subjektif (dipengaruhi sudut pandang)"],
+      ],
+    },
+    question: "Perhatikan tabel perbedaan fakta dan opini di atas. Kalimat fakta adalah kalimat yang ...",
     options: ["Berisi pendapat atau perasaan seseorang", "Dapat dibuktikan kebenarannya secara nyata", "Mengandung kata-kata seperti 'mungkin' atau 'sebaiknya'", "Merupakan khayalan penulisnya"],
     correctAnswer: 1,
     materi: "Fakta dan Opini", tujuanPembelajaran: "Membedakan kalimat fakta dan opini", levelKognitif: "C2"
@@ -189,7 +211,20 @@ const pg: PGQuestion[] = [
   },
   {
     id: "bind-pg-25", type: "PG", number: 25,
-    question: "Kata tanya yang digunakan untuk menanyakan cara atau proses adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Kata Tanya dan Fungsinya (5W + 1H)",
+      headers: ["Kata Tanya", "Bahasa Inggris", "Digunakan untuk menanyakan"],
+      rows: [
+        ["Apa", "What", "Benda, hal, atau peristiwa"],
+        ["Siapa", "Who", "Orang / pelaku"],
+        ["Di mana", "Where", "Tempat / lokasi"],
+        ["Kapan", "When", "Waktu / tanggal"],
+        ["Mengapa", "Why", "Alasan / sebab"],
+        ["Bagaimana", "How", "Cara / proses / kondisi"],
+      ],
+    },
+    question: "Perhatikan tabel kata tanya di atas. Kata tanya yang digunakan untuk menanyakan cara atau proses adalah ...",
     options: ["Apa", "Siapa", "Bagaimana", "Mengapa"],
     correctAnswer: 2,
     materi: "Kata Tanya", tujuanPembelajaran: "Menggunakan kata tanya yang tepat", levelKognitif: "C1"
@@ -205,7 +240,18 @@ const pg: PGQuestion[] = [
   // Majas & Gaya Bahasa (C1-C3)
   {
     id: "bind-pg-27", type: "PG", number: 27,
-    question: "Kalimat 'Matanya bagai bintang di langit malam' menggunakan majas ...",
+    chartData: {
+      type: "table",
+      caption: "Jenis-Jenis Majas (Gaya Bahasa)",
+      headers: ["Majas", "Ciri Khas", "Contoh"],
+      rows: [
+        ["Simile/Perbandingan", "Membandingkan dg kata 'seperti/bagai/laksana'", "'Matanya bagai bintang di langit malam'"],
+        ["Personifikasi", "Benda mati diberi sifat manusia", "'Angin berbisik di telingaku'"],
+        ["Hiperbola", "Pernyataan berlebihan", "'Berlari seribu kilometer'"],
+        ["Metafora", "Perbandingan langsung tanpa kata pembanding", "'Dia adalah bintang kelasku'"],
+      ],
+    },
+    question: "Perhatikan tabel jenis majas di atas. Kalimat 'Matanya bagai bintang di langit malam' menggunakan majas ...",
     options: ["Hiperbola", "Personifikasi", "Simile/Perbandingan", "Metafora"],
     correctAnswer: 2,
     materi: "Majas", tujuanPembelajaran: "Mengidentifikasi jenis majas", levelKognitif: "C2"
@@ -307,7 +353,20 @@ const pg: PGQuestion[] = [
   },
   {
     id: "bind-pg-37", type: "PG", number: 37,
-    question: "Judul berita: 'Pelajar SD di Bandung Juarai Kompetisi Sains Nasional di Jakarta pada Kamis Kemarin'\n\nUnsur WHERE (Di mana) dalam judul berita tersebut adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Unsur Berita: 5W + 1H",
+      headers: ["Kata Tanya", "Unsur Berita", "Jawaban dari Judul"],
+      rows: [
+        ["What (Apa)", "Peristiwa apa?", "Kompetisi Sains Nasional"],
+        ["Who (Siapa)", "Siapa pelakunya?", "Pelajar SD di Bandung"],
+        ["Where (Di mana)", "Di mana terjadi?", "Jakarta"],
+        ["When (Kapan)", "Kapan terjadi?", "Kamis kemarin"],
+        ["Why (Mengapa)", "Mengapa terjadi?", "Tidak disebutkan di judul"],
+        ["How (Bagaimana)", "Bagaimana prosesnya?", "Tidak disebutkan di judul"],
+      ],
+    },
+    question: "Perhatikan tabel analisis 5W1H di atas untuk judul berita:\n'Pelajar SD di Bandung Juarai Kompetisi Sains Nasional di Jakarta pada Kamis Kemarin'\n\nUnsur WHERE (Di mana) dalam judul berita tersebut adalah ...",
     options: [
       "Pelajar SD — pelaku berita",
       "Kompetisi sains nasional — peristiwa",

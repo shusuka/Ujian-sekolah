@@ -51,7 +51,18 @@ export const paiBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
-      question: 'Perhatikan tabel berikut:\n| Sifat Wajib | Arti |\n|---|---|\n| Sidiq | Terpercaya |\n| Amanah | Jujur |\n| Tablig | Menyampaikan |\n| Fathonah | Menyampaikan |\n\nPasangan sifat wajib bagi Rasul dan artinya yang BENAR adalah...',
+      question: 'Perhatikan tabel sifat wajib bagi Rasul berikut. Pasangan sifat wajib bagi Rasul dan artinya yang BENAR adalah...',
+      chartData: {
+        type: "table" as const,
+        caption: "Sifat Wajib Bagi Rasul Allah",
+        headers: ["Sifat Wajib", "Arti dalam Tabel (SALAH)", "Arti yang BENAR"],
+        rows: [
+          ["Sidiq", "Terpercaya ❌", "Jujur / Benar ✓"],
+          ["Amanah", "Jujur ❌", "Terpercaya ✓"],
+          ["Tablig", "Menyampaikan ✓", "Menyampaikan ✓"],
+          ["Fathonah", "Menyampaikan ❌", "Cerdas ✓"],
+        ],
+      },
       options: ["Sidiq – Jujur/Benar", "Amanah – Cerdas", "Tablig – Menyampaikan", "Fathonah – Terpercaya"],
       correctAnswer: 2,
       materi: "Sifat wajib bagi rasul",
@@ -59,7 +70,17 @@ export const paiBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
-      question: "Hari ketika seluruh manusia dikumpulkan di Padang Mahsyar untuk mempertanggungjawabkan seluruh amalnya selama hidup di dunia disebut...",
+      question: "Perhatikan urutan tahapan Hari Akhir berikut. Hari ketika seluruh manusia dikumpulkan di Padang Mahsyar untuk mempertanggungjawabkan seluruh amalnya selama hidup di dunia disebut...",
+      chartData: {
+        type: "timeline" as const,
+        events: [
+          { year: "Tahap 1", event: "Yaumul Ba'ats – Hari Kebangkitan dari kubur" },
+          { year: "Tahap 2", event: "Yaumul Hasyr – Dikumpulkan di Padang Mahsyar" },
+          { year: "Tahap 3", event: "Yaumul Hisab – Perhitungan & pertanggungjawaban amal" },
+          { year: "Tahap 4", event: "Yaumul Mizan – Penimbangan amal baik & buruk" },
+          { year: "Tahap 5", event: "Yaumul Jaza' – Pembalasan (Surga atau Neraka)" },
+        ],
+      },
       options: ["Yaumul Ba'ats", "Yaumul Hisab", "Yaumul Barzah", "Yaumul Mizan"],
       correctAnswer: 1,
       materi: "Hikmah beriman kepada hari akhir",
@@ -67,7 +88,18 @@ export const paiBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
-      question: 'Perhatikan tabel asmaul husna berikut:\n| No | Asmaul Husna | Arti |\n|---|---|---|\n| 1 | Al-Malik | Yang Maha Kuasa |\n| 2 | Al-Aziz | Yang Maha Raja |\n| 3 | Al-Qayyum | Yang Maha Berdiri Sendiri |\n| 4 | As-Samad | Yang Maha Mulia |\n\nPasangan yang BENAR adalah nomor...',
+      question: 'Perhatikan tabel asmau al-husna berikut (beberapa arti sengaja ditukar). Pasangan yang BENAR adalah nomor...',
+      chartData: {
+        type: "table" as const,
+        caption: "Asmau al-Husna dan Artinya (ada yang salah!)",
+        headers: ["No", "Asmaul Husna", "Arti dalam Tabel", "Arti yang Benar"],
+        rows: [
+          ["1", "Al-Malik (الملك)", "Yang Maha Kuasa ❌", "Yang Maha Raja ✗"],
+          ["2", "Al-Aziz (العزيز)", "Yang Maha Raja ❌", "Yang Maha Mulia/Perkasa ✗"],
+          ["3", "Al-Qayyum (القيوم)", "Yang Maha Berdiri Sendiri ✓", "Yang Maha Berdiri Sendiri ✓"],
+          ["4", "As-Samad (الصمد)", "Yang Maha Mulia ❌", "Tempat Bergantung Segala ✗"],
+        ],
+      },
       options: ["1", "2", "3", "4"],
       correctAnswer: 2,
       materi: "Asmau al-husna: Al-Malik, Al-Aziz, Al-Qayyum, As-Samad",
@@ -195,7 +227,18 @@ export const paiBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
-      question: 'Perhatikan tabel berikut:\n| Sahabat | Jasa |\n|---|---|\n| Abu Bakar Shiddiq | Memperluas wilayah Islam |\n| Umar bin Khattab | Membukukan Al-Qur\'an |\n| Utsman bin Affan | Membakukan mushaf Al-Qur\'an |\n| Ali bin Abi Thalib | Memerangi nabi-nabi palsu |\n\nPasangan sahabat Nabi dan jasanya yang SESUAI adalah...',
+      question: 'Perhatikan tabel jasa sahabat Nabi berikut (beberapa jasa sengaja ditukar). Pasangan sahabat Nabi dan jasanya yang SESUAI adalah...',
+      chartData: {
+        type: "table" as const,
+        caption: "Jasa Para Sahabat Nabi Muhammad SAW",
+        headers: ["Sahabat", "Jasa dalam Tabel (ada yang salah)", "Jasa yang Benar"],
+        rows: [
+          ["Abu Bakar Shiddiq", "Memperluas wilayah Islam ❌", "Memerangi nabi palsu & inisiasi pembukuan Al-Qur'an"],
+          ["Umar bin Khattab", "Membukukan Al-Qur'an ❌", "Memperluas wilayah Islam"],
+          ["Utsman bin Affan", "Membakukan mushaf Al-Qur'an ✓", "Membakukan & memperbanyak mushaf Al-Qur'an"],
+          ["Ali bin Abi Thalib", "Memerangi nabi-nabi palsu ❌", "Babul Ilmi – pengembangan ilmu nahwu"],
+        ],
+      },
       options: ["Abu Bakar – Memperluas wilayah Islam", "Umar – Membukukan Al-Qur'an", "Utsman – Membakukan mushaf Al-Qur'an", "Ali – Memerangi nabi-nabi palsu"],
       correctAnswer: 2,
       materi: "Jasa sahabat nabi Muhammad saw.",

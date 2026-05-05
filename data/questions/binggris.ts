@@ -4,7 +4,8 @@ const pg: PGQuestion[] = [
   // ===== READING COMPREHENSION – TEKS DESKRIPTIF (C2-C3) =====
   {
     id: "bing-pg-1", type: "PG", number: 1,
-    question: "Read the descriptive text below and answer questions 1–2.\n\n'Borobudur Temple is one of the greatest Buddhist monuments in the world. It is located in Magelang, Central Java, Indonesia. Built in the 9th century during the reign of the Syailendra dynasty, the temple consists of nine stacked platforms topped by a central dome. Borobudur is decorated with 2,672 relief panels and 504 Buddha statues. In 1991, it was listed as a UNESCO World Heritage Site and continues to attract millions of visitors from around the world each year.'\n\nAccording to the text, where is Borobudur Temple located?",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/400px-Borobudur-Nothwest-view.jpg",
+    question: "Look at the photo of Borobudur Temple above, then read the descriptive text below.\n\n'Borobudur Temple is one of the greatest Buddhist monuments in the world. It is located in Magelang, Central Java, Indonesia. Built in the 9th century during the reign of the Syailendra dynasty, the temple consists of nine stacked platforms topped by a central dome. Borobudur is decorated with 2,672 relief panels and 504 Buddha statues. In 1991, it was listed as a UNESCO World Heritage Site and continues to attract millions of visitors from around the world each year.'\n\nAccording to the text, where is Borobudur Temple located?",
     options: [
       "In Yogyakarta, Central Java, Indonesia",
       "In Magelang, Central Java, Indonesia",
@@ -30,7 +31,18 @@ const pg: PGQuestion[] = [
   // ===== READING COMPREHENSION – RECOUNT TEXT (C2-C4) =====
   {
     id: "bing-pg-3", type: "PG", number: 3,
-    question: "Read the recount text below and answer questions 3–5.\n\n'Last month, our class went on a field trip to Taman Mini Indonesia Indah (TMII) in Jakarta. We left school at 6.30 in the morning and arrived two hours later. First, we visited the Miniature Park where we saw scale models of traditional houses from all 38 provinces of Indonesia. Then we watched a colourful traditional dance performance at the central stage. After that, we had lunch and spent the rest of the afternoon exploring the Science Museum. We returned to school in the late afternoon, feeling tired but very happy.'\n\nWhat did the class do FIRST after arriving at TMII?",
+    chartData: {
+      type: "timeline",
+      events: [
+        { year: "06.30", event: "Left school in the morning" },
+        { year: "08.30", event: "Arrived at TMII (2 hours later)" },
+        { year: "Morning", event: "Visited Miniature Park – models of traditional houses" },
+        { year: "Mid-day", event: "Watched traditional dance performance" },
+        { year: "Afternoon", event: "Had lunch, then explored Science Museum" },
+        { year: "Late afternoon", event: "Returned to school — tired but happy" },
+      ],
+    },
+    question: "Read the timeline and recount text below about a field trip to TMII.\n\n'Last month, our class went on a field trip to Taman Mini Indonesia Indah (TMII) in Jakarta. We left school at 6.30 in the morning and arrived two hours later. First, we visited the Miniature Park where we saw scale models of traditional houses from all 38 provinces of Indonesia. Then we watched a colourful traditional dance performance at the central stage. After that, we had lunch and spent the rest of the afternoon exploring the Science Museum. We returned to school in the late afternoon, feeling tired but very happy.'\n\nWhat did the class do FIRST after arriving at TMII?",
     options: [
       "Watched a traditional dance performance at the central stage",
       "Had lunch at a restaurant near the museum",
@@ -63,7 +75,20 @@ const pg: PGQuestion[] = [
   // ===== READING COMPREHENSION – PROCEDURE TEXT (C2-C3) =====
   {
     id: "bing-pg-6", type: "PG", number: 6,
-    question: "Read the procedure text below and answer questions 6–8.\n\nHow to Plant a Seed\nWhat you need: a small pot, soil, seeds, water.\n\nStep 1: Fill a small pot with soil until it is almost full.\nStep 2: Make a small hole in the centre of the soil, about 1–2 cm deep.\nStep 3: Place one or two seeds into the hole and cover them gently with soil.\nStep 4: Water the seeds carefully — just enough to make the soil moist, not too wet.\nStep 5: Place the pot in a sunny spot near a window and check every day.\nStep 6: In about one to two weeks, the seed will start to sprout.\n\nAccording to the procedure, what should you do BEFORE placing the seeds into the hole?",
+    chartData: {
+      type: "table",
+      caption: "How to Plant a Seed – Step by Step",
+      headers: ["Step", "Action", "Key Detail"],
+      rows: [
+        ["Step 1", "Fill pot with soil", "Almost full"],
+        ["Step 2", "Make a hole", "1–2 cm deep, in the centre"],
+        ["Step 3", "Place seeds + cover", "One or two seeds, cover gently"],
+        ["Step 4", "Water carefully", "Moist, NOT too wet"],
+        ["Step 5", "Place in sunny spot", "Near a window, check every day"],
+        ["Step 6", "Wait for sprout", "About 1–2 weeks"],
+      ],
+    },
+    question: "Study the step-by-step table above, then read the procedure text.\n\nHow to Plant a Seed\nWhat you need: a small pot, soil, seeds, water.\n\nStep 1: Fill a small pot with soil until it is almost full.\nStep 2: Make a small hole in the centre of the soil, about 1–2 cm deep.\nStep 3: Place one or two seeds into the hole and cover them gently with soil.\nStep 4: Water the seeds carefully — just enough to make the soil moist, not too wet.\nStep 5: Place the pot in a sunny spot near a window and check every day.\nStep 6: In about one to two weeks, the seed will start to sprout.\n\nAccording to the procedure, what should you do BEFORE placing the seeds into the hole?",
     options: [
       "Water the seeds until the soil is soaking wet",
       "Place the pot near a sunny window first",

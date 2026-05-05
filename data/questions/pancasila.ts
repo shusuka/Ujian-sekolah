@@ -3,7 +3,18 @@ import { SubjectQuestionBank } from "@/lib/types";
 export const pancasilaBank: SubjectQuestionBank = {
   pg: [
     {
-      question: 'Perhatikan peristiwa-peristiwa berikut:\n1) Sidang BPUPK Pertama (29 Mei – 1 Juni 1945)\n2) Penetapan Pancasila oleh PPKI (18 Agustus 1945)\n3) Perumusan Piagam Jakarta (22 Juni 1945)\n4) Sidang BPUPK Kedua (10-17 Juli 1945)\n\nUrutan kronologis yang TEPAT mengenai sejarah lahirnya Pancasila adalah...',
+      question: 'Perhatikan garis waktu sejarah lahirnya Pancasila berikut. Urutan kronologis peristiwa (1), (2), (3), (4) yang TEPAT adalah...',
+      chartData: {
+        type: "timeline" as const,
+        events: [
+          { year: "29 Mei – 1 Jun 1945", event: "Sidang BPUPK Pertama – Yamin, Soepomo, Soekarno usulkan dasar negara" },
+          { year: "1 Juni 1945", event: "Soekarno mengusulkan nama 'PANCASILA' → diperingati Hari Lahir Pancasila" },
+          { year: "22 Juni 1945", event: "Panitia Sembilan merumuskan Piagam Jakarta" },
+          { year: "10–17 Juli 1945", event: "Sidang BPUPK Kedua – membahas rancangan UUD" },
+          { year: "17 Agustus 1945", event: "Proklamasi Kemerdekaan Indonesia" },
+          { year: "18 Agustus 1945", event: "PPKI menetapkan Pancasila sebagai Dasar Negara" },
+        ],
+      },
       options: ["1, 3, 4, 2", "3, 1, 4, 2", "1, 4, 3, 2", "4, 1, 3, 2"],
       correctAnswer: 0,
       materi: "Sejarah kelahiran Pancasila",
@@ -35,7 +46,19 @@ export const pancasilaBank: SubjectQuestionBank = {
       levelKognitif: "C2",
     },
     {
-      question: "Pancasila terdiri dari lima sila yang tersusun secara hierarkis dan piramidal. Yang dimaksud hierarkis dan piramidal adalah...",
+      question: "Perhatikan tabel hubungan sila-sila Pancasila berikut. Pancasila tersusun secara hierarkis dan piramidal. Yang dimaksud hierarkis dan piramidal adalah...",
+      chartData: {
+        type: "table" as const,
+        caption: "Susunan Hierarkis & Piramidal Pancasila",
+        headers: ["Sila", "Bunyi Sila", "Kedudukan"],
+        rows: [
+          ["Sila 1 ★", "Ketuhanan Yang Maha Esa", "DASAR & JIWA bagi sila 2–5"],
+          ["Sila 2", "Kemanusiaan yang Adil dan Beradab", "Dilandasi Sila 1"],
+          ["Sila 3", "Persatuan Indonesia", "Dilandasi Sila 1 & 2"],
+          ["Sila 4", "Kerakyatan yang Dipimpin Hikmat...", "Dilandasi Sila 1, 2, 3"],
+          ["Sila 5", "Keadilan Sosial bagi Seluruh Rakyat", "Tujuan dari Sila 1–4"],
+        ],
+      },
       options: ["Sila kelima lebih penting dari sila pertama", "Sila pertama menjadi dasar/jiwa bagi sila-sila berikutnya", "Semua sila memiliki kedudukan yang sama rata", "Sila ketiga adalah yang paling utama"],
       correctAnswer: 1,
       materi: "Hubungan sila-sila Pancasila",
@@ -91,7 +114,18 @@ export const pancasilaBank: SubjectQuestionBank = {
       levelKognitif: "C2",
     },
     {
-      question: 'Perhatikan tabel norma berikut:\n| Norma | Sanksi |\n|---|---|\n| Agama | Dosa dan siksa akhirat |\n| Hukum | Hukuman penjara atau denda |\n| Susila | Rasa malu dan penyesalan |\n| Kesopanan | Dikucilkan masyarakat |\n\nNorma yang memiliki sanksi tegas berupa hukuman penjara atau denda adalah...',
+      question: 'Perhatikan tabel jenis norma dalam kehidupan bermasyarakat berikut. Norma yang memiliki sanksi tegas berupa hukuman penjara atau denda adalah...',
+      chartData: {
+        type: "table" as const,
+        caption: "Jenis-Jenis Norma dalam Kehidupan Bermasyarakat",
+        headers: ["Norma", "Sumber", "Sanksi", "Contoh Pelanggaran"],
+        rows: [
+          ["Agama", "Kitab suci / ajaran agama", "Dosa & siksa akhirat", "Tidak salat, berbohong"],
+          ["Hukum", "Negara / pemerintah", "Penjara atau denda 🔒", "Mencuri, korupsi, menipu"],
+          ["Susila", "Hati nurani", "Rasa malu & penyesalan", "Tidak jujur, berlaku tidak patut"],
+          ["Kesopanan", "Adat & kebiasaan", "Dikucilkan masyarakat", "Tidak hormat orang tua"],
+        ],
+      },
       options: ["Norma Agama", "Norma Hukum", "Norma Susila", "Norma Kesopanan"],
       correctAnswer: 1,
       materi: "Norma, hak, dan kewajiban",

@@ -147,7 +147,19 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C1",
     },
     {
-      question: 'Perhatikan diagram batang nilai ulangan matematika kelas 6:\nNilai 60: 5 siswa, Nilai 70: 8 siswa, Nilai 80: 12 siswa, Nilai 90: 7 siswa, Nilai 100: 3 siswa\n\nJumlah siswa yang mendapat nilai di atas 75 adalah...',
+      chartData: {
+        type: "bar",
+        title: "Nilai Ulangan Matematika Kelas 6",
+        unit: "siswa",
+        items: [
+          { label: "Nilai 60", value: 5, color: "#94A3B8" },
+          { label: "Nilai 70", value: 8, color: "#60A5FA" },
+          { label: "Nilai 80", value: 12, color: "#34D399" },
+          { label: "Nilai 90", value: 7, color: "#A78BFA" },
+          { label: "Nilai 100", value: 3, color: "#F472B6" },
+        ],
+      },
+      question: "Perhatikan diagram batang nilai ulangan matematika kelas 6 di atas!\n\nJumlah siswa yang mendapat nilai di atas 75 adalah...",
       options: ["22", "15", "20", "25"],
       correctAnswer: 0,
       materi: "Analisis data",
@@ -214,6 +226,16 @@ export const matematikaBank: SubjectQuestionBank = {
 
     // ===== SOAL TINGKAT LANJUT (Lingkaran, Bangun Ruang, Statistika, Skala, Aljabar) =====
     {
+      chartData: {
+        type: "table",
+        caption: "Rumus Lingkaran",
+        headers: ["Rumus", "Keterangan"],
+        rows: [
+          ["Keliling (K) = π × d", "d = diameter (2 × jari-jari)"],
+          ["Luas (L) = π × r²", "r = jari-jari"],
+          ["π = 22/7 atau 3,14", "Gunakan sesuai petunjuk soal"],
+        ],
+      },
       question: "Sebuah ban sepeda memiliki diameter 56 cm. Keliling ban tersebut adalah ... cm. (π = 22/7)",
       options: ["156 cm", "176 cm", "186 cm", "196 cm"],
       correctAnswer: 1,
@@ -246,6 +268,15 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
+      chartData: {
+        type: "table",
+        caption: "Data Nilai Ulangan 7 Siswa (sudah diurutkan)",
+        headers: ["Data Asli", "Data Diurutkan"],
+        rows: [
+          ["70, 65, 80, 75, 90, 85, 75", "65, 70, 75, 75, 80, 85, 90"],
+          ["7 data", "Median = nilai ke-4 = ?"],
+        ],
+      },
       question: "Data nilai ulangan 7 siswa: 70, 65, 80, 75, 90, 85, 75.\nSetelah diurutkan: 65, 70, 75, 75, 80, 85, 90.\nNilai median (nilai tengah) dari data tersebut adalah ...",
       options: ["70", "75", "77", "80"],
       correctAnswer: 1,
@@ -254,7 +285,18 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C3",
     },
     {
-      question: "Data waktu bermain (jam) 8 anak dalam sehari: 1, 2, 3, 2, 4, 2, 1, 3.\nModus (nilai yang paling sering muncul) dari data tersebut adalah ...",
+      chartData: {
+        type: "bar",
+        title: "Waktu Bermain Anak (jam per hari)",
+        unit: "anak",
+        items: [
+          { label: "1 jam", value: 2, color: "#60A5FA" },
+          { label: "2 jam", value: 3, color: "#34D399" },
+          { label: "3 jam", value: 2, color: "#F59E0B" },
+          { label: "4 jam", value: 1, color: "#EF4444" },
+        ],
+      },
+      question: "Perhatikan diagram batang di atas yang menunjukkan data waktu bermain (jam) 8 anak dalam sehari.\nModus (nilai yang paling sering muncul) dari data tersebut adalah ...",
       options: ["1", "2", "3", "4"],
       correctAnswer: 1,
       materi: "Statistika – Modus",
@@ -262,6 +304,16 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C2",
     },
     {
+      chartData: {
+        type: "table",
+        caption: "Rumus Skala Peta",
+        headers: ["Rumus", "Keterangan"],
+        rows: [
+          ["Skala = Jarak Peta ÷ Jarak Sebenarnya", "Skala menunjukkan perbandingan"],
+          ["Jarak Sebenarnya = Jarak Peta × Penyebut Skala", "Gunakan ini untuk soal ini"],
+          ["Contoh: 4 cm × 500.000 = 2.000.000 cm = ... km", "1 km = 100.000 cm"],
+        ],
+      },
       question: "Sebuah peta memiliki skala 1:500.000. Jarak dua kota pada peta adalah 4 cm. Jarak sebenarnya adalah ... km.",
       options: ["2 km", "20 km", "200 km", "2.000 km"],
       correctAnswer: 1,
@@ -491,9 +543,20 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C4",
     },
     {
-      question: "Data hobi siswa kelas 6:\nMembaca: 8 siswa, Olahraga: 12 siswa, Menggambar: 6 siswa, Bermain musik: 4 siswa\n\nBuatlah diagram batang dari data tersebut! (Gambarkan di tempat yang tersedia dan beri keterangan lengkap)",
-      modelAnswer: "Diagram Batang Hobi Siswa Kelas 6:\n\n• Judul: 'Diagram Batang Hobi Siswa Kelas 6'\n• Sumbu X: Jenis Hobi (Membaca, Olahraga, Menggambar, Bermain Musik)\n• Sumbu Y: Jumlah Siswa (0, 2, 4, 6, 8, 10, 12)\n• Batang: Membaca=8, Olahraga=12, Menggambar=6, Bermain Musik=4\n\nHobi terbanyak: Olahraga (12 siswa)\nHobi paling sedikit: Bermain Musik (4 siswa)",
-      keyPoints: ["Diagram batang dibuat dengan benar", "Sumbu X dan Y diberi label", "Judul diagram ada"],
+      chartData: {
+        type: "bar",
+        title: "Hobi Siswa Kelas 6",
+        unit: "siswa",
+        items: [
+          { label: "Membaca", value: 8, color: "#3B82F6" },
+          { label: "Olahraga", value: 12, color: "#10B981" },
+          { label: "Menggambar", value: 6, color: "#F59E0B" },
+          { label: "Musik", value: 4, color: "#8B5CF6" },
+        ],
+      },
+      question: "Perhatikan diagram batang data hobi siswa kelas 6 di atas.\n\nBuatlah analisis dari data tersebut! Tentukan:\na) Hobi paling diminati\nb) Hobi paling sedikit diminati\nc) Total seluruh siswa\nd) Jika dibuat diagram lingkaran, berapa persen siswa yang suka Olahraga?",
+      modelAnswer: "Diagram Batang Hobi Siswa Kelas 6:\n\n• Judul: 'Diagram Batang Hobi Siswa Kelas 6'\n• Sumbu X: Jenis Hobi (Membaca, Olahraga, Menggambar, Bermain Musik)\n• Sumbu Y: Jumlah Siswa (0, 2, 4, 6, 8, 10, 12)\n• Batang: Membaca=8, Olahraga=12, Menggambar=6, Bermain Musik=4\n\na) Hobi paling diminati: Olahraga (12 siswa)\nb) Hobi paling sedikit diminati: Bermain Musik (4 siswa)\nc) Total seluruh siswa: 8 + 12 + 6 + 4 = 30 siswa\nd) Persentase Olahraga: 12/30 × 100% = 40%",
+      keyPoints: ["Hobi terbanyak: Olahraga (12 siswa)", "Hobi paling sedikit: Bermain Musik (4 siswa)", "Total siswa: 30 orang", "Persentase Olahraga: 12/30 × 100% = 40%"],
       materi: "Analisis data",
       tujuanPembelajaran: "Menyajikan data dalam bentuk diagram batang",
       levelKognitif: "C3",
@@ -508,6 +571,15 @@ export const matematikaBank: SubjectQuestionBank = {
       levelKognitif: "C4",
     },
     {
+      chartData: {
+        type: "table",
+        caption: "Data Nilai Ulangan 10 Siswa Kelas 6 (diurutkan)",
+        headers: ["Posisi", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+        rows: [
+          ["Nilai", "60", "65", "70", "75", "75", "75", "80", "80", "85", "90"],
+          ["Keterangan", "", "", "", "↑", "Median", "↑", "", "", "", ""],
+        ],
+      },
       question: "Data nilai ulangan matematika 10 siswa kelas 6:\n60, 75, 80, 65, 90, 75, 85, 70, 80, 75\n\nTentukan:\na) Rata-rata (mean) nilai tersebut\nb) Median (nilai tengah) setelah diurutkan\nc) Modus (nilai yang paling sering muncul)\nd) Berapa siswa yang mendapat nilai di atas rata-rata?",
       modelAnswer: "Data diurutkan: 60, 65, 70, 75, 75, 75, 80, 80, 85, 90\na) Mean = (60+75+80+65+90+75+85+70+80+75) ÷ 10 = 755 ÷ 10 = 75,5\nb) Median = (75+75) ÷ 2 = 75 (nilai ke-5 dan ke-6)\nc) Modus = 75 (muncul 3 kali)\nd) Di atas 75,5: nilai 80, 80, 85, 90 → 4 siswa",
       keyPoints: ["Mean = 75,5", "Median = 75", "Modus = 75", "4 siswa di atas rata-rata"],

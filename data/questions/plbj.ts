@@ -4,7 +4,8 @@ const pg: PGQuestion[] = [
   // Kebudayaan Betawi (C1-C2)
   {
     id: "plbj-pg-1", type: "PG", number: 1,
-    question: "Ondel-ondel merupakan kesenian boneka raksasa yang berasal dari daerah ...",
+    question: "Perhatikan gambar boneka raksasa khas Betawi di atas. Kesenian boneka raksasa tersebut yang berasal dari daerah ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Ondel-ondel2.jpg/320px-Ondel-ondel2.jpg",
     options: ["Jawa Barat", "Banten", "DKI Jakarta (Betawi)", "Jawa Tengah"],
     correctAnswer: 2,
     materi: "Kebudayaan Betawi", tujuanPembelajaran: "Mengidentifikasi kesenian khas Betawi", levelKognitif: "C1"
@@ -18,7 +19,8 @@ const pg: PGQuestion[] = [
   },
   {
     id: "plbj-pg-3", type: "PG", number: 3,
-    question: "Kerak telor adalah makanan khas Betawi yang terbuat dari ...",
+    question: "Perhatikan gambar makanan khas Betawi di atas. Makanan tersebut terbuat dari ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kerak_telor.jpg/320px-Kerak_telor.jpg",
     options: ["Tepung beras, telur bebek, dan kelapa parut", "Tepung terigu, telur ayam, dan gula", "Singkong, telur, dan bumbu rempah", "Ketan, telur puyuh, dan santan"],
     correctAnswer: 0,
     materi: "Kuliner Betawi", tujuanPembelajaran: "Menyebutkan bahan makanan khas Betawi", levelKognitif: "C1"
@@ -62,7 +64,8 @@ const pg: PGQuestion[] = [
   },
   {
     id: "plbj-pg-9", type: "PG", number: 9,
-    question: "Monumen Nasional (Monas) terletak di kota administrasi ...",
+    question: "Perhatikan gambar monumen terkenal di Jakarta di atas. Monumen Nasional (Monas) tersebut terletak di kota administrasi ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Monas_2013_01.jpg/320px-Monas_2013_01.jpg",
     options: ["Jakarta Selatan", "Jakarta Barat", "Jakarta Pusat", "Jakarta Utara"],
     correctAnswer: 2,
     materi: "Tempat Bersejarah Jakarta", tujuanPembelajaran: "Mengidentifikasi lokasi tempat bersejarah di Jakarta", levelKognitif: "C1"
@@ -154,7 +157,17 @@ const pg: PGQuestion[] = [
   // Tokoh & Sejarah Jakarta (C1-C3)
   {
     id: "plbj-pg-21", type: "PG", number: 21,
-    question: "Nama asli kota Jakarta sebelum berganti nama adalah ...",
+    question: "Perhatikan garis waktu perubahan nama Kota Jakarta berikut. Urutan nama kota Jakarta dari masa ke masa yang BENAR adalah ...",
+    chartData: {
+      type: "timeline" as const,
+      events: [
+        { year: "Abad 12", event: "SUNDA KELAPA – Pelabuhan penting Kerajaan Sunda" },
+        { year: "1527", event: "JAYAKARTA – Fatahillah kalahkan Portugis (artinya: kota kemenangan)" },
+        { year: "1619", event: "BATAVIA – VOC Belanda (Jan Pieterszoon Coen)" },
+        { year: "1942", event: "JAKARTA – Jepang ambil alih (5 Maret 1942)" },
+        { year: "1945–skrg", event: "JAKARTA – Ibu Kota Republik Indonesia Merdeka" },
+      ],
+    },
     options: ["Sunda Kelapa", "Batavia", "Jayakarta", "Semua jawaban benar (berurutan)"],
     correctAnswer: 3,
     materi: "Sejarah Jakarta", tujuanPembelajaran: "Menyebutkan nama-nama kota Jakarta dari masa ke masa", levelKognitif: "C2"
@@ -177,7 +190,20 @@ const pg: PGQuestion[] = [
   // Kearifan Lokal & Nilai Budaya (C2-C4)
   {
     id: "plbj-pg-24", type: "PG", number: 24,
-    question: "Nilai kebersamaan dan gotong royong dalam masyarakat Betawi tercermin dalam kegiatan ...",
+    question: "Perhatikan tabel kekayaan budaya Betawi berikut. Nilai kebersamaan dan gotong royong dalam masyarakat Betawi tercermin dalam kegiatan ...",
+    chartData: {
+      type: "table" as const,
+      caption: "Kekayaan Budaya Betawi",
+      headers: ["Kategori", "Contoh"],
+      rows: [
+        ["Kesenian", "Ondel-ondel, Tari Topeng, Lenong, Gambang Kromong, Tanjidor"],
+        ["Kuliner", "Kerak Telor, Soto Betawi, Kue Rangi, Bir Pletok"],
+        ["Pakaian Adat", "Baju Sadariah (pria), Kebaya Encim (wanita)"],
+        ["Rumah Adat", "Rumah Kebaya / Bapang (ciri: teras lebar)"],
+        ["Tradisi", "Palang Pintu (pernikahan), Lebaran Betawi, Sunatan"],
+        ["Nilai Sosial", "Gotong royong, kerja bakti, kekeluargaan"],
+      ],
+    },
     options: ["Berdagang sendiri-sendiri", "Kerja bakti membersihkan lingkungan bersama", "Berlomba mendapatkan keuntungan", "Menyimpan harta untuk diri sendiri"],
     correctAnswer: 1,
     materi: "Nilai Budaya Betawi", tujuanPembelajaran: "Mengidentifikasi nilai kebersamaan dalam budaya Betawi", levelKognitif: "C2"
