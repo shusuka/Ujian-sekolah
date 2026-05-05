@@ -67,15 +67,6 @@ export default function SubjectsPage() {
           </div>
         </div>
 
-        {/* Info bar */}
-        <div className="flex items-center gap-4 mb-6 text-sm text-gray-600 bg-amber-50 border border-amber-200 rounded-2xl p-4">
-          <span className="text-2xl">💡</span>
-          <p>
-            Setiap kali kamu memulai ujian, sistem akan memilih <strong>paket soal secara acak</strong> dari 5 variasi yang tersedia.
-            Kerjakan dengan jujur!
-          </p>
-        </div>
-
         {/* Subject grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SUBJECTS.map((subject, i) => (
