@@ -8,7 +8,8 @@ const pg: PGQuestion[] = [
 
   {
     id: "ipas-pg-1", type: "PG", number: 1,
-    question: "Rangka, sendi, dan otot bekerja sama agar tubuh manusia bisa bergerak. Rangka disebut alat gerak pasif karena ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Human_skeleton_front_en.svg/220px-Human_skeleton_front_en.svg.png",
+    question: "Perhatikan gambar rangka manusia di atas. Rangka, sendi, dan otot bekerja sama agar tubuh manusia bisa bergerak. Rangka disebut alat gerak pasif karena ...",
     options: ["Rangka tidak pernah bergerak sama sekali", "Rangka hanya bergerak jika ditarik oleh otot", "Rangka bergerak sendiri tanpa bantuan otot", "Rangka terlalu berat untuk bergerak"],
     correctAnswer: 1,
     materi: "Sistem Gerak – Rangka dan Otot", tujuanPembelajaran: "Menjelaskan peran rangka sebagai alat gerak pasif", levelKognitif: "C2"
@@ -16,13 +17,34 @@ const pg: PGQuestion[] = [
   {
     id: "ipas-pg-2", type: "PG", number: 2,
     question: "Sendi yang memungkinkan gerakan ke segala arah seperti pada sendi bahu dan pinggul disebut sendi ...",
+    chartData: {
+      type: "table",
+      caption: "Jenis-Jenis Sendi pada Tubuh Manusia",
+      headers: ["Jenis Sendi", "Lokasi", "Arah Gerak"],
+      rows: [
+        ["Sendi engsel", "Siku, lutut, jari", "Satu arah (seperti engsel pintu)"],
+        ["Sendi putar", "Tulang leher (atlas-axis)", "Berputar/memutar"],
+        ["Sendi pelana", "Ibu jari", "Dua arah (maju-mundur & kiri-kanan)"],
+        ["Sendi peluru", "Bahu, panggul", "Segala arah (360°)"],
+      ],
+    },
     options: ["Sendi engsel", "Sendi putar", "Sendi pelana", "Sendi peluru"],
     correctAnswer: 3,
     materi: "Sistem Gerak – Sendi", tujuanPembelajaran: "Mengidentifikasi jenis-jenis sendi dan fungsinya", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-3", type: "PG", number: 3,
-    question: "Perhatikan kelainan tulang berikut:\n• Tulang punggung melengkung ke depan (perut maju)\n• Biasanya terjadi pada wanita hamil atau orang yang sering membawa beban berat di depan\n\nKelainan tulang tersebut disebut ...",
+    chartData: {
+      type: "table",
+      caption: "Perbandingan Kelainan Tulang Belakang",
+      headers: ["Kelainan", "Arah Lengkungan", "Penyebab Umum"],
+      rows: [
+        ["Lordosis", "Ke depan (perut maju)", "Beban berat di depan, kehamilan"],
+        ["Kifosis", "Ke belakang (punggung bungkuk)", "Terlalu sering membungkuk"],
+        ["Skoliosis", "Ke samping (membentuk S/C)", "Duduk miring, kebiasaan buruk"],
+      ],
+    },
+    question: "Perhatikan tabel kelainan tulang di atas. Tulang punggung yang melengkung ke depan sehingga perut terlihat maju ke depan, biasanya terjadi pada wanita hamil atau orang yang sering membawa beban berat di depan. Kelainan tulang tersebut disebut ...",
     options: ["Kifosis", "Lordosis", "Skoliosis", "Osteoporosis"],
     correctAnswer: 1,
     materi: "Sistem Gerak – Kelainan Tulang", tujuanPembelajaran: "Membedakan jenis-jenis kelainan pada sistem gerak", levelKognitif: "C3"
@@ -36,14 +58,25 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-5", type: "PG", number: 5,
-    question: "Otot jantung memiliki sifat yang berbeda dari otot lurik dan otot polos. Sifat khas otot jantung adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Perbandingan Jenis Otot pada Tubuh Manusia",
+      headers: ["Jenis Otot", "Lokasi", "Cara Kerja", "Ciri Khas"],
+      rows: [
+        ["Otot Lurik", "Melekat pada tulang (lengan, kaki)", "Sadar (dapat dikendalikan)", "Berlurik, mudah lelah"],
+        ["Otot Polos", "Organ dalam (lambung, usus)", "Tidak sadar (otomatis)", "Tidak berlurik, lambat"],
+        ["Otot Jantung", "Hanya di jantung", "Tidak sadar, tidak pernah lelah", "Berlurik, bekerja terus-menerus"],
+      ],
+    },
+    question: "Perhatikan tabel jenis otot di atas. Otot jantung memiliki sifat yang berbeda dari otot lurik dan otot polos. Sifat khas otot jantung adalah ...",
     options: ["Bekerja secara sadar dan bisa dikendalikan", "Bekerja di luar kesadaran dan tidak pernah lelah", "Hanya aktif saat kita berolahraga", "Memiliki warna putih dan bergerak lambat"],
     correctAnswer: 1,
     materi: "Sistem Gerak – Otot", tujuanPembelajaran: "Membedakan jenis-jenis otot dan cara kerjanya", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-6", type: "PG", number: 6,
-    question: "Ketika tangan seseorang tidak sengaja menyentuh benda panas, ia langsung menarik tangannya sebelum otak memerintahkan. Peristiwa ini disebut gerak ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Reflex_arc_en.svg/300px-Reflex_arc_en.svg.png",
+    question: "Perhatikan diagram busur refleks di atas. Ketika tangan seseorang tidak sengaja menyentuh benda panas, ia langsung menarik tangannya sebelum otak memerintahkan. Peristiwa ini disebut gerak ...",
     options: ["Gerak sadar yang dikendalikan otak besar", "Gerak refleks yang dikendalikan sumsum tulang belakang", "Gerak terkoordinasi antara otak dan tangan", "Gerak volunter yang dipelajari sejak bayi"],
     correctAnswer: 1,
     materi: "Sistem Saraf", tujuanPembelajaran: "Membedakan gerak refleks dan gerak sadar", levelKognitif: "C3"
@@ -97,7 +130,8 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-13", type: "PG", number: 13,
-    question: "Proklamasi Kemerdekaan Indonesia dibacakan oleh Ir. Soekarno pada tanggal 17 Agustus 1945 di ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Proklamasi.jpg/280px-Proklamasi.jpg",
+    question: "Perhatikan foto bersejarah di atas. Proklamasi Kemerdekaan Indonesia dibacakan oleh Ir. Soekarno pada tanggal 17 Agustus 1945 di ...",
     options: ["Lapangan Banteng, Jakarta Pusat", "Jalan Pegangsaan Timur No. 56, Jakarta", "Istana Negara, Jakarta Pusat", "Gedung Volksraad, Batavia"],
     correctAnswer: 1,
     materi: "Sejarah – Proklamasi Kemerdekaan", tujuanPembelajaran: "Menyebutkan tempat dan tanggal proklamasi kemerdekaan", levelKognitif: "C1"
@@ -111,7 +145,17 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-15", type: "PG", number: 15,
-    question: "Budi Utomo yang didirikan pada 20 Mei 1908 dianggap sebagai awal kebangkitan nasional Indonesia karena ...",
+    chartData: {
+      type: "timeline",
+      events: [
+        { year: "1602", event: "VOC didirikan, Belanda mulai masuk Nusantara" },
+        { year: "1830", event: "Tanam Paksa (Cultuurstelsel) mulai diterapkan" },
+        { year: "1908", event: "Budi Utomo berdiri — awal Kebangkitan Nasional" },
+        { year: "1928", event: "Sumpah Pemuda: satu tanah air, bangsa, bahasa" },
+        { year: "1945", event: "Proklamasi Kemerdekaan Indonesia, 17 Agustus" },
+      ],
+    },
+    question: "Perhatikan garis waktu (timeline) sejarah Indonesia di atas. Budi Utomo yang didirikan pada 20 Mei 1908 dianggap sebagai awal kebangkitan nasional Indonesia karena ...",
     options: ["Merupakan organisasi perlawanan bersenjata pertama melawan Belanda", "Merupakan organisasi modern pertama yang bersifat nasional dan menggunakan pendidikan sebagai sarana perjuangan", "Berhasil mengusir Belanda dari wilayah Jawa", "Merupakan organisasi keagamaan yang menyatukan seluruh Islam Nusantara"],
     correctAnswer: 1,
     materi: "Sejarah – Pergerakan Nasional", tujuanPembelajaran: "Menjelaskan makna Hari Kebangkitan Nasional", levelKognitif: "C3"
@@ -158,7 +202,20 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-21", type: "PG", number: 21,
-    question: "Perhatikan daftar benua berikut: Asia, Afrika, Amerika, Eropa, Australia, Antartika. Benua TERLUAS dan TERKECIL berturut-turut adalah ...",
+    chartData: {
+      type: "bar",
+      title: "Luas Benua di Dunia",
+      unit: "juta km²",
+      items: [
+        { label: "Asia", value: 44.6, color: "#EF4444" },
+        { label: "Amerika", value: 42.5, color: "#3B82F6" },
+        { label: "Afrika", value: 30.4, color: "#F59E0B" },
+        { label: "Antartika", value: 14.2, color: "#6B7280" },
+        { label: "Eropa", value: 10.5, color: "#10B981" },
+        { label: "Australia", value: 7.7, color: "#8B5CF6" },
+      ],
+    },
+    question: "Perhatikan diagram batang luas benua di atas. Berdasarkan data tersebut, benua TERLUAS dan TERKECIL berturut-turut adalah ...",
     options: ["Afrika dan Australia", "Asia dan Antartika", "Asia dan Australia", "Amerika dan Eropa"],
     correctAnswer: 2,
     materi: "Geografi – Benua di Dunia", tujuanPembelajaran: "Membandingkan ukuran benua-benua di dunia", levelKognitif: "C2"
@@ -210,28 +267,50 @@ const pg: PGQuestion[] = [
 
   {
     id: "ipas-pg-27", type: "PG", number: 27,
-    question: "Rotasi Bumi adalah perputaran Bumi pada porosnya. Akibat langsung dari rotasi Bumi adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Rotasi vs Revolusi Bumi",
+      headers: ["Gerak Bumi", "Definisi", "Waktu", "Akibat"],
+      rows: [
+        ["Rotasi", "Bumi berputar pada porosnya", "±24 jam (1 hari)", "Siang & malam, perbedaan waktu"],
+        ["Revolusi", "Bumi mengelilingi Matahari", "±365¼ hari (1 tahun)", "Pergantian musim, kalender masehi"],
+      ],
+    },
+    question: "Perhatikan tabel perbandingan gerak Bumi di atas. Rotasi Bumi adalah perputaran Bumi pada porosnya. Akibat langsung dari rotasi Bumi adalah ...",
     options: ["Terjadinya pergantian musim panas dan dingin", "Terjadinya siang dan malam serta perbedaan waktu di berbagai tempat", "Terjadinya gerhana matahari dan gerhana bulan", "Terjadinya pasang surut air laut"],
     correctAnswer: 1,
     materi: "Tata Surya – Rotasi dan Revolusi", tujuanPembelajaran: "Menjelaskan akibat rotasi Bumi", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-28", type: "PG", number: 28,
-    question: "Planet Venus dijuluki 'Bintang Kejora' dan memiliki suhu permukaan (~465°C) lebih panas dari Merkurius, meskipun Merkurius lebih dekat ke Matahari. Alasan yang PALING TEPAT adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Data Perbandingan Planet Merkurius dan Venus",
+      headers: ["Karakteristik", "Merkurius", "Venus"],
+      rows: [
+        ["Jarak dari Matahari", "57,9 juta km (terdekat)", "108,2 juta km (ke-2)"],
+        ["Suhu rata-rata", "Siang: +430°C / Malam: -180°C", "+465°C (konsisten)"],
+        ["Tebal atmosfer", "Hampir tidak ada", "Sangat tebal (96% CO₂)"],
+        ["Efek rumah kaca", "Tidak ada", "Sangat ekstrem"],
+      ],
+    },
+    question: "Perhatikan tabel data planet di atas. Planet Venus dijuluki 'Bintang Kejora' dan memiliki suhu permukaan (~465°C) lebih panas dari Merkurius, meskipun Merkurius lebih dekat ke Matahari. Alasan yang PALING TEPAT adalah ...",
     options: ["Venus lebih besar dari Merkurius sehingga menyerap lebih banyak panas", "Atmosfer tebal Venus mengandung CO₂ yang menyebabkan efek rumah kaca ekstrem sehingga panas terperangkap", "Venus berputar lebih cepat sehingga menghasilkan panas gesekan", "Merkurius memiliki perisai yang memantulkan panas matahari"],
     correctAnswer: 1,
     materi: "Tata Surya – Planet", tujuanPembelajaran: "Menganalisis karakteristik planet-planet dalam tata surya", levelKognitif: "C4"
   },
   {
     id: "ipas-pg-29", type: "PG", number: 29,
-    question: "Urutan planet dari yang PALING DEKAT ke Matahari adalah ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/800px-Planets2013.svg.png",
+    question: "Perhatikan gambar tata surya di atas yang menunjukkan urutan planet dari Matahari. Urutan planet dari yang PALING DEKAT ke Matahari adalah ...",
     options: ["Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus", "Venus, Merkurius, Bumi, Mars, Jupiter, Saturnus, Neptunus, Uranus", "Merkurius, Venus, Mars, Bumi, Jupiter, Saturnus, Uranus, Neptunus", "Bumi, Venus, Merkurius, Mars, Jupiter, Saturnus, Uranus, Neptunus"],
     correctAnswer: 0,
     materi: "Tata Surya – Planet", tujuanPembelajaran: "Menyebutkan urutan planet dari Matahari", levelKognitif: "C1"
   },
   {
     id: "ipas-pg-30", type: "PG", number: 30,
-    question: "Planet Saturnus dikenal karena memiliki cincin yang indah. Cincin Saturnus tersebut tersusun dari ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/400px-Saturn_during_Equinox.jpg",
+    question: "Perhatikan foto planet Saturnus dari wahana antariksa Cassini di atas. Planet Saturnus dikenal karena memiliki cincin yang indah. Cincin Saturnus tersebut tersusun dari ...",
     options: ["Awan tebal dari gas hidrogen dan helium", "Jutaan partikel es, batuan, dan debu berbagai ukuran", "Kawah meteor yang mengelilingi planet", "Bulan-bulan kecil yang bergerak sangat cepat"],
     correctAnswer: 1,
     materi: "Tata Surya – Planet", tujuanPembelajaran: "Mendeskripsikan ciri khas planet Saturnus", levelKognitif: "C1"
@@ -252,14 +331,16 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-33", type: "PG", number: 33,
-    question: "Gerhana Matahari total terjadi ketika ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Geometry_of_a_Total_Solar_Eclipse.svg/400px-Geometry_of_a_Total_Solar_Eclipse.svg.png",
+    question: "Perhatikan diagram posisi Matahari, Bulan, dan Bumi saat gerhana di atas. Gerhana Matahari total terjadi ketika ...",
     options: ["Bumi berada di antara Matahari dan Bulan sehingga Bulan masuk ke bayangan Bumi", "Bulan berada tepat di antara Matahari dan Bumi sehingga sinar Matahari terhalang sampai ke Bumi", "Matahari berada di antara Bumi dan Bulan sehingga Bumi gelap", "Bumi dan Bulan berada pada posisi yang sama dari Matahari"],
     correctAnswer: 1,
     materi: "Tata Surya – Gerhana", tujuanPembelajaran: "Menjelaskan proses terjadinya gerhana Matahari", levelKognitif: "C2"
   },
   {
     id: "ipas-pg-34", type: "PG", number: 34,
-    question: "Revolusi Bumi mengelilingi Matahari membutuhkan waktu sekitar 365¼ hari. Akibat dari revolusi Bumi adalah ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Seasons_en.png/400px-Seasons_en.png",
+    question: "Perhatikan diagram revolusi Bumi dan pergantian musim di atas. Revolusi Bumi mengelilingi Matahari membutuhkan waktu sekitar 365¼ hari. Akibat dari revolusi Bumi adalah ...",
     options: ["Terjadinya siang dan malam secara bergantian setiap 24 jam", "Terjadinya pergantian musim dan pembuatan kalender masehi (1 tahun = 365 hari)", "Terjadinya perbedaan waktu antara kota-kota di Indonesia", "Terjadinya pasang surut air laut setiap hari"],
     correctAnswer: 1,
     materi: "Tata Surya – Rotasi dan Revolusi", tujuanPembelajaran: "Menjelaskan akibat revolusi Bumi", levelKognitif: "C2"
@@ -285,21 +366,36 @@ const pg: PGQuestion[] = [
   },
   {
     id: "ipas-pg-37", type: "PG", number: 37,
-    question: "Indonesia memiliki potensi besar untuk mengembangkan energi panas bumi (geotermal). Sumber energi ini tersedia melimpah di Indonesia karena ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/NesjavellirPowerPlant_edit2.jpg/400px-NesjavellirPowerPlant_edit2.jpg",
+    question: "Perhatikan foto pembangkit listrik tenaga panas bumi (geotermal) di atas. Indonesia memiliki potensi besar untuk mengembangkan energi panas bumi (geotermal). Sumber energi ini tersedia melimpah di Indonesia karena ...",
     options: ["Indonesia memiliki banyak sungai besar yang mengalir deras", "Indonesia berada di cincin api Pasifik dengan banyak gunung berapi aktif yang menyimpan panas bumi", "Indonesia mendapat sinar matahari sepanjang tahun", "Indonesia memiliki hutan tropis yang luas sebagai sumber biomassa"],
     correctAnswer: 1,
     materi: "Energi – Terbarukan", tujuanPembelajaran: "Menjelaskan potensi energi terbarukan di Indonesia", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-38", type: "PG", number: 38,
-    question: "Perhatikan daftar sumber energi:\n(1) Matahari  (2) Angin  (3) Batu bara  (4) Minyak bumi  (5) Air  (6) Gas alam\n\nYang termasuk energi TERBARUKAN adalah ...",
+    chartData: {
+      type: "table",
+      caption: "Klasifikasi Sumber-Sumber Energi",
+      headers: ["No.", "Sumber Energi", "Kategori", "Keterangan"],
+      rows: [
+        ["1", "☀️ Matahari", "✅ Terbarukan", "Tidak akan habis, ramah lingkungan"],
+        ["2", "💨 Angin", "✅ Terbarukan", "Menggerakkan turbin angin (PLTB)"],
+        ["3", "⚫ Batu bara", "❌ Tak Terbarukan", "Fosil, terbatas, menghasilkan CO₂"],
+        ["4", "🛢️ Minyak bumi", "❌ Tak Terbarukan", "Fosil, terbatas, polutif"],
+        ["5", "💧 Air", "✅ Terbarukan", "Siklus air terus berulang (PLTA)"],
+        ["6", "🔥 Gas alam", "❌ Tak Terbarukan", "Fosil, lebih bersih dari batu bara"],
+      ],
+    },
+    question: "Perhatikan tabel klasifikasi sumber energi di atas. Berdasarkan tabel tersebut, yang termasuk energi TERBARUKAN adalah ...",
     options: ["(1), (2), (3)", "(1), (2), (5)", "(3), (4), (6)", "(2), (4), (5)"],
     correctAnswer: 1,
     materi: "Energi – Terbarukan vs Tak Terbarukan", tujuanPembelajaran: "Membedakan sumber energi terbarukan dan tak terbarukan", levelKognitif: "C3"
   },
   {
     id: "ipas-pg-39", type: "PG", number: 39,
-    question: "Penggunaan panel surya (solar panel) di rumah-rumah dapat mengurangi ketergantungan pada listrik dari PLN yang menggunakan batu bara. Evaluasi pernyataan berikut: 'Panel surya adalah solusi sempurna untuk krisis energi Indonesia.'\n\nPernyataan ini ...",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Photovoltaik_Dachanlage_Hannover_-_Schwarze_Heide_-_1_MW.jpg/400px-Photovoltaik_Dachanlage_Hannover_-_Schwarze_Heide_-_1_MW.jpg",
+    question: "Perhatikan foto instalasi panel surya di atas. Penggunaan panel surya (solar panel) dapat mengurangi ketergantungan pada listrik dari PLN yang menggunakan batu bara. Evaluasi pernyataan berikut: 'Panel surya adalah solusi sempurna untuk krisis energi Indonesia.'\n\nPernyataan ini ...",
     options: ["Benar sepenuhnya karena Indonesia mendapat sinar matahari melimpah", "Tidak sepenuhnya benar; panel surya baik tapi masih ada tantangan biaya awal yang tinggi, penyimpanan energi malam hari, dan tidak cocok di semua wilayah", "Salah karena panel surya tidak efektif di iklim tropis", "Benar, karena panel surya sudah bisa menggantikan seluruh kebutuhan energi Indonesia"],
     correctAnswer: 1,
     materi: "Energi – Terbarukan", tujuanPembelajaran: "Mengevaluasi kelebihan dan keterbatasan energi surya", levelKognitif: "C5"
@@ -550,7 +646,18 @@ const ut: UTQuestion[] = [
   // BAB 5 – Tata Surya (HOTS)
   {
     id: "ipas-ut-6", type: "UT", number: 70,
-    question: "Perhatikan data planet-planet berikut:\n• Merkurius: terdekat ke Matahari, hampir tidak punya atmosfer, suhu siang +430°C / malam -180°C\n• Venus: nomor 2 dari Matahari, atmosfer tebal CO₂, suhu rata-rata +465°C\n• Mars: nomor 4, atmosfer tipis CO₂, suhu rata-rata -60°C, ada bukti air beku\n\nBerdasarkan data tersebut, analisislah:\na) Mengapa Venus lebih panas dari Merkurius meski Merkurius lebih dekat ke Matahari?\nb) Mengapa suhu Merkurius sangat ekstrem (siang sangat panas, malam sangat dingin)?\nc) Para ilmuwan sedang meneliti apakah Mars bisa dihuni manusia di masa depan. Berdasarkan data di atas, apa tantangan terbesar yang harus diatasi?",
+    chartData: {
+      type: "table",
+      caption: "Data Perbandingan Planet Dalam Tata Surya",
+      headers: ["Planet", "Jarak dari Matahari", "Suhu Rata-rata", "Atmosfer", "Keunikan"],
+      rows: [
+        ["Merkurius", "57,9 juta km (ke-1)", "Siang +430°C / Malam -180°C", "Hampir tidak ada", "Suhu paling ekstrem"],
+        ["Venus", "108,2 juta km (ke-2)", "+465°C (konsisten)", "Sangat tebal (96% CO₂)", "Planet terpanas"],
+        ["Bumi", "149,6 juta km (ke-3)", "+15°C", "N₂ (78%), O₂ (21%)", "Satu-satunya dengan kehidupan"],
+        ["Mars", "227,9 juta km (ke-4)", "-60°C", "Tipis (95% CO₂)", "Ada bukti air beku di kutub"],
+      ],
+    },
+    question: "Perhatikan tabel data planet di atas dengan seksama. Berdasarkan data tersebut, analisislah:\na) Mengapa Venus lebih panas dari Merkurius meski Merkurius lebih dekat ke Matahari?\nb) Mengapa suhu Merkurius sangat ekstrem (siang sangat panas, malam sangat dingin)?\nc) Para ilmuwan sedang meneliti apakah Mars bisa dihuni manusia di masa depan. Berdasarkan data di atas, apa tantangan terbesar yang harus diatasi?",
     modelAnswer: "a) Venus lebih panas dari Merkurius karena efek rumah kaca ekstrem: atmosfer Venus yang sangat tebal mengandung 96% CO₂, gas yang sangat efektif memerangkap panas. Panas dari Matahari masuk ke Venus tetapi tidak bisa keluar karena terhalang atmosfer tebal ini. Merkurius yang hampir tidak punya atmosfer tidak bisa menyimpan panas.\n\nb) Suhu Merkurius sangat ekstrem karena hampir tidak memiliki atmosfer yang berfungsi sebagai 'selimut': saat menghadap Matahari, tidak ada apa pun yang memantulkan atau menyerap panas sehingga sangat panas. Saat membelakangi Matahari, tidak ada atmosfer yang menahan panas sehingga langsung sangat dingin.\n\nc) Tantangan terbesar menghuni Mars:\n1. Atmosfer tipis dan kurangnya oksigen – manusia tidak bisa bernapas langsung\n2. Suhu rata-rata -60°C sangat dingin untuk kehidupan manusia normal\n3. Radiasi kosmik tinggi karena tidak ada medan magnet dan atmosfer pelindung\n4. Harus membawa atau memproduksi air dan makanan sendiri (meski ada es di kutub Mars)",
     keyPoints: ["Penjelasan efek rumah kaca Venus benar", "Alasan suhu ekstrem Merkurius karena ketiadaan atmosfer", "Minimal 3 tantangan menghuni Mars disebutkan"],
     materi: "Tata Surya – Karakteristik Planet", tujuanPembelajaran: "Menganalisis karakteristik planet berdasarkan data", levelKognitif: "C4"

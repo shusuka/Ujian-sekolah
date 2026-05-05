@@ -1,15 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { PGQuestion, ISQuestion, UTQuestion, Question } from "@/lib/types";
-import { parseTextWithFractions, TextSegment } from "@/lib/utils";
+import {
+  PGQuestion, ISQuestion, UTQuestion, Question,
+  ChartData, ChartDataBar, ChartDataTable, ChartDataTimeline,
+} from "@/lib/types";
+import { parseTextWithFractions } from "@/lib/utils";
 
 interface QuestionCardProps {
   question: Question;
   answer: string | null;
   onAnswer: (answer: string) => void;
   isSubmitted: boolean;
-  autoGrade?: "benar" | "setengah" | "salah" | null; // auto-computed for UT
+  autoGrade?: "benar" | "setengah" | "salah" | null;
 }
 
 const typeLabels: Record<string, { label: string; color: string; bg: string }> = {
@@ -18,7 +21,7 @@ const typeLabels: Record<string, { label: string; color: string; bg: string }> =
   UT: { label: "Uraian Tertulis", color: "text-purple-700", bg: "bg-purple-100" },
 };
 
-// Renders text with proper fraction display for [a/b] or (a/b) patterns
+// ─── RichText: fractions ────────────────────────────────────────────────────
 function RichText({ text, className = "" }: { text: string; className?: string }) {
   const segments = parseTextWithFractions(text);
   return (
@@ -38,20 +41,100 @@ function RichText({ text, className = "" }: { text: string; className?: string }
   );
 }
 
-// Renders question text preserving newlines + fraction support
-function QuestionText({ text }: { text: string }) {
+// ─── Markdown table parser ──────────────────────────────────────────────────
+type TextBlock = { kind: "text"; lines: string[] };
+type TableBlock = { kind: "table"; headers: string[]; rows: string[][] };
+type Block = TextBlock | TableBlock;
+
+function isTableSeparator(line: string) {
+  return /^\|[\s\-|:]+\|$/.test(line.trim());
+}
+
+function parseTableLine(line: string): string[] {
+  return line.split("|").slice(1, -1).map((c) => c.trim());
+}
+
+function parseBlocks(text: string): Block[] {
+  const rawLines = text.split("\n");
+  const blocks: Block[] = [];
+  let i = 0;
+  let currentText: string[] = [];
+
+  while (i < rawLines.length) {
+    const line = rawLines[i];
+    if (line.trim().startsWith("|")) {
+      if (currentText.length) { blocks.push({ kind: "text", lines: currentText }); currentText = []; }
+      const tableLines: string[] = [];
+      while (i < rawLines.length && rawLines[i].trim().startsWith("|")) {
+        tableLines.push(rawLines[i]);
+        i++;
+      }
+      const nonSep = tableLines.filter((l) => !isTableSeparator(l));
+      if (nonSep.length >= 1) {
+        blocks.push({
+          kind: "table",
+          headers: parseTableLine(nonSep[0]),
+          rows: nonSep.slice(1).map(parseTableLine),
+        });
+      }
+    } else {
+      currentText.push(line);
+      i++;
+    }
+  }
+  if (currentText.length) blocks.push({ kind: "text", lines: currentText });
+  return blocks;
+}
+
+// ─── QuestionText: newlines + fractions + markdown tables ──────────────────
+function InlineTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
-    <div className="text-gray-800 text-sm leading-relaxed font-medium">
-      {text.split("\n").map((line, i) => (
-        <p key={i} className={i > 0 ? "mt-1" : ""}>
-          <RichText text={line} />
-        </p>
-      ))}
+    <div className="my-2 overflow-x-auto rounded-lg border border-blue-200">
+      <table className="w-full text-xs border-collapse">
+        <thead>
+          <tr className="bg-blue-600 text-white">
+            {headers.map((h, i) => (
+              <th key={i} className="px-2.5 py-1.5 text-left font-semibold border-r border-blue-500 last:border-r-0">{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, ri) => (
+            <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-blue-50"}>
+              {row.map((cell, ci) => (
+                <td key={ci} className="px-2.5 py-1.5 border-r border-gray-200 last:border-r-0 text-gray-700">{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
 
-// Optional image display
+function QuestionText({ text }: { text: string }) {
+  const blocks = parseBlocks(text);
+  return (
+    <div className="text-gray-800 text-sm leading-relaxed font-medium">
+      {blocks.map((block, bi) => {
+        if (block.kind === "table") {
+          return <InlineTable key={bi} headers={block.headers} rows={block.rows} />;
+        }
+        return (
+          <span key={bi}>
+            {block.lines.map((line, li) => (
+              <p key={li} className={bi > 0 || li > 0 ? "mt-1" : ""}>
+                <RichText text={line} />
+              </p>
+            ))}
+          </span>
+        );
+      })}
+    </div>
+  );
+}
+
+// ─── QuestionImage ──────────────────────────────────────────────────────────
 function QuestionImage({ url }: { url: string }) {
   const [errored, setErrored] = useState(false);
   if (errored) return null;
@@ -62,7 +145,7 @@ function QuestionImage({ url }: { url: string }) {
         <img
           src={url}
           alt="Gambar soal"
-          className="w-full h-auto object-contain max-h-64"
+          className="w-full h-auto object-contain max-h-72"
           onError={() => setErrored(true)}
         />
       </div>
@@ -70,6 +153,98 @@ function QuestionImage({ url }: { url: string }) {
   );
 }
 
+// ─── Chart components ───────────────────────────────────────────────────────
+const BAR_COLORS = ["#3B82F6","#10B981","#F59E0B","#EF4444","#8B5CF6","#EC4899","#14B8A6","#F97316"];
+
+function BarChart({ data }: { data: ChartDataBar }) {
+  const max = Math.max(...data.items.map((i) => i.value), 1);
+  return (
+    <div className="my-3 bg-gray-50 rounded-xl border border-gray-200 p-3">
+      {data.title && (
+        <div className="text-xs font-semibold text-center text-gray-600 mb-2">{data.title}</div>
+      )}
+      <div className="flex items-end justify-around gap-1.5" style={{ height: "140px" }}>
+        {data.items.map((item, i) => {
+          const heightPct = (item.value / max) * 100;
+          const color = item.color || BAR_COLORS[i % BAR_COLORS.length];
+          return (
+            <div key={i} className="flex flex-col items-center flex-1 h-full justify-end">
+              <div className="text-center font-bold mb-0.5" style={{ color, fontSize: "10px" }}>
+                {item.value}{data.unit ? "" : ""}
+              </div>
+              <div
+                className="w-full rounded-t-md transition-all"
+                style={{ height: `${heightPct}%`, backgroundColor: color, minHeight: item.value > 0 ? 4 : 0 }}
+              />
+              <div className="text-center text-gray-600 mt-1 leading-tight px-0.5" style={{ fontSize: "9px" }}>
+                {item.label}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {data.unit && (
+        <div className="text-center text-gray-400 mt-1" style={{ fontSize: "9px" }}>Satuan: {data.unit}</div>
+      )}
+    </div>
+  );
+}
+
+function TableChart({ data }: { data: ChartDataTable }) {
+  return (
+    <div className="my-3 overflow-x-auto rounded-xl border border-indigo-200">
+      {data.caption && (
+        <div className="bg-indigo-600 text-white text-xs font-semibold text-center py-1.5 px-2">{data.caption}</div>
+      )}
+      <table className="w-full text-xs border-collapse">
+        <thead>
+          <tr className={data.caption ? "bg-indigo-100" : "bg-indigo-600 text-white"}>
+            {data.headers.map((h, i) => (
+              <th key={i} className={`px-2.5 py-1.5 text-left font-semibold border-r border-indigo-200 last:border-r-0 ${!data.caption ? "text-white border-indigo-500" : "text-indigo-800"}`}>{h}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.rows.map((row, ri) => (
+            <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-indigo-50"}>
+              {row.map((cell, ci) => (
+                <td key={ci} className="px-2.5 py-1.5 border-r border-gray-100 last:border-r-0 text-gray-700">{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+function TimelineChart({ data }: { data: ChartDataTimeline }) {
+  return (
+    <div className="my-3 bg-amber-50 rounded-xl border border-amber-200 p-3">
+      <div className="relative pl-5">
+        <div className="absolute left-2 top-1 bottom-1 w-0.5 bg-amber-400" />
+        {data.events.map((e, i) => (
+          <div key={i} className="relative mb-2 last:mb-0">
+            <div className="absolute -left-3 top-1 w-3 h-3 rounded-full bg-amber-500 border-2 border-white shadow-sm" />
+            <div>
+              <span className="text-xs font-bold text-amber-700">{e.year}</span>
+              <span className="text-xs text-gray-700 ml-1.5">{e.event}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function QuestionChart({ data }: { data: ChartData }) {
+  if (data.type === "bar") return <BarChart data={data as ChartDataBar} />;
+  if (data.type === "table") return <TableChart data={data as ChartDataTable} />;
+  if (data.type === "timeline") return <TimelineChart data={data as ChartDataTimeline} />;
+  return null;
+}
+
+// ─── Answer cards ───────────────────────────────────────────────────────────
 function PGCard({ question, answer, onAnswer, isSubmitted }: {
   question: PGQuestion; answer: string | null; onAnswer: (a: string) => void; isSubmitted: boolean;
 }) {
@@ -222,9 +397,11 @@ function UTCard({ question, answer, onAnswer, isSubmitted, autoGrade }: {
   );
 }
 
+// ─── Main QuestionCard ──────────────────────────────────────────────────────
 export default function QuestionCard({ question, answer, onAnswer, isSubmitted, autoGrade }: QuestionCardProps) {
   const meta = typeLabels[question.type];
   const imageUrl = (question as any).imageUrl;
+  const chartData = (question as any).chartData as ChartData | undefined;
 
   return (
     <div className="bg-white rounded-2xl shadow-md p-5 border border-gray-100 animate-fade-in">
@@ -246,11 +423,14 @@ export default function QuestionCard({ question, answer, onAnswer, isSubmitted, 
         </div>
       </div>
 
-      {/* Question text */}
+      {/* Question text (with inline table rendering) */}
       <QuestionText text={question.question} />
 
       {/* Optional image */}
       {imageUrl && <QuestionImage url={imageUrl} />}
+
+      {/* Optional chart / visual data */}
+      {chartData && <QuestionChart data={chartData} />}
 
       {/* Answer area */}
       {question.type === "PG" && (

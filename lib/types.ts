@@ -1,12 +1,33 @@
 export type QuestionType = "PG" | "IS" | "UT";
 export type LevelKognitif = "C1" | "C2" | "C3" | "C4" | "C5";
 
+// ─── Chart / Visual Data Types ───────────────────────────────────────────────
+export interface ChartDataBar {
+  type: "bar";
+  title?: string;
+  unit?: string;
+  items: { label: string; value: number; color?: string }[];
+}
+export interface ChartDataTable {
+  type: "table";
+  caption?: string;
+  headers: string[];
+  rows: string[][];
+}
+export interface ChartDataTimeline {
+  type: "timeline";
+  events: { year: string; event: string }[];
+}
+export type ChartData = ChartDataBar | ChartDataTable | ChartDataTimeline;
+// ─────────────────────────────────────────────────────────────────────────────
+
 export interface PGQuestion {
   id: string;
   type: "PG";
   number: number;
   question: string;
-  imageUrl?: string;          // optional image for the question
+  imageUrl?: string;
+  chartData?: ChartData;
   options: string[];
   correctAnswer: number;      // index 0-3
   materi: string;
@@ -21,6 +42,7 @@ export interface ISQuestion {
   number: number;
   question: string;
   imageUrl?: string;
+  chartData?: ChartData;
   acceptedAnswers: string[];  // list of accepted keywords (case-insensitive)
   modelAnswer: string;        // shown after submission
   materi: string;
@@ -35,6 +57,7 @@ export interface UTQuestion {
   number: number;
   question: string;
   imageUrl?: string;
+  chartData?: ChartData;
   modelAnswer: string;        // shown after submission
   keyPoints: string[];        // keywords used for auto-grading
   materi: string;
