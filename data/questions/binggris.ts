@@ -1,230 +1,349 @@
 import { PGQuestion, ISQuestion, UTQuestion, SubjectQuestionBank } from "@/lib/types";
 
 const pg: PGQuestion[] = [
-  // Greetings & Introductions (C1-C2)
+  // ===== READING COMPREHENSION – TEKS DESKRIPTIF (C2-C3) =====
   {
     id: "bing-pg-1", type: "PG", number: 1,
-    question: "What is the correct greeting when you meet someone in the morning?",
-    options: ["Good night", "Good afternoon", "Good morning", "Good evening"],
-    correctAnswer: 2,
-    materi: "Greetings", tujuanPembelajaran: "Menggunakan salam yang tepat", levelKognitif: "C1"
+    question: "Read the descriptive text below and answer questions 1–2.\n\n'Borobudur Temple is one of the greatest Buddhist monuments in the world. It is located in Magelang, Central Java, Indonesia. Built in the 9th century during the reign of the Syailendra dynasty, the temple consists of nine stacked platforms topped by a central dome. Borobudur is decorated with 2,672 relief panels and 504 Buddha statues. In 1991, it was listed as a UNESCO World Heritage Site and continues to attract millions of visitors from around the world each year.'\n\nAccording to the text, where is Borobudur Temple located?",
+    options: [
+      "In Yogyakarta, Central Java, Indonesia",
+      "In Magelang, Central Java, Indonesia",
+      "In Surakarta, Central Java, Indonesia",
+      "In Semarang, Central Java, Indonesia"
+    ],
+    correctAnswer: 1,
+    materi: "Reading Comprehension – Descriptive Text", tujuanPembelajaran: "Menemukan informasi tersurat dalam teks deskriptif", levelKognitif: "C2"
   },
   {
     id: "bing-pg-2", type: "PG", number: 2,
-    question: "What do you say when you meet someone for the first time?",
-    options: ["See you later", "Nice to meet you", "Goodbye", "Thank you"],
-    correctAnswer: 1,
-    materi: "Introductions", tujuanPembelajaran: "Memperkenalkan diri", levelKognitif: "C1"
+    question: "Still referring to the Borobudur text above.\n\nThe word 'decorated' in the sentence 'Borobudur is decorated with 2,672 relief panels and 504 Buddha statues' is closest in meaning to ...",
+    options: [
+      "damaged and destroyed over time",
+      "hidden from visitors behind walls",
+      "adorned and beautified with carvings",
+      "measured and counted by scientists"
+    ],
+    correctAnswer: 2,
+    materi: "Reading Comprehension – Vocabulary in Context", tujuanPembelajaran: "Memahami arti kata dalam konteks teks deskriptif", levelKognitif: "C2"
   },
+
+  // ===== READING COMPREHENSION – RECOUNT TEXT (C2-C4) =====
   {
     id: "bing-pg-3", type: "PG", number: 3,
-    question: "How do you respond to 'How are you?'",
-    options: ["My name is Budi", "I am ten years old", "I am fine, thank you", "I live in Jakarta"],
+    question: "Read the recount text below and answer questions 3–5.\n\n'Last month, our class went on a field trip to Taman Mini Indonesia Indah (TMII) in Jakarta. We left school at 6.30 in the morning and arrived two hours later. First, we visited the Miniature Park where we saw scale models of traditional houses from all 38 provinces of Indonesia. Then we watched a colourful traditional dance performance at the central stage. After that, we had lunch and spent the rest of the afternoon exploring the Science Museum. We returned to school in the late afternoon, feeling tired but very happy.'\n\nWhat did the class do FIRST after arriving at TMII?",
+    options: [
+      "Watched a traditional dance performance at the central stage",
+      "Had lunch at a restaurant near the museum",
+      "Visited the Miniature Park and saw models of traditional houses",
+      "Explored the Science Museum exhibits"
+    ],
     correctAnswer: 2,
-    materi: "Greetings", tujuanPembelajaran: "Merespons sapaan", levelKognitif: "C1"
+    materi: "Reading Comprehension – Recount Text", tujuanPembelajaran: "Menemukan informasi tersurat dalam teks recount", levelKognitif: "C2"
   },
   {
     id: "bing-pg-4", type: "PG", number: 4,
-    question: "What do you say when you leave someone?",
-    options: ["Hello", "Good morning", "Nice to meet you", "Goodbye"],
-    correctAnswer: 3,
-    materi: "Greetings", tujuanPembelajaran: "Menggunakan ungkapan perpisahan", levelKognitif: "C1"
+    question: "Referring to the TMII recount text above.\n\nHow long did it take for the class to travel from school to TMII?",
+    options: ["30 minutes", "1 hour", "2 hours", "3 hours"],
+    correctAnswer: 2,
+    materi: "Reading Comprehension – Recount Text", tujuanPembelajaran: "Menemukan informasi spesifik dalam teks recount", levelKognitif: "C2"
   },
   {
     id: "bing-pg-5", type: "PG", number: 5,
-    question: "Sinta: 'My name is Sinta. What is your name?' Budi: '...'",
-    options: ["I am twelve years old", "I am fine", "My name is Budi", "I live in Bandung"],
+    question: "Referring to the TMII recount text above.\n\nThe students returned to school feeling 'tired but very happy.' What can be INFERRED from this ending?",
+    options: [
+      "The trip was too exhausting and the students did not enjoy it",
+      "The students could not wait to go home because TMII was boring",
+      "Despite being physically tired, the students had a meaningful and enjoyable trip",
+      "The students want to stay at TMII and not return to school"
+    ],
     correctAnswer: 2,
-    materi: "Introductions", tujuanPembelajaran: "Memperkenalkan diri", levelKognitif: "C2"
+    materi: "Reading Comprehension – Inference", tujuanPembelajaran: "Menarik kesimpulan dari informasi tersirat dalam teks recount", levelKognitif: "C4"
   },
 
-  // Days, Months, Time (C1-C2)
+  // ===== READING COMPREHENSION – PROCEDURE TEXT (C2-C3) =====
   {
     id: "bing-pg-6", type: "PG", number: 6,
-    question: "What day comes after Wednesday?",
-    options: ["Tuesday", "Thursday", "Friday", "Monday"],
-    correctAnswer: 1,
-    materi: "Days and Months", tujuanPembelajaran: "Menyebutkan hari dalam seminggu", levelKognitif: "C1"
+    question: "Read the procedure text below and answer questions 6–8.\n\nHow to Plant a Seed\nWhat you need: a small pot, soil, seeds, water.\n\nStep 1: Fill a small pot with soil until it is almost full.\nStep 2: Make a small hole in the centre of the soil, about 1–2 cm deep.\nStep 3: Place one or two seeds into the hole and cover them gently with soil.\nStep 4: Water the seeds carefully — just enough to make the soil moist, not too wet.\nStep 5: Place the pot in a sunny spot near a window and check every day.\nStep 6: In about one to two weeks, the seed will start to sprout.\n\nAccording to the procedure, what should you do BEFORE placing the seeds into the hole?",
+    options: [
+      "Water the seeds until the soil is soaking wet",
+      "Place the pot near a sunny window first",
+      "Cover the seeds gently with soil",
+      "Make a small hole in the centre of the soil"
+    ],
+    correctAnswer: 3,
+    materi: "Reading Comprehension – Procedure Text", tujuanPembelajaran: "Memahami urutan langkah dalam teks prosedur", levelKognitif: "C2"
   },
   {
     id: "bing-pg-7", type: "PG", number: 7,
-    question: "How many months are there in a year?",
-    options: ["10", "11", "12", "13"],
-    correctAnswer: 2,
-    materi: "Days and Months", tujuanPembelajaran: "Menyebutkan jumlah bulan", levelKognitif: "C1"
+    question: "Referring to the 'How to Plant a Seed' procedure text above.\n\nIn Step 4, it says to water the seeds 'just enough to make the soil moist, not too wet.' The word 'moist' in this context means ...",
+    options: [
+      "completely dry and powdery",
+      "slightly damp — not too wet and not too dry",
+      "very wet and fully soaked with water",
+      "hard and compacted like dried clay"
+    ],
+    correctAnswer: 1,
+    materi: "Reading Comprehension – Vocabulary in Context", tujuanPembelajaran: "Memahami makna kata dalam konteks teks prosedur", levelKognitif: "C2"
   },
   {
     id: "bing-pg-8", type: "PG", number: 8,
-    question: "What month comes after July?",
-    options: ["June", "September", "August", "October"],
+    question: "Referring to the 'How to Plant a Seed' text above.\n\nWhat is the MAIN PURPOSE of this text?",
+    options: [
+      "To describe the different types of seeds and where they are found in nature",
+      "To tell an interesting story about a gardener who grows plants",
+      "To give step-by-step instructions on how to plant a seed correctly",
+      "To persuade readers to buy gardening tools and start a garden"
+    ],
     correctAnswer: 2,
-    materi: "Days and Months", tujuanPembelajaran: "Menyebutkan bulan secara berurutan", levelKognitif: "C2"
+    materi: "Text Purpose – Procedure Text", tujuanPembelajaran: "Mengidentifikasi tujuan penulisan teks prosedur", levelKognitif: "C2"
   },
+
+  // ===== GRAMMAR – PRESENT TENSE & PAST TENSE (C2-C3) =====
   {
     id: "bing-pg-9", type: "PG", number: 9,
-    question: "The clock shows 07.00. What time is it?",
-    options: ["It is seven past one", "It is seven o'clock", "It is one o'clock", "It is half past seven"],
-    correctAnswer: 1,
-    materi: "Telling Time", tujuanPembelajaran: "Menyebutkan waktu dalam bahasa Inggris", levelKognitif: "C2"
+    question: "Choose the sentence with the CORRECT subject-verb agreement in simple present tense.\n\n(Note: When the subject is he, she, it, or a singular noun, we add -s or -es to the verb.)",
+    options: [
+      "My sister always go to school by bicycle every morning.",
+      "The children plays in the garden after school every day.",
+      "Mr. Budi teaches English at our school every Monday and Thursday.",
+      "They walks to the library together every Wednesday afternoon."
+    ],
+    correctAnswer: 2,
+    materi: "Grammar – Simple Present Tense (Subject-Verb Agreement)", tujuanPembelajaran: "Menggunakan kesesuaian subjek dan kata kerja dalam simple present tense", levelKognitif: "C3"
   },
   {
     id: "bing-pg-10", type: "PG", number: 10,
-    question: "Hari ini adalah Senin. Dalam Bahasa Inggris, Senin adalah ...",
-    options: ["Sunday", "Tuesday", "Monday", "Wednesday"],
-    correctAnswer: 2,
-    materi: "Days and Months", tujuanPembelajaran: "Menerjemahkan nama hari", levelKognitif: "C1"
+    question: "Choose the correct verb form to complete the sentence below.\n\n'Last Tuesday, Deni and his classmates ___ (go) to the National Museum in Jakarta for their annual class trip.'",
+    options: ["go", "goed", "going", "went"],
+    correctAnswer: 3,
+    materi: "Grammar – Simple Past Tense (Irregular Verbs)", tujuanPembelajaran: "Menggunakan kata kerja tidak beraturan dalam simple past tense", levelKognitif: "C2"
   },
-
-  // Numbers and Colors (C1-C2)
   {
     id: "bing-pg-11", type: "PG", number: 11,
-    question: "The number 25 in English is ...",
-    options: ["Fifteen", "Twenty", "Twenty-five", "Fifty"],
+    question: "Fill in the blank with the CORRECT past tense form.\n\n'Last night, Sari ___ (study) for three hours before going to bed. She wanted to prepare as well as possible for the science test this morning.'",
+    options: ["study", "studyed", "studied", "studies"],
     correctAnswer: 2,
-    materi: "Numbers", tujuanPembelajaran: "Menyebutkan bilangan dalam bahasa Inggris", levelKognitif: "C1"
+    materi: "Grammar – Simple Past Tense (Regular Verbs)", tujuanPembelajaran: "Menggunakan kata kerja beraturan dalam simple past tense", levelKognitif: "C2"
   },
   {
     id: "bing-pg-12", type: "PG", number: 12,
-    question: "Warna merah dalam Bahasa Inggris adalah ...",
-    options: ["Blue", "Green", "Yellow", "Red"],
-    correctAnswer: 3,
-    materi: "Colors", tujuanPembelajaran: "Menyebutkan warna dalam bahasa Inggris", levelKognitif: "C1"
+    question: "Read the description carefully and choose the sentence that best describes the action happening RIGHT NOW.\n\n'It is 3 PM on Tuesday. Reza is sitting at the kitchen table. His exercise books are open in front of him, he has a pencil in his hand, and he is looking down at the page with concentration.'\n\nThe sentence that best describes what Reza is doing at this moment is ...",
+    options: [
+      "Reza cooked dinner in the kitchen this afternoon.",
+      "Reza is doing his homework at the kitchen table.",
+      "Reza did his homework yesterday afternoon.",
+      "Reza will study after he finishes his dinner."
+    ],
+    correctAnswer: 1,
+    materi: "Grammar – Present Continuous Tense", tujuanPembelajaran: "Menggunakan present continuous tense untuk menggambarkan kegiatan yang sedang berlangsung", levelKognitif: "C3"
   },
   {
     id: "bing-pg-13", type: "PG", number: 13,
-    question: "What color is the sky on a clear day?",
-    options: ["Green", "Red", "Blue", "Yellow"],
-    correctAnswer: 2,
-    materi: "Colors", tujuanPembelajaran: "Menggunakan warna dalam konteks", levelKognitif: "C2"
+    question: "Complete the sentence below using the CORRECT future tense form.\n\n'Our class teacher announced this morning that next month our school ___ (hold) an English speech competition for all sixth-grade students. The winner will represent the school in the district competition.'",
+    options: ["held", "hold", "has held", "will hold"],
+    correctAnswer: 3,
+    materi: "Grammar – Simple Future Tense (will)", tujuanPembelajaran: "Menggunakan will untuk menyatakan rencana di masa depan", levelKognitif: "C2"
   },
 
-  // Family & Descriptive (C1-C3)
+  // ===== GRAMMAR – COMPARATIVES & SUPERLATIVES (C2-C3) =====
   {
     id: "bing-pg-14", type: "PG", number: 14,
-    question: "The father of your father is called your ...",
-    options: ["Uncle", "Grandfather", "Brother", "Cousin"],
-    correctAnswer: 1,
-    materi: "Family Members", tujuanPembelajaran: "Menyebutkan anggota keluarga", levelKognitif: "C1"
+    question: "Fill in the blank with the CORRECT comparative form.\n\n'According to geological data, Mount Bromo stands at 2,329 metres above sea level, while Mount Rinjani in Lombok reaches 3,726 metres above sea level. This means Mount Rinjani is ___ than Mount Bromo.'",
+    options: ["high", "highest", "higher", "more high"],
+    correctAnswer: 2,
+    materi: "Grammar – Adjectives (Comparative)", tujuanPembelajaran: "Menggunakan bentuk komparatif kata sifat dengan benar", levelKognitif: "C2"
   },
   {
     id: "bing-pg-15", type: "PG", number: 15,
-    question: "Look at the picture. The girl has ... hair.",
-    options: ["Short and curly", "Long and straight", "Bald", "Short and straight"],
-    correctAnswer: 1,
-    materi: "Describing People", tujuanPembelajaran: "Mendeskripsikan penampilan seseorang", levelKognitif: "C2"
-  },
-  {
-    id: "bing-pg-16", type: "PG", number: 16,
-    question: "My mother's sister is my ...",
-    options: ["Aunt", "Grandmother", "Cousin", "Sister"],
-    correctAnswer: 0,
-    materi: "Family Members", tujuanPembelajaran: "Menyebutkan anggota keluarga", levelKognitif: "C2"
+    question: "Fill in the blank with the CORRECT superlative form.\n\n'Geographers have measured many great rivers: the Yangtze (6,300 km), the Amazon (6,400 km), and the Nile (6,650 km). Based on these measurements, the Nile River is ___ river in the world.'",
+    options: ["longer", "the longer", "long", "the longest"],
+    correctAnswer: 3,
+    materi: "Grammar – Adjectives (Superlative)", tujuanPembelajaran: "Menggunakan bentuk superlatif kata sifat dengan benar", levelKognitif: "C2"
   },
 
-  // Professions (C1-C2)
+  // ===== GRAMMAR – MODAL VERBS (C3) =====
   {
-    id: "bing-pg-17", type: "PG", number: 17,
-    question: "A person who teaches students at school is called a ...",
-    options: ["Doctor", "Police officer", "Teacher", "Pilot"],
+    id: "bing-pg-16", type: "PG", number: 16,
+    question: "Read the dialogue and choose the CORRECT modal verb.\n\nDoctor: 'You have a high fever and need rest. You ___ go back to school until you feel completely better. Stay at home, drink plenty of water, and take your medicine regularly.'\n\nWhich modal verb correctly completes the doctor's advice?",
+    options: [
+      "can freely",
+      "should always",
+      "must not",
+      "might"
+    ],
     correctAnswer: 2,
-    materi: "Professions", tujuanPembelajaran: "Menyebutkan nama profesi", levelKognitif: "C1"
+    materi: "Grammar – Modal Verbs (Must not – Prohibition/Warning)", tujuanPembelajaran: "Menggunakan modal verb must not untuk menyatakan larangan atau peringatan", levelKognitif: "C3"
   },
   {
+    id: "bing-pg-17", type: "PG", number: 17,
+    question: "A student asks their teacher for advice: 'I always get very nervous during presentations and tend to forget what I am supposed to say. How can I improve?'\n\nWhich response gives CORRECT advice using an appropriate modal verb?",
+    options: [
+      "You must practise your presentation aloud in front of a mirror every evening before the event.",
+      "You will nervous every time you practise.",
+      "You can to feel better if you just stop worrying about it.",
+      "You should practising more to feel more confident."
+    ],
+    correctAnswer: 0,
+    materi: "Grammar – Modal Verbs (Must – Strong Advice)", tujuanPembelajaran: "Menggunakan modal verb untuk memberikan saran yang kuat", levelKognitif: "C3"
+  },
+
+  // ===== GRAMMAR – QUESTIONS & PREPOSITIONS (C3) =====
+  {
     id: "bing-pg-18", type: "PG", number: 18,
-    question: "A person who flies an airplane is called a ...",
-    options: ["Driver", "Sailor", "Pilot", "Captain"],
+    question: "Read this statement: 'Rina goes to school by bus every morning.'\n\nWhich of the following is the CORRECT yes/no question form of the sentence above?",
+    options: [
+      "Do Rina go to school by bus every morning?",
+      "Does Rina goes to school by bus every morning?",
+      "Does Rina go to school by bus every morning?",
+      "Is Rina goes to school by bus every morning?"
+    ],
     correctAnswer: 2,
-    materi: "Professions", tujuanPembelajaran: "Menyebutkan nama profesi", levelKognitif: "C1"
+    materi: "Grammar – Question Formation (Simple Present)", tujuanPembelajaran: "Membentuk kalimat tanya dalam simple present tense", levelKognitif: "C3"
   },
   {
     id: "bing-pg-19", type: "PG", number: 19,
-    question: "What does a doctor do?",
-    options: ["Sells food", "Teaches students", "Builds houses", "Treats sick people"],
-    correctAnswer: 3,
-    materi: "Professions", tujuanPembelajaran: "Mendeskripsikan tugas suatu profesi", levelKognitif: "C2"
+    question: "Choose the CORRECT prepositions to complete the sentence.\n\n'The class field trip to the botanical garden is scheduled ___ Friday, ___ 7 o'clock ___ the morning. Please arrive at school five minutes early.'",
+    options: [
+      "in / at / in",
+      "on / at / in",
+      "at / in / on",
+      "on / in / at"
+    ],
+    correctAnswer: 1,
+    materi: "Grammar – Prepositions of Time (in/at/on)", tujuanPembelajaran: "Menggunakan preposisi waktu yang tepat dalam kalimat", levelKognitif: "C3"
   },
-
-  // Things Around Us (C1-C2)
   {
     id: "bing-pg-20", type: "PG", number: 20,
-    question: "Which of the following is a school stationery?",
-    options: ["Refrigerator", "Pencil", "Table", "Chair"],
-    correctAnswer: 1,
-    materi: "Things Around Us", tujuanPembelajaran: "Mengidentifikasi benda di sekitar", levelKognitif: "C1"
+    question: "Choose the CORRECT conjunction to connect the two ideas below.\n\n'Andi prepared very well for the examination and felt confident going into the test. ___, he did not achieve the highest score in the class, because many other students had also studied extremely hard.'",
+    options: ["Because", "Although", "However", "Therefore"],
+    correctAnswer: 2,
+    materi: "Grammar – Conjunctions (Contrast: However)", tujuanPembelajaran: "Menggunakan konjungsi yang tepat untuk menghubungkan ide yang bertentangan", levelKognitif: "C3"
   },
+
+  // ===== VOCABULARY IN CONTEXT (C2-C3) =====
   {
     id: "bing-pg-21", type: "PG", number: 21,
-    question: "We use a ... to write in our notebook.",
-    options: ["Ruler", "Scissors", "Pencil", "Eraser"],
-    correctAnswer: 2,
-    materi: "Things Around Us", tujuanPembelajaran: "Menggunakan kosakata benda sekolah", levelKognitif: "C1"
+    question: "Read the sentence and choose the BEST meaning for the underlined word.\n\n'After weeks of drought, the farmers were overjoyed when the heavy rains finally arrived and their withered crops began to recover.'\n\nThe word 'drought' in the sentence above means ...",
+    options: [
+      "a long period of very heavy and damaging rainfall",
+      "a long period of unusually dry weather with very little or no rain",
+      "strong, destructive winds that flatten crops and trees",
+      "a type of insect pest that eats and destroys plant leaves"
+    ],
+    correctAnswer: 1,
+    materi: "Vocabulary – Word Meaning in Context", tujuanPembelajaran: "Memahami arti kata dalam konteks kalimat", levelKognitif: "C3"
   },
   {
     id: "bing-pg-22", type: "PG", number: 22,
-    question: "What do you use to remove pencil marks on paper?",
-    options: ["Pencil", "Ruler", "Eraser", "Sharpener"],
+    question: "Choose the word that is CLOSEST in meaning (synonym) to the word in bold in the sentence below.\n\n'The young scientist made a **remarkable** discovery that will completely change how doctors treat this serious disease in the future.'",
+    options: [
+      "ordinary and common",
+      "old and long forgotten",
+      "extraordinary and deeply impressive",
+      "dangerous and potentially harmful"
+    ],
     correctAnswer: 2,
-    materi: "Things Around Us", tujuanPembelajaran: "Mengidentifikasi fungsi benda", levelKognitif: "C2"
+    materi: "Vocabulary – Synonyms", tujuanPembelajaran: "Mengidentifikasi sinonim kata dalam konteks kalimat", levelKognitif: "C2"
   },
-
-  // Animals (C1-C2)
   {
     id: "bing-pg-23", type: "PG", number: 23,
-    question: "Which animal can fly?",
-    options: ["Fish", "Cat", "Bird", "Dog"],
+    question: "Choose the word that has the OPPOSITE meaning (antonym) to the word in bold in the sentence below.\n\n'The new school library is a **spacious** and well-lit room where students love to read, study, and borrow books after class.'",
+    options: [
+      "beautiful and modern in design",
+      "noisy and overcrowded with students",
+      "narrow and cramped with very little room",
+      "expensive and luxuriously decorated"
+    ],
     correctAnswer: 2,
-    materi: "Animals", tujuanPembelajaran: "Mengidentifikasi jenis hewan", levelKognitif: "C1"
+    materi: "Vocabulary – Antonyms in Context", tujuanPembelajaran: "Mengidentifikasi antonim kata dalam konteks kalimat", levelKognitif: "C3"
   },
   {
     id: "bing-pg-24", type: "PG", number: 24,
-    question: "A baby cat is called a ...",
-    options: ["Puppy", "Kitten", "Cub", "Calf"],
+    question: "Study the word forms below:\n• 'She treats others with great respect.' (noun)\n• 'We should respect our teachers and parents.' (verb)\n• 'He is always respectful when speaking to elders.' (adjective)\n\nNow choose the sentence that uses the word 'responsible' CORRECTLY as an ADJECTIVE:",
+    options: [
+      "She always takes full responsibility for her actions, good or bad.",
+      "The sixth-grade students are responsible for keeping their own classroom clean.",
+      "We need someone with a great responsibly for leading this important project.",
+      "He must responsibly every student who is working in his group project."
+    ],
     correctAnswer: 1,
-    materi: "Animals", tujuanPembelajaran: "Menyebutkan nama anak hewan", levelKognitif: "C1"
-  },
-  {
-    id: "bing-pg-25", type: "PG", number: 25,
-    question: "The elephant is a ... animal.",
-    options: ["Small", "Large", "Tiny", "Thin"],
-    correctAnswer: 1,
-    materi: "Animals", tujuanPembelajaran: "Mendeskripsikan hewan", levelKognitif: "C2"
+    materi: "Vocabulary – Word Forms (Adjective in Context)", tujuanPembelajaran: "Menggunakan bentuk kata yang tepat (adjective) dalam kalimat", levelKognitif: "C3"
   },
 
-  // Simple Sentences & Reading (C2-C4)
+  // ===== FUNCTIONAL LANGUAGE (C3) =====
   {
-    id: "bing-pg-26", type: "PG", number: 26,
-    question: "Read the sentence: 'Deni goes to school every day.' The subject of the sentence is ...",
-    options: ["Goes", "School", "Deni", "Every day"],
-    correctAnswer: 2,
-    materi: "Simple Sentences", tujuanPembelajaran: "Mengidentifikasi subjek kalimat", levelKognitif: "C3"
+    id: "bing-pg-25", type: "PG", number: 25,
+    question: "Read the dialogue and choose the BEST expression to complete it.\n\nTeacher: 'Class, for our group project on environmental issues, what topic do you think would be most interesting and important to research?'\n\nAisyah: '___, we should choose the topic of plastic waste in the ocean because it is seriously damaging marine life and is entering the food chain that affects human health too.'\n\nThe correct expression to give an opinion is ...",
+    options: [
+      "In my opinion",
+      "On the other hand",
+      "As a result",
+      "In addition to that"
+    ],
+    correctAnswer: 0,
+    materi: "Functional Language – Expressing Opinions", tujuanPembelajaran: "Menggunakan ekspresi yang tepat untuk mengungkapkan pendapat", levelKognitif: "C3"
   },
   {
+    id: "bing-pg-26", type: "PG", number: 26,
+    question: "A new student asks for help finding the library:\n\nNew student: 'Excuse me, I'm looking for the school library. Could you tell me how to get there?'\n\nWhich is the MOST appropriate and helpful response?",
+    options: [
+      "The library? I'm not sure where it is. You should ask someone else.",
+      "Sure! Go straight along this corridor, turn left at the science room, and the library is the third door on your right.",
+      "Why don't you have a map of the school? Everyone gets one on the first day.",
+      "Just walk around and you will find it sooner or later."
+    ],
+    correctAnswer: 1,
+    materi: "Functional Language – Giving Directions", tujuanPembelajaran: "Menggunakan bahasa fungsional untuk memberikan petunjuk arah secara sopan dan jelas", levelKognitif: "C3"
+  },
+
+  // ===== TEXT TYPES (C3-C4) =====
+  {
     id: "bing-pg-27", type: "PG", number: 27,
-    question: "Which sentence is correct?",
-    options: ["She are a student", "He go to school", "They is happy", "We are students"],
-    correctAnswer: 3,
-    materi: "Simple Sentences", tujuanPembelajaran: "Memilih kalimat yang benar", levelKognitif: "C3"
+    question: "Read the two short texts below and identify their correct TEXT TYPES.\n\nText A: 'Once upon a time, a clever mouse helped a mighty lion escape from a hunter's trap. The lion had laughed when the tiny mouse first offered to help, but he soon felt deeply grateful for the mouse's quick thinking and sharp teeth.'\n\nText B: 'Last Sunday, I visited my grandmother in Bogor. We spent the morning cooking her special rendang recipe together, and I carefully wrote down every step. It was the most delicious meal I have ever tasted in my life.'\n\nThe correct text types for Text A and Text B are respectively ...",
+    options: [
+      "Procedure text and Descriptive text",
+      "Narrative text and Recount text",
+      "Report text and Narrative text",
+      "Recount text and Procedure text"
+    ],
+    correctAnswer: 1,
+    materi: "Text Types – Narrative and Recount", tujuanPembelajaran: "Mengidentifikasi jenis teks berdasarkan ciri-ciri dan tujuannya", levelKognitif: "C3"
   },
   {
     id: "bing-pg-28", type: "PG", number: 28,
-    question: "Andi: 'Can you help me, please?' Rini: '...' (Rini setuju membantu)\nJawaban Rini yang tepat adalah ...",
-    options: ["No, I can't", "Sure, I will help you", "I don't know", "Goodbye"],
+    question: "Read the two messages below and answer the question.\n\nMessage A: 'Dear Mr. Hendra, I am writing to formally inform you that due to a family emergency, I will be unable to attend school tomorrow, Wednesday, 7 May. I kindly request your permission to be absent and will submit all missed work upon my return. Yours sincerely, Rizky'\n\nMessage B: 'Hey Bro, can't come to school tmrw, got a family thing. CU later!! 😊'\n\nWhat is the MAIN DIFFERENCE between Message A and Message B?",
+    options: [
+      "Message A uses informal, casual language; Message B uses formal, professional language",
+      "Message A is formal, using complete and polite language; Message B is informal, using casual and shortened language",
+      "Both messages have essentially the same level of formality and politeness",
+      "Message A is significantly shorter and easier to read than Message B"
+    ],
     correctAnswer: 1,
-    materi: "Simple Conversation", tujuanPembelajaran: "Merespons permintaan bantuan", levelKognitif: "C3"
+    materi: "Language Style – Formal vs Informal Language", tujuanPembelajaran: "Membedakan penggunaan bahasa formal dan informal dalam konteks nyata", levelKognitif: "C4"
   },
   {
     id: "bing-pg-29", type: "PG", number: 29,
-    question: "Read the text:\n'My name is Ratna. I am twelve years old. I live in Surabaya. I have one brother and two sisters.'\nHow many siblings does Ratna have?",
-    options: ["One", "Two", "Three", "Four"],
-    correctAnswer: 2,
-    materi: "Reading Comprehension", tujuanPembelajaran: "Memahami teks deskriptif", levelKognitif: "C2"
+    question: "Arrange the following sentences into a CORRECT and LOGICAL paragraph about washing dishes.\n\n(1) After rinsing thoroughly, dry the plates with a clean cloth and put them back in the cupboard.\n(2) The first step is to scrape any leftover food from the plates into the rubbish bin.\n(3) Rinse each plate under clean running water to remove all soap and suds completely.\n(4) Washing dishes properly after meals is an important household skill that everyone should learn.\n(5) Next, fill the sink with warm water and add a few drops of dishwashing liquid, then scrub each plate gently with a sponge.\n\nThe CORRECT logical order is ...",
+    options: [
+      "4 – 2 – 5 – 3 – 1",
+      "2 – 4 – 5 – 1 – 3",
+      "4 – 5 – 2 – 3 – 1",
+      "2 – 5 – 4 – 1 – 3"
+    ],
+    correctAnswer: 0,
+    materi: "Writing – Sentence Arrangement (Procedure Paragraph)", tujuanPembelajaran: "Menyusun kalimat-kalimat menjadi paragraf yang runtut dan logis", levelKognitif: "C3"
   },
   {
     id: "bing-pg-30", type: "PG", number: 30,
-    question: "What is the meaning of the word 'beautiful'?",
-    options: ["Jelek", "Cantik/Indah", "Kuat", "Pintar"],
-    correctAnswer: 1,
-    materi: "Vocabulary", tujuanPembelajaran: "Menerjemahkan kosakata", levelKognitif: "C1"
+    question: "Read the passage below and answer the question.\n\n'Every year on October 28th, Indonesians celebrate Youth Pledge Day (Hari Sumpah Pemuda) to commemorate the historic moment in 1928 when young people from across the archipelago declared their commitment to one homeland, one nation, and one language — Indonesia. This declaration was a powerful turning point in the nation's long struggle for independence. Schools across the country hold flag ceremonies, essay competitions, and cultural performances to honour this important day and inspire the next generation.'\n\nWhat INFERENCE can you make about the importance of Youth Pledge Day based on the text?",
+    options: [
+      "Youth Pledge Day is celebrated only in a few big cities and is not widely known",
+      "Youth Pledge Day is no longer very relevant because it happened nearly 100 years ago",
+      "Youth Pledge Day is a deeply significant national event that connects young Indonesians to their history and national identity",
+      "Schools celebrate Youth Pledge Day mainly because the government requires it by law"
+    ],
+    correctAnswer: 2,
+    materi: "Reading Comprehension – Inference (Expository Text)", tujuanPembelajaran: "Menarik kesimpulan dari teks eksposisi tentang peristiwa bersejarah", levelKognitif: "C4"
   },
 
   // ===== SOAL TINGKAT KELAS 6 (C2-C5) =====
@@ -413,87 +532,87 @@ const pg: PGQuestion[] = [
 const is: ISQuestion[] = [
   {
     id: "bing-is-1", type: "IS", number: 26,
-    question: "Translate to English: 'Selamat pagi'",
-    acceptedAnswers: ["good morning"],
-    modelAnswer: "Good morning",
-    materi: "Greetings", tujuanPembelajaran: "Menerjemahkan salam", levelKognitif: "C1"
+    question: "Read the sentence carefully and fill in the blank with the CORRECT past tense form of the verb in brackets.\n\n'When the teacher ___ (enter) the classroom yesterday morning, all the students were already sitting quietly at their desks and ready to start the lesson.'",
+    acceptedAnswers: ["entered"],
+    modelAnswer: "entered (regular verb: enter → entered)",
+    materi: "Grammar – Simple Past Tense (Regular Verbs)", tujuanPembelajaran: "Menggunakan kata kerja beraturan dalam simple past tense", levelKognitif: "C2"
   },
   {
     id: "bing-is-2", type: "IS", number: 27,
-    question: "Translate to English: 'Terima kasih'",
-    acceptedAnswers: ["thank you", "thanks"],
-    modelAnswer: "Thank you",
-    materi: "Expressions", tujuanPembelajaran: "Menerjemahkan ungkapan", levelKognitif: "C1"
+    question: "Read the sentence below and identify the meaning of the underlined word in Indonesian.\n\n'The expedition team had to abandon their camp and retreat to safety when the storm became too dangerous to continue their climb up the mountain.'\n\nThe word 'abandon' in the sentence above means ... (in Indonesian)",
+    acceptedAnswers: ["meninggalkan", "meninggalkan", "melepaskan"],
+    modelAnswer: "Meninggalkan / melepaskan (to leave something behind, to give up on something)",
+    materi: "Vocabulary – Word Meaning in Context", tujuanPembelajaran: "Memahami makna kata dalam konteks kalimat dan menerjemahkannya", levelKognitif: "C2"
   },
   {
     id: "bing-is-3", type: "IS", number: 28,
-    question: "What day is before Saturday?",
-    acceptedAnswers: ["friday"],
-    modelAnswer: "Friday",
-    materi: "Days and Months", tujuanPembelajaran: "Menyebutkan hari secara berurutan", levelKognitif: "C1"
+    question: "Fill in the blank with the CORRECT comparative form of the adjective in brackets.\n\n'Scientists have measured many mountains in Indonesia. Mount Kerinci in Sumatra is 3,805 metres high, while Mount Rinjani in Lombok is 3,726 metres. Therefore, Mount Kerinci is ___ (tall) than Mount Rinjani.'",
+    acceptedAnswers: ["taller"],
+    modelAnswer: "taller (tall → taller: add -er to short adjectives for comparatives)",
+    materi: "Grammar – Adjectives (Comparative)", tujuanPembelajaran: "Menggunakan bentuk komparatif kata sifat dalam konteks", levelKognitif: "C2"
   },
   {
     id: "bing-is-4", type: "IS", number: 29,
-    question: "Write the English word for the number 50.",
-    acceptedAnswers: ["fifty"],
-    modelAnswer: "Fifty",
-    materi: "Numbers", tujuanPembelajaran: "Menulis bilangan dalam bahasa Inggris", levelKognitif: "C1"
+    question: "Read the following short text and answer the question.\n\n'Ragunan Zoo is one of the oldest and largest zoos in Indonesia. Located in South Jakarta, it covers an area of about 140 hectares and is home to more than 4,000 animals from over 290 species. It is a popular destination for families and school trips every weekend.'\n\nApproximately how many animal species can be found at Ragunan Zoo?",
+    acceptedAnswers: ["290", "over 290", "more than 290"],
+    modelAnswer: "More than 290 species (over 290 species)",
+    materi: "Reading Comprehension – Report Text", tujuanPembelajaran: "Menemukan informasi spesifik dalam teks laporan", levelKognitif: "C2"
   },
   {
     id: "bing-is-5", type: "IS", number: 30,
-    question: "What is the color of grass? (Answer in English)",
-    acceptedAnswers: ["green"],
-    modelAnswer: "Green",
-    materi: "Colors", tujuanPembelajaran: "Mengidentifikasi warna dalam konteks", levelKognitif: "C1"
+    question: "Read the opening lines of a text:\n\n'Once upon a time in a faraway kingdom, there lived a young princess who had never been allowed to leave the palace walls. One day, she discovered a hidden door in the garden that led to an enchanted forest...'\n\nBased on these opening lines, what type of text is this?",
+    acceptedAnswers: ["narrative", "narrative text", "teks naratif"],
+    modelAnswer: "Narrative text — it begins with 'Once upon a time' and tells an imaginative story with characters, setting, and conflict",
+    materi: "Text Types – Identifying Narrative Text", tujuanPembelajaran: "Mengidentifikasi jenis teks berdasarkan ciri-ciri pembukanya", levelKognitif: "C2"
   },
   {
     id: "bing-is-6", type: "IS", number: 31,
-    question: "Translate to English: 'Ayah saya adalah seorang guru.'",
-    acceptedAnswers: ["my father is a teacher", "my father is a teacher."],
-    modelAnswer: "My father is a teacher.",
-    materi: "Family & Professions", tujuanPembelajaran: "Menerjemahkan kalimat sederhana", levelKognitif: "C3"
+    question: "Fill in the blank with the correct MODAL VERB.\n\n'Before crossing a busy road, you ___ always look left and right, and use the pedestrian crossing when one is available. Your safety depends on it.'",
+    acceptedAnswers: ["must", "should"],
+    modelAnswer: "must / should (both express strong obligation or important advice for safety)",
+    materi: "Grammar – Modal Verbs (Must/Should for Obligation and Advice)", tujuanPembelajaran: "Menggunakan modal verb untuk menyatakan kewajiban atau saran yang penting", levelKognitif: "C2"
   },
   {
     id: "bing-is-7", type: "IS", number: 32,
-    question: "Complete the sentence: 'A baby dog is called a ___.'",
-    acceptedAnswers: ["puppy"],
-    modelAnswer: "puppy",
-    materi: "Animals", tujuanPembelajaran: "Menyebutkan nama anak hewan", levelKognitif: "C1"
+    question: "Fill in the blank with the correct CONJUNCTION to complete the sentence logically.\n\n'Dina studied very hard every night for two weeks before the national exam. ___, she achieved the highest score in her school and made her family extremely proud.'",
+    acceptedAnswers: ["as a result", "therefore", "consequently"],
+    modelAnswer: "As a result / Therefore / Consequently — showing cause and effect between the hard study and the high score",
+    materi: "Grammar – Conjunctions (Result/Consequence)", tujuanPembelajaran: "Menggunakan konjungsi yang menunjukkan hubungan sebab-akibat", levelKognitif: "C3"
   },
   {
     id: "bing-is-8", type: "IS", number: 33,
-    question: "What is the opposite of 'big'?",
-    acceptedAnswers: ["small", "little", "tiny"],
-    modelAnswer: "Small",
-    materi: "Vocabulary", tujuanPembelajaran: "Menggunakan antonim kata sifat", levelKognitif: "C2"
+    question: "Read the sentence below and find the grammar MISTAKE. Write the CORRECT form of the wrong word.\n\n'Yesterday, Rina and her friends goes to the school library to borrow books for their group project on climate change.'\n\nThe incorrect word is 'goes' — the correct form should be ___.",
+    acceptedAnswers: ["went"],
+    modelAnswer: "went — because 'yesterday' indicates past tense, and the past form of 'go' is 'went'",
+    materi: "Grammar – Error Correction (Simple Past – Irregular Verb)", tujuanPembelajaran: "Menemukan dan memperbaiki kesalahan tata bahasa dalam kalimat", levelKognitif: "C3"
   },
   {
     id: "bing-is-9", type: "IS", number: 34,
-    question: "Translate to English: 'Berapa umurmu?'",
-    acceptedAnswers: ["how old are you", "how old are you?"],
-    modelAnswer: "How old are you?",
-    materi: "Personal Information", tujuanPembelajaran: "Menerjemahkan pertanyaan", levelKognitif: "C3"
+    question: "Change the active sentence below to a PASSIVE VOICE sentence by filling in the blank.\n\nActive: 'The students clean the classroom every Friday afternoon before going home.'\nPassive: 'The classroom ___ by the students every Friday afternoon before they go home.'",
+    acceptedAnswers: ["is cleaned", "gets cleaned"],
+    modelAnswer: "is cleaned (The classroom is cleaned by the students every Friday afternoon.)",
+    materi: "Grammar – Passive Voice (Simple Present)", tujuanPembelajaran: "Mengubah kalimat aktif menjadi kalimat pasif dalam simple present tense", levelKognitif: "C3"
   },
   {
     id: "bing-is-10", type: "IS", number: 35,
-    question: "Fill in the blank: 'She ___ a student.' (menggunakan to be yang tepat)",
-    acceptedAnswers: ["is"],
-    modelAnswer: "is",
-    materi: "Simple Sentences", tujuanPembelajaran: "Menggunakan to be dengan benar", levelKognitif: "C3"
+    question: "Translate the following sentence from Indonesian to English.\n\n'Para ilmuwan percaya bahwa perubahan iklim adalah salah satu tantangan terbesar yang dihadapi oleh generasi muda saat ini.'\n\nWrite your answer in English.",
+    acceptedAnswers: ["scientists believe that climate change is one of the greatest challenges facing young people today", "scientists believe climate change is one of the biggest challenges facing the younger generation today"],
+    modelAnswer: "Scientists believe that climate change is one of the greatest challenges facing young people today.",
+    materi: "Translation – Indonesian to English", tujuanPembelajaran: "Menerjemahkan kalimat dari Bahasa Indonesia ke Bahasa Inggris secara akurat", levelKognitif: "C3"
   },
   {
     id: "bing-is-11", type: "IS", number: 36,
-    question: "Translate to English: 'Kami pergi ke sekolah setiap hari.'",
-    acceptedAnswers: ["we go to school every day", "we go to school everyday"],
-    modelAnswer: "We go to school every day.",
-    materi: "Simple Sentences", tujuanPembelajaran: "Menerjemahkan kalimat sederhana", levelKognitif: "C3"
+    question: "Read the following sentence and write the ONE WORD that best completes it.\n\n'The ancient Prambanan temple complex was ___ by a powerful earthquake in the 16th century, but many of its structures have since been carefully restored by archaeologists and historians.'\n\nThe missing word (hint: it means 'badly damaged or partly destroyed') is ...",
+    acceptedAnswers: ["damaged", "destroyed", "devastated", "ruined"],
+    modelAnswer: "damaged / destroyed / devastated / ruined (all describe the temple being badly affected by the earthquake)",
+    materi: "Vocabulary – Context Clues", tujuanPembelajaran: "Menggunakan konteks kalimat untuk menemukan kata yang tepat", levelKognitif: "C3"
   },
   {
     id: "bing-is-12", type: "IS", number: 37,
-    question: "The month after April is ...",
-    acceptedAnswers: ["may"],
-    modelAnswer: "May",
-    materi: "Days and Months", tujuanPembelajaran: "Menyebutkan bulan secara berurutan", levelKognitif: "C1"
+    question: "Fill in the blank to complete the TYPE 1 CONDITIONAL sentence below.\n\n'If our school's football team practises harder and improves their teamwork, they ___ win the inter-school tournament next month.'\n\n(Hint: Use will + verb for Type 1 Conditional — a real, likely future possibility.)",
+    acceptedAnswers: ["will", "will win", "will probably win"],
+    modelAnswer: "will (will win — Type 1 conditional: If + present tense, will + base verb)",
+    materi: "Grammar – Conditional Sentences Type 1", tujuanPembelajaran: "Melengkapi conditional sentence type 1 untuk mengungkapkan kemungkinan di masa depan", levelKognitif: "C3"
   },
   {
     id: "bing-is-13", type: "IS", number: 38,
