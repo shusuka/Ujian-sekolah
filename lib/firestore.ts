@@ -21,7 +21,9 @@ export async function fetchSessionQuestions(
     const ref = doc(db, "subjects", subjectId, "sessions", `session_${sessionNumber}`);
     const snap = await fetchWithTimeout(getDoc(ref), 5000);
     if (snap.exists()) {
-      const data = snap.data().questions as Question[];
+      const raw = snap.data().questions;
+      // Support both legacy (array) and new (JSON string) format
+      const data: Question[] = typeof raw === "string" ? JSON.parse(raw) : raw;
       if (data && data.length > 0) return data;
     }
   } catch (err) {
@@ -45,7 +47,9 @@ export async function uploadSubjectSessions(subjectId: string): Promise<void> {
   for (let i = 0; i < bank.sessions.length; i++) {
     const questions = buildQuestionsFromBank(bank, bank.sessions[i], subjectId);
     const ref = doc(db, "subjects", subjectId, "sessions", `session_${i + 1}`);
-    await setDoc(ref, { questions, updatedAt: new Date().toISOString() });
+    // Firestore doesn't support nested arrays (e.g. chartData.rows: string[][])
+    // so we serialize questions as a JSON string to avoid the restriction.
+    await setDoc(ref, { questions: JSON.stringify(questions), updatedAt: new Date().toISOString() });
     console.log(`✅ Uploaded ${subjectId} session ${i + 1} (${questions.length} questions)`);
   }
 }
